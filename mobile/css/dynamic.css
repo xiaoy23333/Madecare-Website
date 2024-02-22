@@ -1,0 +1,54 @@
+  body{
+      background-color: #fff;
+  }
+ .bx{
+            width: 86%;
+            margin: 0 auto ;
+            padding-top: 5%;
+        }
+        .bx h3{
+            text-align: center;
+        }
+        .bx span {
+            font-size: 0.6rem;
+            text-align: center;
+            color: #666;
+            display: block;
+            margin: 0 auto;
+            margin-top: 0.5rem;
+        }
+        .bx p{
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+            line-height: 190%;
+        }
+  .ban{
+        width: 100%;
+        height: auto ;
+    }
+      .bn{
+      margin-top :1rem;
+       color: #fff;
+       background-color: #025361;
+       font-size: 0.6rem;
+    }
+     .dt {
+        background-color: #fff;
+        font-size: 1rem;
+        color: #333;
+    }
+video{
+	width: 100%;
+}
+
+h2{
+	font-size: 0.8rem;
+	font-weight: 800;
+}
+img{
+	margin-top: 0.5rem;
+	margin-bottom: 0.5rem;
+	width: 100%;
+	height: auto;
+}

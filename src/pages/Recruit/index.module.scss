@@ -1,0 +1,52 @@
+.desc{
+  display: block;
+  margin-top: 1.25rem;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  letter-spacing: .0875rem;
+  color: #333;
+}
+
+.tb{
+  margin-top: 1.1875rem;
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.25rem;
+  border-bottom: .125rem dashed #ccc;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.th_tr{
+  width: 100%;
+  height: 2.5rem;
+  background-color: #2fa0b5;
+}
+
+.th_tr th{
+  vertical-align: bottom;
+  border-bottom: .125rem solid #ddd;
+  color:white;
+  padding: .5rem;
+  line-height: 1.42857143;
+  text-align: left;
+}
+
+.td_tr{
+  font-size: .875rem;
+  line-height: 1.5rem;
+  letter-spacing: .0875rem;
+  color: #333;
+}
+
+.td_tr td{
+  padding: .5rem;
+  line-height: 1.42857143;
+  vertical-align: top;
+  border-top: .0625rem solid #ddd;
+}
+
+.td_tr a {
+  display: block;
+  color: #333
+}

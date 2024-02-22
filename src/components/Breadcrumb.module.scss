@@ -1,0 +1,30 @@
+.breadcrumb {
+  display: inline-block;
+  background-color: #fff;
+  font-size: .875rem;
+  line-height: 1.5rem;
+  height: 3.5rem;
+  float: right;
+  margin-top: 1.5rem;
+  margin-bottom: 0
+}
+
+.breadcrumb a {
+  font-size:14px;
+  font-family: 微软雅黑;
+  color: #333333
+}
+
+.breadcrumb > .active {
+  color: #025361
+}
+
+.breadcrumb > li {
+  display: inline-block;
+}
+
+.breadcrumb > li + li:before {
+  color: #025361;
+  content: " > ";
+  padding: 0 .125rem
+}

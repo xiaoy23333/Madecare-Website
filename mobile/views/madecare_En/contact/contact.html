@@ -1,0 +1,199 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MADECARE</title>
+    <link rel="stylesheet" href="../../../libs/aui/aui.css">
+    <link rel="stylesheet" href="../../../css/dynamic.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+
+    <link rel="stylesheet" href=" http://fonts.googleapis.com/icon?family=Material+Icons " type="text/css">
+<!-- HTTP 1.1 -->  <meta http-equiv="pragma" content="no-cache">  <!-- HTTP 1.0 -->  <meta http-equiv="cache-control" content="no-cache">  <!-- Prevent caching at the proxy server -->  <meta http-equiv="expires" content="0">  </head>
+<style>
+    .bx {
+        width: 86%;
+        margin: 0 auto;
+    }
+    #allmap {
+        width: 20%;
+    }
+    .content {
+    flex: 1 0 auto;
+    }
+    .footer {
+    flex-shrink: 0;
+    }
+</style>
+
+<body style="height: 100vh;display: flex;flex-direction: column;">
+<div class="content">
+<!--header-->
+<header class="aui-bar aui-bar-nav">
+    <a class="aui-pull-left logo">
+        <img src="../../../images/logo.png">
+    </a>
+    <a href="javascript:;" class="toggle aui-pull-right aui-btn" id="sidenav-toggle">
+        <i class="material-icons">menu</i>
+    </a>
+</header>
+<!--侧边栏导航的内容-->
+<nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+    <!--nav 最大的标题-->
+    <div class="sidenav-brand">
+        <a href="index.html">美德远健</a>
+    </div>
+
+    <ul class="sidenav-menu">
+        <!--HOME-->
+        <li>
+            <a href="../index.html">
+	          <span class="sidenav-link-icon">
+	            <i class="material-icons">payment</i>
+	          </span>
+                <span class="sidenav-link-title">HOME</span>
+            </a>
+        </li>
+
+        <!--PRODUCTS-->
+        <!-- <li>
+            <a href="../project/project.html" >
+	          <span class="sidenav-link-icon">
+	            <i class="material-icons">shopping_cart</i>
+	          </span>
+                <span class="sidenav-link-title">PRODUCTS</span>
+                
+            </a>
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>                <li><a href="../project/project.html">PRODUCTS</a></li>                <li><a href="../project/project_dws1000.html">力感减重Dynamic Body Weight Support</a></li>                <li><a href="../project/project_tr800.html">Smart Patient Transfer System</a></li>                <li><a href="../project/project_td.html">Intelligent Rehabilitation/转移系统</a></li>                <li><a href="../project/project_jh.html">Patient Monitoring</a></li>                <li><a href="../project/project_dn.html">Urinary Catheterization器/Urinary Catheterization系统</a></li>                <li><a href="../project/project_yun.html">Madecare Cloud</a></li><li><a href="../project/project_dws1000.html">力感减重Dynamic Body Weight Support</a></li><li><a href="../project/project_tr800.html">Smart Patient Transfer System</a></li>
+            </ul>
+        </li> -->
+        <!--SOLUTIONS-->
+        <li>
+            <a href="../solution/solution.html" >
+	          <span class="sidenav-link-icon">
+	            <i class="material-icons">assignment_ind</i>
+	          </span>
+                <span class="sidenav-link-title">SOLUTIONS</span>
+                
+            </a>
+            <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                <li><a href="../solution/solution.html">SOLUTIONS</a></li>
+                <li><a href="../solution/solution_kf.html">Limbs Rehabilitation</a></li>
+                <li><a href="../solution/solution_zy.html">Patient Safe Transfer</a></li>
+                <li><a href="../solution/solution_dn.html">Urinary Catheterization</a></li>
+                <li><a href="../solution/solution_jh.html">Continuous Patient Monitoring</a></li>
+                <li><a href="../solution/solution_cpx.html">Cardiopulmonary Test & Rehabilitation</a></li>
+                <li><a href="../solution/solution_yun.html">Tele-Rehabilitation</a></li>
+            </ul>
+        </li>
+        <!--ABOUT-->
+        <li>
+            <a href="../aboutus/aboutus.html">
+	          <span class="sidenav-link-icon">
+	            <i class="material-icons">supervisor_account</i>
+	          </span>
+                <span class="sidenav-link-title">ABOUT</span>
+            </a>
+        </li>
+        <!--NEWS-->
+        <li>
+            <a href="../dynamic/dynamic.html">
+	          <span class="sidenav-link-icon">
+	            <i class="material-icons">work</i>
+	          </span>
+                <span class="sidenav-link-title">NEWS</span>
+            </a>
+        </li>
+        <!--JOBS-->
+        <li>
+            <a href="../job/job.html">
+	          <span class="sidenav-link-icon">
+	            <i class="material-icons">backup</i>
+	          </span>
+                <span class="sidenav-link-title">JOBS</span>
+            </a>
+        </li>
+        <!--CONTACT-->
+        <li>
+            <a href="../contact/contact.html">
+	           <span class="sidenav-link-icon">
+	            <i class="material-icons">room</i>
+	          </span>
+                <span class="sidenav-link-title">CONTACT</span>
+            </a>
+        </li>
+        <!--中英文切换-->
+        <li>
+            <a href="../../index.html">
+	           <span class="sidenav-link-icon">
+	            <i class="material-icons">language</i>
+	          </span>
+                <span class="sidenav-link-title">中文</span>
+            </a>
+        </li>
+    </ul>
+</nav>
+    <!--NEWS-->
+    <!-- <div class="aui-content" style="height: 4.3rem;">
+        <img src="../../../images/banner_contact2.png" style="height: 4.3rem;" alt="" class="ban">
+    </div> -->
+    <div class="aui-content " style="overflow: hidden;">
+        <p class="aui-padded-10 aui-text-center dt">CONTACT</p>
+
+         <div style="    width: 80%;
+         margin-left: 10%;
+         height: 12rem;
+         margin: auto;" id="dituContent" >
+			 <img src="../../../images/contact_us.png" alt="" >
+		 </div>
+
+         <div class="mes bx" style="margin: 0 auto;">
+            <h3 class="aui-padded-10" style="    text-align: left;">Madecare Medical Systems Ltd</h3>
+            <p class="aui-padded-10">Address：3-211 NO538 YONGFENGTUN HAIDIAN DISTRICT BEIJING CHINA10094<br>
+                Email：contact@madecare.com<br>
+                Website: www.madecare.com<br>
+                Tel: 010-53381056</p>
+        </div>
+    </div>
+</div>
+<footer class="footer">
+    <!--底部-->
+    <!-- <div class="aui-content aui-text-center bn" style="margin-top: 0;">
+        美德远健（北京）医疗系统科技有限公司 <br> 版权所有
+        <br> COPYRIGHT 2019 MADECARE ALL RIGHTS RESERVED     <br>京ICP备18045046号
+    </div> -->
+</footer>
+<script type="text/javascript" src="../../../libs/jquery-1.8.2.min.js"></script>
+<script src="../../../libs/sidenav/sidenav.min.js"></script>
+<!-- <script src="http://api.map.baidu.com/api?v=2.0&ak=j5nHekcXufbYWroRN8F0iWO8rNuAqYrX"></script>
+<script src="../../../js/jquery.baiduMap.min.js"></script> -->
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75 + 'px';
+    window.onresize = function () {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75 + 'px';
+    };
+    $('[data-sidenav]').sidenav();
+    // new BaiduMap({
+    //     id: "dituContent",
+    //     title: {
+    //         text: "美德远健医疗系统科技有限公司",
+    //         className: "title"
+    //     },
+    //     content: {
+    //         className: "content",
+    //         text: [" "]
+    //     },
+    //     point: {
+    //         lng: 116.231473,
+    //         lat: 40.078212
+    //     }
+    // });
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,272 @@
+
+.top {
+  width: 100%;
+  background-color: #025361;
+  height: 4.0625rem;
+  // position:fixed;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index:99;
+}
+
+.main {
+  max-width: 75rem;
+  margin: 0 auto
+}
+
+.logo {
+  width: 8.125rem;
+  height: 2.5rem;
+  margin-top: .625rem;
+  margin-left: 1rem;
+  float: left;
+}
+
+.nav_bar {
+  float: right;
+}
+
+.nav_bar ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 4.0625rem;
+  text-align: center;
+  // min-width: 6.25rem;
+  padding: 0 1rem;
+}
+
+.nav_bar ul li a {
+  font-size: 0.8rem;
+  display: block;
+  text-decoration: none;
+  letter-spacing: .0875rem;
+  color: #fff
+}
+
+.nav_bar > ul > li:hover,.status{
+  background: #024753  
+}
+
+.nav_bar ul li img{
+  margin-top: .9375rem;
+  height: 4.6875rem;
+}
+.nav_bar ul li p{
+  min-width: 13.75rem;
+}
+.nav_bar ul li:hover .hid {
+  display: block
+}
+
+.nav_bar ul li .hid li a {
+  display: block;
+  width: 100%;
+  color: #333
+}
+
+.hid {
+  z-index: 999;
+  width: 100%;
+  //height: 8rem;
+  background: rgba(246, 246, 246, .8);
+  position: absolute;
+  left: 0;
+  display: none;
+  line-height: 0;
+  border-bottom: .0625rem solid #ccc;
+  border-top: .0625rem solid #ccc
+}
+
+.hid ul {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.hid ul li {
+  margin-top: -0.375rem;
+  min-width: 11.25rem;
+  height: 100%
+}
+
+.hid ul li p {
+  display: block;
+  width: 100%;
+  margin-top: -3.75rem;
+  color: #333
+}
+
+.logo > img{
+  max-width: 115%;
+}
+
+.burger {
+  background: transparent;
+  position: relative;
+  margin: 1rem 1.25rem 0 0;
+  font-size: 0;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+  cursor: pointer;
+  vertical-align: middle;
+  display: none;
+  &:focus{
+    outline: none;
+  }
+  span{
+    display: block;
+    position: absolute;
+    height: .25rem;
+    top: 1.375rem;
+    left: .5rem;
+    right: .5rem;
+    background-color: #fff;
+    &:before,&:after{
+      /*before和after与span重合，需要进行上移和下移*/
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: .25rem;
+      background-color: #fff;
+    }
+    &:before{
+      top: -0.625rem;/*相对于中间的span上移.625rem*/
+    }
+    &:after {
+      bottom: -0.625rem;/*相对于中间的span下移.625rem*/
+    }
+  }
+}
+
+
+.sidenav_menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    display: block;
+    position: relative;
+  }
+  a {
+    background: transparent;
+    color: #fff;
+    display: block;
+    line-height: 1.2rem;
+    padding: 0.8rem 1.6rem;
+    text-decoration: none;
+    &:hover {
+      background: #616161;
+    }
+    &.active {
+      color: #FAFAFA;
+    }
+  }
+}
+
+
+.sidenav_menu a.active .sidenav_link_icon,
+.sidenav_menu a.active .sidenav_dropdown_icon {
+  color: #FAFAFA;
+}
+.sidenav_link_icon {
+  color: #757575;
+  display: block;
+  height: 1.2rem;
+  left: 1.2rem;
+  position: absolute;
+  text-align: center;
+  top: 0.8rem;
+  width: 1.2rem;
+}
+.sidenav_link_title {
+  display: block;
+  padding: 0 0.8rem 0 2rem;
+}
+.sidenav_dropdown {
+  border-bottom: 0.05rem solid #424242;
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  a {
+    background: #424242;
+    padding-left: 2rem;
+    &:hover {
+      background: #616161;
+    }
+  }
+  li:first-child a {
+    box-shadow: inset 0 0.05rem 0.05rem rgba(0, 0, 0, 0.1);
+  }
+  &.active{
+    display: block;
+  }
+}
+
+.sidenav_dropdown_icon {
+  color: #757575;
+  display: block;
+  height: 0.8rem;
+  right: 0.8rem;
+  position: absolute;
+  text-align: center;
+  top: 0.8rem;
+  width: 0.8rem;
+}
+
+.sidenav {
+  background: #424242;
+  box-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  display: none;
+  font-size: 0.8rem;
+  font-weight: 400;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  overflow: auto;
+  transform: translate(-221.9rem, 0);
+  transition: transform .3s;
+  top: 0;
+  width: 12.8rem;
+  z-index: 100;
+  &.show {
+    transform: translate(0, 0);
+  }
+}
+
+.sidenav_brand {
+  background: #025361;
+  font-size: 1.2rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  padding: 1rem 1.2rem 0.95rem;
+  a {
+    color: #FAFAFA;
+  }
+}
+
+
+@media screen and (max-width: 62.5rem) {
+  .nav_bar > ul > li {
+    min-width: 5.5rem;
+  }
+  .hid ul li {
+    min-width: 7.5rem;
+  }
+}
+
+@media screen and (max-width: 47.8125rem) {
+  .nav_bar ul{
+    display: none;
+  }
+  .burger{
+    display: block;
+  }
+  .sidenav{
+    display: block;
+  }
+}

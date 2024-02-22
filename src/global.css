@@ -1,0 +1,108 @@
+html {
+    font-size: 1rem;
+    overflow-x: hidden
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+body > div {
+    height: 100%;
+}
+
+.fp-right {
+    height: 20rem;
+}
+
+body > div > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+header + div {
+    flex:1;
+}
+
+*, body, dd, div, input, li, span, table, td, tr, ul {
+    margin: 0;
+    padding: 0;
+    font-family: 方正兰亭纤黑_GBK;
+}
+
+li, ol, ul {
+    list-style: none;
+    /* list-style: aliceblue; */
+}
+
+a {
+    text-decoration: none
+}
+
+a:focus {
+    text-decoration: none
+}
+
+a:hover {
+    text-decoration: none
+}
+
+i {
+    font-style: normal
+}
+
+img {
+    border: 0
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400
+}
+
+header {
+    /* overflow: hidden */
+}
+
+.slick-dots li button{
+    width: 3.125rem !important;
+    height: 3.125rem !important;
+}
+.slick-dots li button:before{
+    font-size: .9375rem !important;
+}
+.slick-dots li.slick-active button:before,.slick-dots li button:before{
+    color:rgb(245,169,69) !important;
+}
+
+/* material icon */
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(assets/fonts/material-icons.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5rem;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.section{
+	opacity: 0;
+}

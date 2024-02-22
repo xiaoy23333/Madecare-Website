@@ -1,0 +1,69 @@
+.dynamic {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: auto;
+}
+.newscontent{
+  width: 55%;
+  margin-left: 24%;
+}
+
+.head {
+  margin-top: 8%;
+}
+.title {
+  font-size: 1.875rem;
+  line-height: 1.5rem;
+  color: #333;
+  display: inline-block;
+  margin-top: 1.25rem;
+}
+
+.sub_title {
+  text-align: center;
+  font-size: 1.25rem;
+  color: #025361;
+  line-height: 2.875rem
+}
+
+.dynamic span {
+  display: inline-block;
+  color: #adadad;
+  font-size: .875rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  text-align: center
+}
+
+.dynamic img {
+  margin: 0 auto 1.5rem;
+  display: table-cell;
+  text-align: center;
+  max-width: 62.5rem;
+  width: 80%;
+}
+
+.dynamic p {
+  display: inline-block;
+  font-size: 1rem;
+  letter-spacing: 0;
+  color: #333;
+  text-indent: 2em;
+  line-height: 2.25rem
+}
+
+.dynamic p:last-child {
+  margin-bottom: 2rem
+}
+
+
+.hr {
+  margin-top: 2.1875rem;
+  margin-bottom: 2.1875rem;
+  border: none;
+  border-top: .0625rem solid #ccc;
+  display: block;
+  width: 100%;  
+}

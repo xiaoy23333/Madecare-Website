@@ -1,0 +1,43 @@
+body {
+  background: #fff;
+}
+.bn {
+  width: 100%;
+}
+.bn p {
+  color: #fff;
+  font-size: 0.6rem;
+}
+.zn {
+  background-color: #fff;
+  color: #025361;
+  /* border-bottom: 0.05rem solid #ccc; */
+  margin-bottom: 0.5rem;
+}
+.tu {
+  /* padding: 0.6rem; */
+  margin: 0 auto ;
+}
+ .ban{
+        width: 100%;
+        height: auto ;
+    }
+.main {
+  padding: 1rem;
+}
+.main ul li {
+  font-size: 0.65rem;
+  line-height: 1.5rem;
+}
+.main ul li span {
+  color: #f29417;
+}
+.main ul .fs {
+  font-size: 0.8rem;
+}
+.bn {
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #025361;
+  font-size: 0.6rem;
+}

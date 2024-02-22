@@ -1,0 +1,26 @@
+.tab_menu_wrap {
+  border-bottom: .0625rem solid #f29417;
+  width: 100%;
+  height: 2.25rem;
+  margin-top: 2.0625rem
+}
+
+.tab_menu_wrap .tab_menu_item:first-child {
+  margin-left: 0
+}
+
+.tab_menu_wrap .tab_menu_item {
+  width: 7rem;
+  height: 2.25rem;
+  font-size: .875rem;
+  line-height: 33px;
+  text-align: center;
+  float: left;
+  cursor: pointer;
+  margin-left: 1.25rem
+}
+.active {
+  background-color: #f29417;
+  position: relative;
+  color: #fff
+}

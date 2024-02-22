@@ -1,0 +1,355 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MADECARE</title>
+    <link rel="stylesheet" href="../../../libs/aui/aui.css">
+    <link rel="stylesheet" href="../../../css/dynamic.css">
+    <link rel="stylesheet" href="../../../css/common.css">
+    <script type="text/javascript" src="../../../libs/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" href=" http://fonts.googleapis.com/icon?family=Material+Icons " type="text/css">
+    <script src="../../../libs/sidenav/sidenav.min.js"></script>
+<!-- HTTP 1.1 -->  <meta http-equiv="pragma" content="no-cache">  <!-- HTTP 1.0 -->  <meta http-equiv="cache-control" content="no-cache">  <!-- Prevent caching at the proxy server -->  <meta http-equiv="expires" content="0">  </head>
+<style>
+    .yx {
+        font-size: 0.7rem;
+    }
+    .table {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .table thead tr {
+        height: 2rem;
+        background-color: #2fa0b5;
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+        font-size: 0.6rem;
+        color: #333;
+        font-weight: 500;
+    }
+   .aui-list .zt {
+        font-size: 0.7rem;
+    }
+</style>
+
+<body>
+    <!--header-->
+    <header class="aui-bar aui-bar-nav .topn">
+        <a class="aui-pull-left logo">
+             <img src="../../../images/logo.png">
+        </a>
+        <a href="javascript:;" class="toggle aui-pull-right aui-btn" id="sidenav-toggle">
+         <i class="material-icons">menu</i>
+       </a>
+    </header>
+    <!--侧边栏导航的内容-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <!--nav 最大的标题-->
+        <div class="sidenav-brand">
+            <a href="index.html">美德远健</a>
+        </div>
+
+        <ul class="sidenav-menu">
+            <!--HOME-->
+            <li>
+                <a href="../../index.html">
+              <span class="sidenav-link-icon">
+                <i class="material-icons">payment</i>
+              </span>
+              <span class="sidenav-link-title">HOME</span>
+            </a>
+            </li>
+
+            <!--PRODUCTS-->
+            <!-- <li>
+                <a href="../project/project.html" >
+              <span class="sidenav-link-icon">
+                <i class="material-icons">shopping_cart</i>
+              </span>
+              <span class="sidenav-link-title">PRODUCTS</span>
+              
+            </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>                <li><a href="../project/project.html">PRODUCTS</a></li>                <li><a href="../project/project_dws1000.html">力感减重Dynamic Body Weight Support</a></li>                <li><a href="../project/project_tr800.html">Smart Patient Transfer System</a></li>                <li><a href="../project/project_td.html">Intelligent Rehabilitation/转移系统</a></li>                <li><a href="../project/project_jh.html">Patient Monitoring</a></li>                <li><a href="../project/project_dn.html">Urinary Catheterization器/Urinary Catheterization系统</a></li>                <li><a href="../project/project_yun.html">Madecare Cloud</a></li><li><a href="../project/project_dws1000.html">力感减重Dynamic Body Weight Support</a></li><li><a href="../project/project_tr800.html">Smart Patient Transfer System</a></li>
+                </ul>
+            </li> -->
+            <!--SOLUTIONS-->
+            <li>
+                <a href="../solution/solution.html" >
+              <span class="sidenav-link-icon">
+                <i class="material-icons">assignment_ind</i>
+              </span>
+              <span class="sidenav-link-title">SOLUTIONS</span>
+              
+            </a>
+                
+            </li>
+            <!--ABOUT-->
+            <li>
+                <a href="../aboutus/aboutus.html">
+              <span class="sidenav-link-icon">
+                <i class="material-icons">supervisor_account</i>
+              </span>
+              <span class="sidenav-link-title">ABOUT</span>
+            </a>
+            </li>
+            <!--NEWS-->
+            <li>
+                <a href="../dynamic/dynamic.html">
+              <span class="sidenav-link-icon">
+                <i class="material-icons">work</i>
+              </span>
+              <span class="sidenav-link-title">NEWS</span>
+            </a>
+            </li>
+            <!--JOBS-->
+            <li>
+                <a href="../job/job.html">
+              <span class="sidenav-link-icon">
+                <i class="material-icons">backup</i>
+              </span>
+              <span class="sidenav-link-title">JOBS</span>
+            </a>
+            </li>
+            <!--CONTACT-->
+            <li>
+                <a href="../contact/contact.html">
+               <span class="sidenav-link-icon">
+                <i class="material-icons">room</i>
+              </span>
+              <span class="sidenav-link-title">CONTACT</span>
+            </a>
+            </li>
+            <!--中英文切换-->
+            <li>
+                <a href="../../index.html">
+                <span class="sidenav-link-icon">
+                    <i class="material-icons">language</i>
+                </span>
+                    <span class="sidenav-link-title">中文</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!--NEWS-->
+    <!-- <div class="aui-content">
+        <img src="../../../images/banner-news.png" alt="" class="ban">
+    </div>
+    <h1 class="aui-padded-10 aui-text-center dt aui-text-gray">JOBS</h1> -->
+    <div class="bx">
+        <div class="aui-content" id="content">
+            <ul class="current" style="display:none;">
+                <li>
+                    <h2 class="aui-text-primary">销售大区总监</h2>
+                    <p>
+                        工作地点：北区，东区，西区 <br/>主要职责：
+                        <br/>1.根据公司战略和目标，制定销售大区的销售、代理商发展、团队建设等目标和对应的计划，完成销售目标、完成货款回收；
+                        <br/>2.负责大区代理商发展和管理；
+                        <br/>3.负责销售团队建设和管理，支撑公司销售业绩的持续成长；
+                        <br/>4.有效进行客户管理，及时收集、分析与反馈市场、客户、竞争状态等市场信息；
+                        <br/>5.预测产品需求量，定期收集并统计分析铲平需求走向， 与工厂协调计划。
+                        <br/>-参与制定公司营销战略。
+                        <br/>岗位要求：
+                        <br/>1、本科以上学历。
+                        <br/>2、具有敏锐的市场洞察力、应变能力、系统化的销售管理能力。
+                        <br/>3、诚信、有工作责任感、乐观自信、知难而进，能较快适应创业环境。
+                        <br/>4、具备果断的决策风格、优秀的沟通、资源整合及协调能力，敢于尝试、善于管理风险。
+                        <br/>5、从事医疗领域销售管理工作5年以上，有带团队经验。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">市场总监</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1.根据公司战略和目标，制定市场营销战略和目标；
+                        <br/>2.负责市场分析、客户管理、用户需求分析、竞争分析；
+                        <br/>3.负责新产品的定义、新产品的市场定位、新产品的上市推广战略和运作；
+                        <br/>4.负责公司的品牌建设和推广；
+                        <br/>5.负责相关展会的规划和运作、专家对接和相关学术活动的开展；
+                        <br/>6.负责公司品牌、产品等宣传及推广文案策划和编撰
+                        <br/>岗位要求：
+                        <br/>1.诚信、有工作责任感、乐观自信、知难而进、有团队精神，能较快适应创业环境。
+                        <br/>2.生物医药或机电相关专业本科及以上学历
+                        <br/>3.有较强的语言表达和沟通能力，思维活跃，具有创新的精神；
+                        <br/>4.医疗领域市场或销售5年以上管理经验，有康复医疗器械经验优先。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">采购总监</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1、根据公司战略和目标，制定采购策略、目标和计划；
+                        <br/>2、负责采购部门的团队建设和管理；
+                        <br/>3、负责采购体系和部门制度的建立、完善和执行；
+                        <br/>4、负责新产品和批量产品的采购，保证采购物料的按时到货和产品的按时出货，做好采购的成本控制；
+                        <br/>5、负责供应商的培养、管理和零部件的质量控制，保证供应商的质量；
+                        <br/>6、有效配合公司生产和研发需要，建立高效的信息化采购管理体系。
+                        <br/>岗位要求：
+                        <br/>1. 大学本科以上学历（理工科）
+                        <br/>2. 高度诚信、有工作责任感、团队精神，能较快适应创业环境
+                        <br/>3. 具有医疗器械或相似企业3到5年以上采购经理岗位工作经验
+                        <br/>4. 熟悉企业采购流程及具备较强的供应链管理经验，熟悉供应商审核评价标准及具备供应商评价能力。
+                        <br/>5. 具有较强的沟通交流能力和谈判能力、团队管理能力、资源整合利用能力。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">产品经理</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1.规划产品发展方向和路径，制定产品的长期竞争策略；
+                        <br/>2.负责新产品的产品定义，包括市场分析、用户需求分析、产品要求描述和新产品立项建议书；
+                        <br/>3.负责相关市场的研究、了解竞争态势和竞争对手、了解用户需求、了解产品销售渠道；
+                        <br/>4.负责产品的上市，包括产品定位、定价、销售策略、产品销售培训；
+                        <br/>5.参与企业年度营销计划及预算编制；
+                        <br/>6.制定产品管理制度与方案；
+                        <br/>岗位要求：
+                        <br/>1.五年以上医疗器械领域产品销售或产品管理经验，康复、护理领域经验更好；
+                        <br/>2.了解康复和医疗护理市场，了解相关市场的产品销售渠道；
+                        <br/>3.良好的团队合作精神和沟通能力；
+                        <br/>4.较强的目标导向、执行力、责任感和学习能力；
+                        <br/>5.生物医学相关专业、或机电类本科以上学历
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">电子工程师 - 表面肌电、电刺激</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1. 设备的电气部分的方案选择、评审和概念定义；
+                        <br/>2. 电气主要部件的选型和可行性分析；
+                        <br/>3. 控制电路的硬件、嵌入式软件设计；
+                        <br/>4. 样机的集成、调试、测试和可靠性试验；
+                        <br/>5. 供应商、生产和售后的必要技术支持；
+                        <br/>6. 设计文件的制作；
+                        <br/>7. 相关先进技术的追踪、评估和引用
+                        <br/>岗位要求：
+                        <br/>1. 本科及以上学历，电子工程、自动化、计算机及相关专业；
+                        <br/>2. 五年以上电子产品开发经验，精通数字及模拟电路设计，有小信号处理经验的优先；
+                        <br/>3. 有表面肌电、电刺激类产品的开发经验；
+                        <br/>4. 精通嵌入式硬件及软件方案，最好有ARM MCU的相关设计经验(如LPC或STM系列)；
+                        <br/>5. 精通PADS, Cadence Capture/Allegro或Protel软件，能够独立进行产品的原理图设计，原理图分析，PCB Layout等工作；
+                        <br/>6. 了解产品开发的流程及设计控制流程；
+                        <br/>7. 良好的团队合作精神和沟通能力；
+                        <br/>8. 良好的主动学习能力，有愿意成为技术专家志向；
+                        <br/>9. 良好的英文阅读水平和一定的英文口语沟通能力。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">高级机器人机械工程师</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1.负责产品的总体机械结构设计方案、评审和设计；
+                        <br/>2.完成机械零部件的3D/2D设计和对机械结构进行数学建模、分析计算及仿真
+                        <br/>3.完成机械零部件结构设计相关方案和图纸输出；
+                        <br/>4.协调工业设计，保证产品的优秀用户体验；
+                        <br/>5.负责样件的生产协调，并对样件生产过程的流程、工艺进行协调、确认；
+                        <br/>6.负责样机的集成、调试、测试和可靠性试验，并对生产及可靠性验证时出现的异常问题进行及时有效的处理；
+                        <br/>7.对供应商、生产和售后的必要技术支持。
+                        <br/>岗位要求：
+                        <br/>1.5年以上机械设计经验；
+                        <br/>2.精通产品机械结构、材料、加工工艺，熟悉塑胶及五金件性能;
+                        <br/>3.熟悉材料表面处理工艺、熟悉机加和钣金设计及制作工艺；
+                        <br/>4.熟练使用机械设计软件，例如Solidworks，ProE（Creo 2.0），CAD等；
+                        <br/>5.具有多自由度机器人结构设计经验，能根据特定的机器人结果建立数学及分析仿真；
+                        <br/>6.具有电机、减速机等运动控制部件选型的经验。
+                        <br/>7.了解产品开发的流程；
+                        <br/>8.良好的团队合作精神和沟通能力；
+                        <br/>9.良好的英文阅读水平；
+                        <br/>10.本科以上学历。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">工厂经理</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1. 根据公司战略和目标，制定工厂运营的目标、运营计划；
+                        <br/>2. 负责石家庄工厂的日常运营，确保产品制造、物流、质量控制等处于高效有序运转状态。完成生产运营各项指标。
+                        <br/>3. 负责生产线的升级及改进，负责工厂运营的信息化建设；
+                        <br/>4. 负责产品设计到生产的高效转化的衔接、与北京公司的有效沟通协调。
+                        <br/><br/>岗位要求
+                        <br/>1. 大学本科及以上学历。
+                        <br/>2. 三年以上医疗器械相关或相似领域工厂经理岗位工作经验。
+                        <br/>3. 具有较强的沟通协调及决策能力。具有较强的团队管理经验。
+                        <br/>4. 熟悉精益生产，5S，看板管理，可视化管理等，质量管理及改进方法，熟悉物流管理（主生产计划，订单及交货期管理，运输管理等）
+                        <br/>5. 诚信、具有较强的责任心及工作热情、较强的学习能力，能承受较大的工作压力。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">高级机器人电子工程师</h2>
+                    <p>
+                        工作地点：北京市海淀区永丰基地或大兴区亦庄 <br/>主要职责：
+                        <br/> 1. 机器人的电气控制部分的方案选择、评审和功能定义；
+                        <br/>2. 电气控制部分主要部件的选型和可行性分析、可行性试验；
+                        <br/>3. 控制电路的硬件、算法、嵌入式软件设计；
+                        <br/>4. 样机的集成、调试、测试和可靠性试验；
+                        <br/>5. 供应商、生产和售后的必要技术支持；
+                        <br/>6. 设计文件的制作；
+                        <br/>7. 相关先进技术的追踪、评估和引用
+                        <br/>岗位要求：
+                        <br/>1.本科及以上学历，电子工程、自动化、计算机及相关专业；
+                        <br/>2.五年以上电子产品开发经验，精通数字及模拟电路设计；
+                        <br/>3.精通嵌入式硬件及软件方案，有ARM MCU的相关设计经验(如LPC或STM系列)；
+                        <br/>4.精通PADS, Cadence Capture/Allegro或Protel软件，能够独立进行产品的原理图设计，原理图分析，PCB Layout等工作；
+                        <br/>5.有机器人产品开发经验，熟悉机器人运动模型建立和控制；
+                        <br/>6.了解产品开发的流程及设计控制流程；
+                        <br/>7.良好的团队合作精神和沟通能力；
+                        <br/>8.良好的主动学习能力，有愿意成为技术专家志向；
+                        <br/>9.良好的英文阅读水平和一定的英文口语沟通能力。
+                    </p>
+                </li>
+            </ul>
+            <ul class="current" style="display:none">
+                <li>
+                    <h2 class="aui-text-primary">Java工程师：</h2>
+                    <p>工作地点：北京市海淀区永丰基地或大兴区亦庄
+                        <br/>岗位要求：
+                        <br>1. 计算机或相关专业统招本科及以上学历；
+                        <br>2. 3年以上相关工作经验；
+                        <br>3. JAVA基础扎实；
+                        <br>4. 熟悉常用框架；
+                        <br>5. 熟悉Linux操作。
+                        <br>注： 公司提供单身宿舍</p>
+                </li>
+            </ul>
+        </div>
+        <!--底部-->
+
+        <!-- <div class="aui-content aui-text-center bn">
+            美德远健（北京）医疗系统科技有限公司 <br> 版权所有
+            <br> COPYRIGHT 2019 MADECARE ALL RIGHTS RESERVED     <br>京ICP备18045046号
+        </div> -->
+</body>
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75 + 'px';
+    window.onresize = function () {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75 + 'px';
+    }
+    $('[data-sidenav]').sidenav();
+    $(function(){
+        var $elms = $("#content ul"),
+            index = sessionStorage.getItem('recruitIndex');
+        $elms.eq(index).show();
+    });
+</script>
+
+</html>

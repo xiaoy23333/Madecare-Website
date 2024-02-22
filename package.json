@@ -1,0 +1,90 @@
+{
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build --prefix-paths",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+  },
+  "dependencies": {
+    "@babel/cli": "^7.7.4",
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@fullpage/react-fullpage": "^0.1.16",
+    "autoprefixer": "^9.6.0",
+    "fullpage.js": "^3.0.7",
+    "gatsby": "^2.24.53",
+    "gatsby-plugin-intl": "^0.2.8",
+    "gatsby-plugin-react-helmet": "^3.1.18",
+    "postcss-cli": "^6.1.3",
+    "postcss-normalize": "^8.0.1",
+    "postcss-preset-env": "^6.7.0",
+    "react": "^16.8.6",
+    "react-background-video-player": "^1.1.6",
+    "react-dom": "^16.8.6",
+    "react-fullpage": "^0.1.19",
+    "react-helmet": "^5.2.1",
+    "react-slick": "^0.24.0",
+    "reactjs-videobg": "^1.2.3",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-decorators": "^7.4.4",
+    "babel-preset-gatsby": "^0.2.0",
+    "file-loader": "^4.2.0",
+    "gatsby-plugin-layout": "^1.1.0",
+    "gatsby-plugin-react-css-modules": "^2.1.0",
+    "gatsby-plugin-sass": "^2.1.0",
+		"sass": "^1.62.1",
+		"sass-loader": "^13.3.0",
+    "prettier": "^1.18.2",
+    "url-loader": "^2.2.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+  },
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "browserslist": [
+    "last 3 version",
+    "> 3% in alt-AS",
+    "not ie <= 8"
+  ],
+  "postcss": {
+    "plugins": {
+      "postcss-normalize": {},
+      "postcss-preset-env": {
+        "presets": [
+          [
+            "env",
+            {
+              "targets": {
+                "browsers": [
+                  "last 2 versions",
+                  "ie 11"
+                ]
+              },
+              "useBuiltIns": true
+            }
+          ]
+        ]
+      },
+      "autoprefixer": {
+        "options": {
+          "browsers": [
+            "last 2 versions",
+            "ie 11"
+          ]
+        }
+      }
+    }
+  }
+}

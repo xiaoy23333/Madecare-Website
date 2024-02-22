@@ -1,0 +1,51 @@
+body {
+  background: #fff;
+}
+.fangan {
+  margin: 0.6rem;
+  margin: 0 auto;
+}
+a {
+  color: #333;
+}
+.img_box {
+  width: 20%;
+  margin: 0 auto;
+}
+.tb {
+  text-align: center;
+  background: #ccc;
+  width: 85%;
+  font-size: 0.8rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: 1rem;
+  border-radius: 5px;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+ .ban{
+        width: 100%;
+        height: auto ;
+    }
+.wz {
+  color: #666;
+  font-size: 0.6rem;
+  line-height: 1.2rem;
+  width: 86%;
+  margin: 0 auto;
+}
+.zn {
+  font-size: 0.8rem;
+  background-color: #025361;
+  padding: 0.1rem;
+  color: #fff;
+}
+.bn {
+  margin-top: 1rem;
+  color: #fff;
+  background-color: #025361;
+  font-size: 0.6rem;
+}

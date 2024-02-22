@@ -1,0 +1,16 @@
+{
+  "plugins": [["@babel/plugin-proposal-decorators",{ "legacy": true }]],
+  "presets": [
+    [
+      "babel-preset-gatsby",
+      {
+        "targets": {
+          "browsers": [    
+            "last 1 version",
+            "> 3% in alt-AS",
+            "not ie <= 10"]
+        }
+      }
+    ]
+  ]
+}

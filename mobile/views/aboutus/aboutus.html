@@ -1,0 +1,291 @@
+<!doctype html>
+<html class="no-js">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>美德远健</title>
+    <link rel="stylesheet" href="../../libs/aui/aui.css">
+    <link rel="stylesheet" href="../../libs/aui/aui-slide.css">
+    <link rel="stylesheet" href="../../css/project.css">
+    <link rel="stylesheet" href="../../css/aboutus.css">
+    <link rel="stylesheet" href="../../libs/swiper/swiper.min.css">
+
+    <script type="text/javascript" src="../../libs/aui/api.js"></script>
+    <script type="text/javascript" src="../../libs/zepto.min.js"></script>
+    <link rel="stylesheet" href="../../css/common.css">
+    <script type="text/javascript" src="../../libs/jquery-1.8.2.min.js"></script>
+    <script src="../../libs/sidenav/sidenav.min.js"></script>
+    <link rel="stylesheet" href=" http://fonts.googleapis.com/icon?family=Material+Icons " type="text/css">
+<!-- HTTP 1.1 -->  <meta http-equiv="pragma" content="no-cache">  <!-- HTTP 1.0 -->  <meta http-equiv="cache-control" content="no-cache">  <!-- Prevent caching at the proxy server -->  <meta http-equiv="expires" content="0">  </head>
+
+<body>
+    <header class="aui-bar aui-bar-nav .topn">
+        <a class="aui-pull-left logo">
+            <img src="../../images/logo.png">
+        </a>
+        <a href="javascript:;" class="toggle aui-pull-right aui-btn" id="sidenav-toggle">
+            <i class="material-icons">menu</i>
+        </a>
+    </header>
+    <!--侧边栏导航的内容-->
+    <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+        <!--nav 最大的标题-->
+        <div class="sidenav-brand">
+            <a href="index.html">美德远健</a>
+        </div>
+
+        <ul class="sidenav-menu">
+            <!--首页-->
+            <li>
+                <a href="../index.html">
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">payment</i>
+                    </span>
+                    <span class="sidenav-link-title">首页</span>
+                </a>
+            </li>
+
+            <!--产品中心-->
+            <!-- <li>
+                <a href="../project/project.html" >
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">shopping_cart</i>
+                    </span>
+                    <span class="sidenav-link-title">产品中心</span>
+
+                </a>
+                <ul class="sidenav-dropdown" data-sidenav-dropdown>
+                    <li>
+                        <a href="../project/project.html">产品中心</a>
+                    </li>
+                    <li>
+                        <a href="../project/project_td.html">智能康复/转移系统</a>
+                    </li>
+                    <li>
+                        <a href="../project/project_dn.html">智能导尿器/智能导尿系统</a>
+                    </li>
+                    <li>
+                        <a href="../project/project_jh.html">长期床旁监护系统</a>
+                    </li>
+                    <li>
+                        <a href="../project/project_yun.html">远健云平台</a>
+                    </li>
+                </ul>
+            </li> -->
+            <!--解决方案-->
+            <li>
+                <a href="../solution/solution.html" >
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">assignment_ind</i>
+                    </span>
+                    <span class="sidenav-link-title">解决方案</span>
+                    <!-- <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+                        <i class="material-icons">arrow_drop_down</i>
+                    </span>
+                    <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+                        <i class="material-icons">arrow_drop_up</i>
+                    </span> -->
+                </a>
+                
+            </li>
+            <!--关于我们-->
+            <li>
+                <a href="../aboutus/aboutus.html">
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">supervisor_account</i>
+                    </span>
+                    <span class="sidenav-link-title">关于我们</span>
+                </a>
+            </li>
+            <!--远健动态-->
+            <li>
+                <a href="../dynamic/dynamic.html">
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">work</i>
+                    </span>
+                    <span class="sidenav-link-title">远健动态</span>
+                </a>
+            </li>
+            <!--远健招聘-->
+            <li>
+                <a href="../job/job.html">
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">backup</i>
+                    </span>
+                    <span class="sidenav-link-title">远健招聘</span>
+                </a>
+            </li>
+            <!--联系我们-->
+            <li>
+                <a href="../contact/contact.html">
+                    <span class="sidenav-link-icon">
+                        <i class="material-icons">room</i>
+                    </span>
+                    <span class="sidenav-link-title">联系我们</span>
+                </a>
+            </li>
+            <!--中英文切换-->
+            <li>
+                <a href="../madecare_En/index.html">
+                <span class="sidenav-link-icon">
+                    <i class="material-icons">language</i>
+                </span>
+                    <span class="sidenav-link-title">English</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <!-- <div class="aui-content">
+        <img src="../../images/aboutmebanner.png" alt="" class="ban">
+    </div> -->
+    <div class="aui-content">
+        <!-- <h3 class="aui-padded-10 aui-text-center zn">关于我们</h3>
+        <div class="sm">
+            <div class="smz bx">
+                <img src="../../images/shiming.png" alt="">
+                <p class="smp">
+                    <br> 专注老年人康复/护理, 提供智能化整体解决方案</p>
+            </div>
+        </div> -->
+        <!--公司简介-->
+        <div id="wrapper">
+            <div class="jianjie">
+            </div>
+            <p class="zt"> &nbsp &nbsp &nbsp &nbsp                
+美德远健是一家专注于康复和护理，利用先进技术和数据，为医疗服务机构和养老 服务机构提供智能化康复护理设备、智能化解决方案的高科技公司。公司的目标是 利用新技术和创新的商业模式，成为康复和护理领域高效的、高成长的、具有全球 视野的企业。美德远健有一支了解行业、重视执行力、具有国际视野的团队。公司 的产品立足于临床的有效性、良好的用户体验、优秀的产品品质和高度的智能化。
+			</p>
+            
+        </div>
+        <div class="main">
+        </div>
+        <!--tab栏-->
+        <div class="wrap">
+            <div class="tabs">
+                <span class="part active">
+                    <a href="#" hidefocus="true">公司团队</a>
+                </span>
+                <span class="part">
+                    <a href="#" hidefocus="true">公司愿景</a>
+                </span>
+                <span class="part">
+                    <a href="#" hidefocus="true">公司使命</a>
+                </span>
+                <span class="part">
+                    <a href="#" hidefocus="true">公司文化</a>
+                </span>
+            </div>
+            <div class="swiper-container" style="height:100%;">
+                <div class="swiper-wrapper" style="height: 100%;">
+                    <div class="swiper-slide swiper-slide-visible swiper-slide-active ">
+                        <div class="content-slide aui-row-padded td ">
+                            <p class="fis">&nbsp &nbsp &nbsp &nbsp 美德远健是一家新创的高科技公司，以其清晰的战略定位、包容的文化和专业化的做事方式，凝聚了有丰富医疗行业经验、丰富的创业经验、丰富的公司管理经验的彼此信任的创始人团队；吸引了兼具创业精神和管理能力、在医疗领域和互联网领域颇有业绩建树的合伙人团队；建立了具有康复技术、控制技术、复杂机构设计技术、移动互联网技术、先进传感器技术、先进工 业设计能力的高效研发团队。
+                            </p>
+							<p class="fis">公司依托中关村医学转化中心的平台，充分利用其强大的医疗领域资源和其强大的战略资本，将和更多的优秀人才和优秀资源共同合作，积极有效应对老龄化带来的健康挑战，在康复护理领域做出贡献。
+</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aui-row">
+                        <div class="content-slide aui-row-padded  td  ">
+                            <p class="fis">
+                                &nbsp &nbsp &nbsp利用新技术和创新的商业模式，成为老年人健康医疗领域高效的、具有全球视野的公司。
+                            </p>
+                            <p>
+                                &nbsp &nbsp &nbsp 我们的目标:
+                            </p>
+                            <div class="fis" style="    width: 80%;    margin-left: 10%;">
+                                <li>&nbsp &nbsp 一个聚焦于老年人康复护理、具有细分领域竞争优势的专业化公司; 
+                                <br> </li>
+								<li>&nbsp &nbsp &nbsp 一个具有移动互联网基因、以大数据为核心、极具创新精神的高科技公司;
+								<br> </li>
+								<li>&nbsp &nbsp &nbsp 一个强调产品疗效、易用性、品质、智能化的，有口碑的、可信赖的业内知名公司;
+                                <br></li>
+								<li>&nbsp &nbsp &nbsp 一个有商业模式优势、盈利能力、研发/生产/营销/资本运作一体化的高成长公司;
+                                <br></li>
+								<li>&nbsp &nbsp &nbsp 一个具有高效运作流程的、国际视野的全球化公司</li>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aui-row">
+                        <div class="content-slide aui-row-padded  td  ">
+                            <p class="fis">
+                                专注老年人康复/护理, 提供智能化整体解决方案
+                            </p>
+                            <p>
+                                中国老龄化的趋势正在加速，庞大的老年人群给社会带来了医疗健康、专业医疗护理上的空前挑战。现有的医疗健康和护理与现实的需求之间存在着很大的 差距，老龄化的加剧，会让需求与供给间的矛盾变得更大。三十多年的快速经济 发展使人们的健康观念和健康消费意识发生了很大的变化。医疗健康的消费结构 正在从单纯的临床治疗向康复、护理及预防倾斜。康复医学的发展，使得康复和 护理和临床医学相辅相成，作为整体医学的一部分，越来越重要。
+                            </p>
+                            <div class="fis" >
+                               <p>
+                                美德远健有一支长期致力于医疗领域的技术和管理团队，他们怀揣梦想，正在为老年人的健康、 为应对社会老龄化的挑战不懈努力。我们也真诚愿意与各界人士协力同进。 通过技术创新，推动康复护理领域传统医疗器械的智能化和互联网化转型， 助力康复护理服务在效率、质量、可及性、循证化及远程诊疗上的提升。
+                               </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide aui-row" style="    width: 20rem;
+    height: 100%;
+    padding: 0 2%;">
+                        <div class="content-slide aui-row-padded  td  ">
+                            <p class="fis">
+                                核心价值
+                                <!-- <br> 诚信正直：坚守法律底线、坚守道德底线、遵守公司纪律，不损害客户利益、不损害公司利益、不损害员工利益。
+                                <br> 勇于担当：主动发现问题、勇于面对问题、积极解决问题，不推脱、不扯皮、不拖延。
+                                <br> 追求卓越：把事情做到极致。设定卓越目标、挖掘潜能、 用尽方法、超越自己。不浅尝辄止、不满足现状、不轻言放弃。
+ --> 
+							<p>
+								<div style="float: left; width: 20%;"><span><span>诚信正直 :</span></span> </div>
+								<div style="float: left; width: 80%;"><span>我们坚守法律和道德，永远保护客户利益</span></div><br>
+								<div style="float: left; width: 20%;"><span><span>勇于担当 :</span></span> </div>
+								<div style="float: left; width: 80%;"><span>在公司，我们践行主动发现问题，勇于面对问题，积极解决问题。在社会，我们直面老龄化带来的康复养老挑战， 推动行业智能化解决方案</span></div><br>
+								<div class="" style="float: left; width: 20%;"><span><span>追求卓越 :</span></span> </div>
+								<div style="float: left; width: 80%;"><span>我们精心打磨的每一款产品，无论是产品有效性、产品性能还是产品品质和外观都达到了世界一流水准。我们立足于用户需求，追求原创，以创新带来更多的客户价值</span></div><br>
+							</p>
+							</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部-->
+    <!-- <div class="aui-content aui-text-center bn">
+        美德远健（北京）医疗系统科技有限公司
+        <br> 版权所有
+        <br> COPYRIGHT 2019 MADECARE ALL RIGHTS RESERVED     <br>京ICP备18045046号
+    </div> -->
+</body>
+<script type="text/javascript" src="../../js/idangerous.swiper.min.js"></script>
+<script>
+    document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75 + 'px';
+    window.onresize = function () {
+        document.documentElement.style.fontSize = document.documentElement.clientWidth / 18.75 + 'px';
+    }
+    $(function () {
+
+        var tabsSwiper;
+        tabsSwiper = new Swiper('.swiper-container', {
+            speed: 500,
+            onSlideChangeStart: function () {
+                $(".tabs .active").removeClass('active');
+                $(".tabs span").eq(tabsSwiper.activeIndex).addClass('active');
+            }
+        });
+
+        $(".tabs span").on('touchstart mousedown', function (e) {
+            e.preventDefault()
+            $(".tabs .active").removeClass('active');
+            $(this).addClass('active');
+            tabsSwiper.swipeTo($(this).index());
+
+        });
+
+        $(".tabs span").click(function (e) {
+            e.preventDefault();
+        });
+    });
+    $('[data-sidenav]').sidenav();
+</script>
+
+</html>

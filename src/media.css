@@ -1,0 +1,18 @@
+@media screen and (max-width: 1200px) {     //TODO:?
+    html{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    html{
+        font-size: 14px; 
+        /* 14 */
+    }
+}
+
+@media screen and (max-width: 765px) {
+    html{
+        font-size: 21px;
+    }
+}

@@ -1,0 +1,68 @@
+.content {
+  // min-height: 38rem;
+  // margin-bottom: 9%;
+  flex:1;
+  overflow: auto;
+}
+
+.content_bg {
+  margin-top: 4.0625rem;
+  width: 100%;
+  height: .5rem;
+  position: relative;
+  /* background-color: #f7f7f7; */
+}
+
+.content_bg .content_box {
+  width: 68.75rem;
+  margin: 0 auto;
+  text-align: center
+}
+
+.banner_title {
+  display: inline-block;
+  margin-top: 8.875rem;
+  font-family: MicrosoftYaHei;
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.5rem;
+  letter-spacing: .15rem;
+  color: #333;
+  margin-left: 1.25rem
+}
+
+.banner {
+  display: inline-block;
+  width: 34.375rem;
+  height: 22.5rem;
+  vertical-align: top;
+  margin-left: 13.75rem
+}
+
+.solution {
+  padding-top: 1.125rem;
+  width: 62.5rem;
+  //height: 63.75rem;
+  margin: 0 auto 1.5625rem;
+  overflow: hidden;
+}
+
+.title{
+  font-size: 1.875rem;
+  line-height: 1.5rem;
+  display: inline-block;
+  color: #025361;
+  margin-top: 1.25rem;
+  margin-bottom: .625rem;
+}
+
+.hr{
+  margin-top: .625rem;
+  margin-bottom: 1.25rem;
+  border: 0;
+  border-top: .0625rem solid #eee;
+  display: block;
+  width: 100%;  
+}

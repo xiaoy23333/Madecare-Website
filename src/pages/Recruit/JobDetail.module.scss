@@ -1,0 +1,87 @@
+.pager {
+  padding-left: 0;
+  margin: 1.25rem 0;
+  text-align: center;
+  list-style: none;
+}
+
+.button{
+  border-radius: .9375rem;
+  background-color: #2fa0b5;
+  color: #fff;
+  display: inline-block;
+  padding: .375rem .75rem;
+  margin-bottom: 0;
+  font-size: .875rem;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: .0625rem solid transparent;
+  &:hover{
+    color: #fff;
+    background-color: #31b0d5;
+    border-color: #269abc;
+  }
+  a{
+    color: white;
+  }
+}
+
+.nav{
+  margin-top: 3rem;
+}
+
+.previous,.next{
+  display: inline-block;
+  a{
+    text-decoration: none;
+    background-color: #eee;
+    display: inline-block;
+    padding: .3125rem .875rem;
+    border: .0625rem solid #ddd;
+    color: #337ab7;
+    border-radius: .9375rem;
+    &:hover{
+      color: #23527c;
+    }
+  }
+}
+.previous{
+  float: left;
+}
+
+.next{
+  float: right;
+}
+
+.job_name{
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  letter-spacing: .1125rem;
+  color: #2fa0b5;
+  margin:.9375rem auto;
+}
+
+.job_detail{
+  font-size: .875rem;
+  line-height: 1.875rem;
+  letter-spacing: .0875rem;
+  color: #333;
+}
+
+.job_cur{
+  display: block;
+}
+
+.job_hidden{
+  display: none;
+}
