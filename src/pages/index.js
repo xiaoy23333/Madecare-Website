@@ -560,7 +560,7 @@ render={({ state, fullpageApi }) => {
                             </div>                            
                         </div>
                         <div >
-                          <p className={styles.Index} style={{    float: 'left',    marginTop: '-14%',    marginLeft: '105%'}} >03</p>
+                          <p className={styles.Index} style={{    float: 'left',    marginTop: '-14%',    marginLeft: '105%'}} >05</p>
                         </div>                        
                     </div>  
               </div>
@@ -629,7 +629,7 @@ render={({ state, fullpageApi }) => {
                   </div>
 
                     <div className={styles.tr600_left}>
-                        <div className={styles.Index} style={{marginTop: '0%',marginLeft: '0%',float: 'left',    width: '11rem',    height: '11rem'}} >04</div>
+                        <div className={styles.Index} style={{marginTop: '0%',marginLeft: '0%',float: 'left',    width: '11rem',    height: '11rem'}} >06</div>
      
                         <div className={styles.descrip04} style={{}}  >                        
                             <div className={styles.word_24}>
@@ -718,7 +718,7 @@ render={({ state, fullpageApi }) => {
                                 {intl.formatMessage({ id: "p11.pms600intro" })}
                         </div>
                         <div style={{}}>
-                          <p className={styles.Index} style={{  marginTop: '0',marginLeft: '25rem'}} >05</p>
+                          <p className={styles.Index} style={{  marginTop: '0',marginLeft: '25rem'}} >07</p>
                         </div>
                       </div>
                     </div>
@@ -793,7 +793,7 @@ render={({ state, fullpageApi }) => {
                   <div className="wrapper">
                     <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc600_01.jpg').default})` }}>
                       <div style={{}}>
-                          <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >06</p>
+                          <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >08</p>
                       </div>
 
                       <div className={styles.descrip06} style={{float:"left"}}  >
