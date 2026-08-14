@@ -18,7 +18,7 @@ import { LANGS} from '../config';
 
 
 
-export default @injectIntl class Index extends React.Component {
+class Index extends React.Component {
   //fullpage options
 
   // scrollingSpeed = {1000} /* Options here */
@@ -55,7 +55,7 @@ export default @injectIntl class Index extends React.Component {
   }
 	
 	componentDidMount() {
-		document.title = "美德远健官网";
+		document.title = "冀德远健官网";
 		const meta = document.createElement('meta');
 		meta.content = 'never';
 		meta.name = 'referrer';
@@ -63,7 +63,7 @@ export default @injectIntl class Index extends React.Component {
 		document.getElementsByTagName('head')[0].appendChild(meta);
 	}
 	
-  render({...rest }) {
+  render() {
     // console.log(rest);
     // console.log("&&^*")
 
@@ -79,7 +79,7 @@ export default @injectIntl class Index extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
-    const anchors = ["1", "2", "3","4","5","6","7","8","9","10","11","12","13","14","15","16"];
+    const anchors = ["1", "2", "3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"];
 
     return (
       <ReactFullpage
@@ -110,7 +110,7 @@ render={({ state, fullpageApi }) => {
                 </VideoBg> */}
                 {/* <iframe height={498} width={510} src={'https://vku.youku.com/live/ilpshare?id=8063211'} frameborder={0} ></iframe> */}
                 <VideoBg loop muted autoPlay>
-                    <VideoBg.Source src={require('../assets/mp4/2k-ffa96772cabead64113b654f2b13bf01.mp4')} />
+                    <VideoBg.Source src={require('../assets/mp4/2k-ffa96772cabead64113b654f2b13bf01.mp4').default} />
                 </VideoBg>
               </div>
               <div className="section">
@@ -120,7 +120,7 @@ render={({ state, fullpageApi }) => {
                     <div className={styles.sfy_row}>
                           <div className={styles.sfy_left} >
                               {/* <div className={styles.sfy_left_banner}> */}
-                                  <img className={styles.images_left} src={require('../assets/imgs/Index/overview/00.png')} />             
+                                  <img className={styles.images_left} src={require('../assets/imgs/Index/overview/00.png').default} />             
                                   {/* <div style={{paddingLeft: '14.75rem',display: 'block'}}></div> */}      
                                                   
                                   {/*
@@ -141,27 +141,27 @@ render={({ state, fullpageApi }) => {
                           </div>
                           <div className={styles.sfy_product1} >
                                 <div className={styles.images_a} >
-                                    <img src={require('../assets/imgs/Index/overview/a.png')} />
+                                    <img src={require('../assets/imgs/Index/overview/a.png').default} />
                                 </div>
                                 <div className={styles.product1} >
                                     <div style={{    height: '86%'}}  >
-                                        <img  style={{marginTop:'-25%'}} src={require('../assets/imgs/Index/overview/001.png')} />
+                                        <img  style={{marginTop:'-25%'}} src={require('../assets/imgs/Index/overview/001.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} >
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(11, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(12, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
                                     </div>
                                 </div>
                                 <div className={styles.product2} >
                                       <div style={{    height: '89%'}} >
-                                          <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png')} />   
+                                          <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png').default} />   
                                       </div>                                 
                                       <div className={styles.kfzy1} >
-                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(7, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(8, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
                                       </div>
                                 </div>
                                 <div className={styles.product3} >
                                       <div style={{    height: '89%'}}  >
-                                          <img className={styles.images} src={require('../assets/imgs/Index/overview/02.png')} />   
+                                          <img className={styles.images} src={require('../assets/imgs/Index/overview/02.png').default} />   
                                       </div>                         
                                       <div className={styles.sfy_right_xzkf} style={{}}>
                                           <button className={styles.button_style} onClick={() => fullpageApi.moveTo(3, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.xzkf"})}</span></button>
@@ -170,27 +170,27 @@ render={({ state, fullpageApi }) => {
                           </div>
                           <div className={styles.sfy_product2} >
                                 <div className={styles.images_a} >
-                                    <img   style={{    }}   src={require('../assets/imgs/Index/overview/a.png')} />
+                                    <img   style={{    }}   src={require('../assets/imgs/Index/overview/a.png').default} />
                                 </div>
                                 <div className={styles.product1} >
                                     <div style={{height: '89%',marginTop:'0%'}} >
-                                      <img src={require('../assets/imgs/Index/overview/03.png')} />
+                                      <img src={require('../assets/imgs/Index/overview/03.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(13, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(14, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
                                     </div>
                                 </div>
                                 <div className={styles.product2} >
                                       <div style={{    height: '90%'}}   >
-                                          <img  className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png')} />     
+                                          <img  className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png').default} />     
                                       </div>                               
                                       <div className={styles.kfzy1} >
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(9, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(10, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
                                       </div>
                                 </div>
                                 <div className={styles.product3} >
                                       <div style={{    height: '90%'}}   >
-                                            <img   className={styles.images} src={require('../assets/imgs/Index/overview/04.png')} />                
+                                            <img   className={styles.images} src={require('../assets/imgs/Index/overview/04.png').default} />                
                                       </div>            
                                       <div className={styles.sfy_right_xzkf} style={{}}>
                                       <button className={styles.button_style} onClick={() => fullpageApi.moveTo(5, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.cpx"})}</span></button>
@@ -209,25 +209,25 @@ render={({ state, fullpageApi }) => {
                                     />
                                 </p> 
                                 <div className={styles.middle1} >
-                                    <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png')} />                                    
+                                    <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png').default} />                                    
                                     <p className={styles.kfzy1} >
-                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(7, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
+                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(8, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
                                     </p>
                                 </div>                               
                                 <div className={styles.middle2} >
-                                    <img className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png')} />
+                                    <img className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png').default} />
                                     <p className={styles.kfzy2} >
-                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(9, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
+                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(10, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
                                     </p>                                    
                                 </div>
                               </div>
                           </div>
                           <div className={styles.sfy_right}>	
-                            <img className={styles.images} src={require('../assets/imgs/Index/overview/02.png')} />                            
+                            <img className={styles.images} src={require('../assets/imgs/Index/overview/02.png').default} />                            
                                 <p className={styles.sfy_right_xzkf} style={{}}>
                                 <button className={styles.button_style} onClick={() => fullpageApi.moveTo(3, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.xzkf"})}</span></button>
                                 </p> 
-                            <img className={styles.images2} src={require('../assets/imgs/Index/overview/04.png')} />
+                            <img className={styles.images2} src={require('../assets/imgs/Index/overview/04.png').default} />
                             
                               <p className={styles.sfy_right_cpx} style={{color:'#333333',width: '100%',textAlign:'center', marginTop: '-1%' }}>
                               <button className={styles.button_style}  onClick={() => fullpageApi.moveTo(5, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.cpx" })}</span></button>
@@ -237,7 +237,7 @@ render={({ state, fullpageApi }) => {
 
                     <div className={styles.sfy_bottom} >
                           <div className={styles.images_bottom}  style={{backgroundSize:'100%',backgroundPosition:'center',backgroundRepeat:'no-repeat',
-                                backgroundImage: `url(${require('../assets/imgs/Index/group2.png')}) `,
+                                backgroundImage: `url(${require('../assets/imgs/Index/group2.png').default}) `,
                                 // backgroundColor: '#f6f6f6',
                               }}><p style={{display: 'flex',
                                 justifyContent: 'space-around'}} ><span className={styles.word_20} style={{color:'#ffffff',marginRight: '50%'}}  >{intl.formatMessage({ id: "cpzs.znhl" })}</span>
@@ -256,7 +256,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -265,7 +265,7 @@ render={({ state, fullpageApi }) => {
                   </div>
 
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/dws1000_1.png')})` }}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/dws1000_1.png').default})` }}>
                           <div style={{}}>
                               <p className={styles.Index} style={{  marginTop: '70vh',marginLeft: '12.5rem'}} >
                                 01
@@ -310,7 +310,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img alt="美德远健" style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img alt="冀德远健" style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -318,7 +318,7 @@ render={({ state, fullpageApi }) => {
                     </button>
                   </div>
                   
-                  <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/dws1000webbg.png')})` }} />
+                  <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/dws1000webbg.png').default})` }} />
 
                     <div className={styles.dws1000_container}>
                       <div className={styles.dws1000} >
@@ -374,7 +374,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -399,7 +399,7 @@ render={({ state, fullpageApi }) => {
                                                 
                     </div>
                   <div className={styles.cpx_image} >        
-                      <img style={{Width: '75%'}} src={require('../assets/imgs/Index/cpx_01.png')} />
+                      <img style={{Width: '75%'}} src={require('../assets/imgs/Index/cpx_01.png').default} />
                   </div>
 
               </div>
@@ -409,7 +409,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -419,7 +419,7 @@ render={({ state, fullpageApi }) => {
 
                     <div className={styles.cpx_container}>
                       <div className={styles.cpx} >    
-                          <img src={require('../assets/imgs/Index/cpx_02.png')} />
+                          <img src={require('../assets/imgs/Index/cpx_02.png').default} />
                       </div>               
                       <div className={styles.cpx_info}>         
                         <div className={styles.cpx_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "index6.cpx" })}</p></div>
@@ -471,12 +471,74 @@ render={({ state, fullpageApi }) => {
 
               </div>
               <div className="section">
+                  {/* P7 SEM 运动负荷试验测试踏车 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>
+                      </div>
+                    </button>
+                  </div>
+
+                    <div className={styles.cpx_container}>
+                      <div className={styles.cpx} >
+                          <img src={require('../assets/imgs/Index/sem_01.jpeg').default} />
+                      </div>
+                      <div className={styles.cpx_info}>
+                        <div className={styles.cpx_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "index7sem.title" })}</p></div>
+                            <div className={styles.product_cpx}>
+                                      <div className={styles.cpx_function}>
+                                      <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.paramtitle" })}</div>
+                                          <div className={styles.word_18}>
+                                              <ul className={styles.ul2}>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li1" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li2" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li3" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li4" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li5" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li6" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul2.li7" })}</li>
+                                              </ul>
+                                          </div>
+                                    </div>
+                                    <div className={styles.cpx_apply}>
+                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.featuretitle" })}</div>
+                                        <div className={styles.word_18}>
+                                            <ul className={styles.ul3}>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li1" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li2" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li3" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li4" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li5" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li6" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li7" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li8" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li9" })}</li>
+                                            </ul>
+                                        </div>
+
+                                    </div>
+                              </div>
+
+                      </div>
+                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                        <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
+                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7sem.applyintro" })}</span>
+                      </div>
+                  </div>
+
+              </div>
+              <div className="section">
                   {/* P7 */}
                   <Header {...this.props}/>
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -484,7 +546,7 @@ render={({ state, fullpageApi }) => {
                     </button>                    
                   </div>
 
-                  <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/tr800webbg.jpg')})` ,height: '96.8%', marginTop: '3.2%'}} />
+                  <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/tr800webbg.jpg').default})` ,height: '96.8%', marginTop: '3.2%'}} />
                     <div className={styles.tr800_right}>
                         <div className={styles.descrip3} style={{textAlign:"right"}}  >                        
                             <div className={styles.word_24} style={{ display: 'inline-block',  width: '100%'}}>
@@ -508,7 +570,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -519,7 +581,7 @@ render={({ state, fullpageApi }) => {
                     <div >
                       <div className={styles.tr800}>             
                       </div>
-                      <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/imgs/Index/tr800_02.jpg')})`, height: '97.6%', marginTop: '2.4%' }} />
+                      <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/imgs/Index/tr800_02.jpg').default})`, height: '97.6%', marginTop: '2.4%' }} />
                       <div className={styles.tr800_info}>
                               <div className={styles.tr800_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "p8.tr800" })}</p></div>
                                   <div className={styles.product_tr800}> 
@@ -558,7 +620,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -581,7 +643,7 @@ render={({ state, fullpageApi }) => {
                             </div>
                         </div>                                                                
                     </div>
-                    <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/product04webbg.jpg')})` ,height: '96.7%', marginTop: '3.3%'}} />
+                    <div className={styles.web_bg} style={{backgroundImage: `url(${require('../assets/bigimg/product04webbg.jpg').default})` ,height: '96.7%', marginTop: '3.3%'}} />
                     
               </div>
               <div className="section">
@@ -590,7 +652,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -599,7 +661,7 @@ render={({ state, fullpageApi }) => {
                   </div>
 
                   <div className={styles.tr600_container}>
-                      <div className={styles.tr600} style={{backgroundImage: `url(${require('../assets/imgs/Index/tr600_02.png')})`,backgroundPosition: 'center' }} >             
+                      <div className={styles.tr600} style={{backgroundImage: `url(${require('../assets/imgs/Index/tr600_02.png').default})`,backgroundPosition: 'center' }} >             
                       </div>
                       <div className={styles.tr600_info}>
                               <div className={styles.tr600_title}><p  className={styles.word_30}>{intl.formatMessage({ id: "p10.tr600" })}</p></div>
@@ -636,11 +698,11 @@ render={({ state, fullpageApi }) => {
                   {/* P11 */}
                   <Header {...this.props}/>
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/pms600_01.jpg')})` ,zIndex:'0'}}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/pms600_01.jpg').default})` ,zIndex:'0'}}>
                     <div className={styles.back_top}>
                       <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                         <div className={styles.back_icon}>
-                            <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon_white.png')} />
+                            <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon_white.png').default} />
                         </div>
                         <div className={styles.backto_white} >                                  
                                 <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -669,7 +731,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -679,7 +741,7 @@ render={({ state, fullpageApi }) => {
 
                   <div className={styles.pms600_container}>
                     <div className={styles.pms600} >
-                        <img src={require('../assets/imgs/Index/pms600_02.png')} />
+                        <img src={require('../assets/imgs/Index/pms600_02.png').default} />
                         {/* <p className={styles.productname}>{intl.formatMessage({ id: "p12.cpjh" })}</p> */}
                     </div>
                     <div className={styles.pms600_info}>
@@ -720,7 +782,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon_white.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon_white.png').default} />
                       </div>
                       <div className={styles.backto_white} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -729,7 +791,7 @@ render={({ state, fullpageApi }) => {
                   </div>
                   
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc600_01.jpg')})` }}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc600_01.jpg').default})` }}>
                       <div style={{}}>
                           <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >06</p>
                       </div>
@@ -754,7 +816,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -765,7 +827,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.sc600_container}>
                     <div className={styles.sc600_box}>
                         <div className={styles.sc600} >  
-                            <img style={{width: '100%'}} src={require('../assets/imgs/Index/sc600_02.png')} />     
+                            <img style={{width: '100%'}} src={require('../assets/imgs/Index/sc600_02.png').default} />     
                             {/* <p className={styles.productname}>{intl.formatMessage({ id: "p14.zndn" })}</p>       */}
                         </div>
                     </div>
@@ -808,7 +870,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -819,7 +881,7 @@ render={({ state, fullpageApi }) => {
 
                   <div className={styles.yjy_box} style={{height: (intl.locale !== "en") ? '72vh':'85vh'}}>
                       <div className={styles.yjy} > 
-                          <img style={{width: '100%',    maxHeight: '99%',  backgroundSize: 'cover',    paddingTop: '1%'}} src={(intl.locale !== "en") ? require('../assets/bigimg/yjy.jpg') : require('../assets/imgs/Index/yjy_en.png')} />            
+                          <img style={{width: '100%',    maxHeight: '99%',  backgroundSize: 'cover',    paddingTop: '1%'}} src={(intl.locale !== "en") ? require('../assets/bigimg/yjy.jpg').default : require('../assets/imgs/Index/yjy_en.png').default} />            
                       </div>
                   </div>
 
@@ -838,7 +900,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.back_top}>
                     <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
                       <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png')} />
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
                       </div>
                       <div className={styles.backto} >                                  
                               <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
@@ -863,14 +925,14 @@ render={({ state, fullpageApi }) => {
                           <div key={title}><h3><Link to={to}>{title}</Link></h3><span>{time}</span><p>{cnt}</p></div>,
                         )}
                       </div>   
-                      <div className={styles.button}><Link to={'/news'}>更多动态 <img src={require('../assets/imgs/Index/more.png')}
+                      <div className={styles.button}><Link to={'/news'}>更多动态 <img src={require('../assets/imgs/Index/more.png').default}
                                                                                 alt=""/></Link></div>       
                     </div>
                     <div className={styles.lowright}>
                         <dl className="about_wrap">
                             <dd className={styles.about} ><Link to="/contact/" style={{color:'black',borderBottomStyle: 'groove'}}>{intl.formatMessage({ id: "p16.contact" })}</Link></dd>
                             <dd className={styles.about2} ><Link to="/recruit/" style={{color:'black',borderBottomStyle: 'groove'}}>{intl.formatMessage({ id: "p16.jobs" })}</Link></dd>
-                            <dt className={styles.qrcode}><img alt={'微信二维码'} src={require('../assets/imgs/qrcode.png')}/></dt>
+                            <dt className={styles.qrcode}><img alt={'微信二维码'} src={require('../assets/imgs/qrcode.png').default}/></dt>
                             <dd className={styles.about3} style={{color:'black'}}>{intl.formatMessage({ id: "p16.wechat" })}</dd>
                           </dl>
                       </div>
@@ -886,3 +948,5 @@ render={({ state, fullpageApi }) => {
 }
 
 
+
+export default injectIntl(Index);

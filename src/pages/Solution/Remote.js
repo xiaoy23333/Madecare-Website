@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Remote.module.scss';
 import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-export default @solWrap(<FormattedMessage id="en.yjy" />) @injectIntl
 class Remote extends React.Component {
   render() {
     let {intl} = this.props;
@@ -17,10 +16,12 @@ class Remote extends React.Component {
             </div>
             <div className={styles.image} style={{width: (intl.locale !== "en") ? '70%':'100%'}} >
                 <div className={styles.img}>
-                    <img src={ (intl.locale !== "en") ? require('../../assets/imgs/Index/yjy.png') : require('../../assets/imgs/Index/yjy_en.png')} alt=""/>
+                    <img src={ (intl.locale !== "en") ? require('../../assets/imgs/Index/yjy.png').default : require('../../assets/imgs/Index/yjy_en.png').default} alt=""/>
                 </div>                
             </div>        
       </div>
     );
   }
 }
+
+export default solWrap(<FormattedMessage id="en.yjy" />)(injectIntl(Remote));

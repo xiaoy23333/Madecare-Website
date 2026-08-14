@@ -5,7 +5,7 @@ import { injectIntl } from 'gatsby-plugin-intl';
 import { LANGS, HEADER_NAV, NAVS } from '../config';
 import { navigate } from 'gatsby';
 
-export default @injectIntl class NavHeader extends Component {
+class NavHeader extends Component {
   toggleLan = () => {
     let { location: { href }, intl: { locale } } = this.props;
     let hArr = href.split('/');
@@ -80,7 +80,7 @@ export default @injectIntl class NavHeader extends Component {
         return (  
           <header className={styles.top} style={{display: this.state.btnFlag ? 'table' : 'none' }}>
             <div className={styles.main}>
-              <div className={styles.logo}><a href="/"><img src={require('../assets/imgs/NavHeader/logo.png')} alt=""/></a></div>
+              <div className={styles.logo}><a href="/"><img src={require('../assets/imgs/NavHeader/logo.png').default} alt=""/></a></div>
               <div className={styles.nav_bar}>
                 <ul>
                   {/* {restatus ==='#1'?this.setState({isreload: true}):""} */}
@@ -110,7 +110,7 @@ export default @injectIntl class NavHeader extends Component {
             {/*移动端导航*/}
             <nav className={[styles.sidenav,sideNav ? styles.show : ''].join(' ')}>
               <div className={styles.sidenav_brand}>
-                <Link to={'/'}>美德远健</Link>
+                <Link to={'/'}>冀德远健</Link>
               </div>
               {<ul className={styles.sidenav_menu}>
                 {HEADER_NAV.map(({ to, txt, items, icon }, index) => (            
@@ -140,3 +140,5 @@ export default @injectIntl class NavHeader extends Component {
 
 const Icon = ({className = styles.sidenav_dropdown_icon,name}) =>
   <i className={[className, 'material-icons'].join(' ')}>{name}</i>;
+
+export default injectIntl(NavHeader);

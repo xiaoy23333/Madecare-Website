@@ -3,7 +3,6 @@ import React from 'react';
 import styles from './Cpx.module.scss';
 import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-export default @solWrap(<FormattedMessage id="en.cpx" />) @injectIntl
 class Monitor extends React.Component {
   render() {
     let {intl} = this.props;
@@ -15,10 +14,12 @@ class Monitor extends React.Component {
             <br />
             <FormattedMessage id="solution.cpxdescrip2" />
             </div>
-          <img src={require('../../assets/imgs/Solution/solution_cpx.png')}
+          <img src={require('../../assets/imgs/Solution/solution_cpx.png').default}
                                                          alt=""/>
         
       </div>
     );
   }
 }
+
+export default solWrap(<FormattedMessage id="en.cpx" />)(injectIntl(Monitor));

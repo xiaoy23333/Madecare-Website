@@ -7,7 +7,7 @@ import { NEWS_ABSTRACT } from '../../config';
 export default class News extends React.Component {
 	
 	componentDidMount() {
-		document.title = "美德远健官网";
+		document.title = "冀德远健官网";
 		const meta = document.createElement('meta');
 		meta.content = 'never';
 		meta.name = 'referrer';
@@ -19,7 +19,7 @@ export default class News extends React.Component {
     return (
       <div style={{overflow: 'auto',paddingTop: '65px'}}>
         <div className={styles.banner} style={{
-          background: `url(${require('../../assets/imgs/News/banner.png')}) no-repeat`,
+          background: `url(${require('../../assets/imgs/News/banner.png').default}) no-repeat`,
           backgroundSize: '100% auto'
         }}>
           <div>智能·老人·健康</div>

@@ -9,28 +9,28 @@ export const NEWS_DETAIL = {
 	  publisher:'madecare',
 	  items:[
 	    {txt:'2021年6月24日至26日，陕西省心脏康复中心联盟成立大会暨心脏康复高峰论坛在古城西安举行。此次会议，madecare携能将CPET测试“化繁为简”的CPX-600高级心肺功能评测系统隆重登场。为与心脏康复从业者进行心肺运动试验（CPET）实操演示，成为大会明星设备。'},
-			{src:require('./assets/imgs/News/new8-01.jpg')},
+			{src:require('./assets/imgs/News/new8-01.jpg').default},
 			{title:'大会致辞'},
 			{txt:"陕西省人民医院党委书记高敬龙书记在成立大会上致辞，他对葛均波院士、霍勇教授、徐亚伟教授、陕西省卫生健康委胡俊鸿督查专员长期以来对陕西省人民医院的关心和指导表示衷心感谢。陕西省心脏康复中心联盟的成立，必将推动陕西省心脏康复工作实现质的飞跃，迎来心脏康复理念的再次转变，实现“以疾病为中心”到“以健康为中心”的战略转变。"},
-			{src:require('./assets/imgs/News/new8-02.jpg')},
+			{src:require('./assets/imgs/News/new8-02.jpg').default},
 			{txt:'葛均波院士通过视频连线，代表心血管健康联盟对陕西省心脏康复中心联盟成立表示热烈的祝贺。他在致辞中指出，随着人们对生活质量追求的提高，心脏康复越来越受到重视，陕西省心脏康复中心联盟的成立，带动陕西省心脏康复事业的发展。心脏康复事业业，任重道远。希望陕西省各位专家同仁能够一同携手，在心血管疾病的救治管理体系上，规范康复与随访，实现心血管疾病的闭环管理，最终共同促进心血管事件拐点的早日到来。'},
-			{src:require('./assets/imgs/News/new8-03.jpg')},
+			{src:require('./assets/imgs/News/new8-03.jpg').default},
 			{txt:'霍勇教授通过视频连线对联盟成立表示祝贺，他指出心血管健康联盟多年来大力推动心血管学科中心建设，胸痛中心、心衰中心、房颤中心、高血压达标中心以及心脏康复中心的建设呈现良好的发展态势，防、救、治、康体系的建立、探索、推广与应用，也愈发证明省级联盟成立的重要性。希望陕西省在寿锡凌教授的带领和推动下，借助陕西省心血管疾病诊疗的优势力量，推动心脏康复工作的发展。'},
-			{src:require('./assets/imgs/News/new8-04.jpg')},
+			{src:require('./assets/imgs/News/new8-04.jpg').default},
 			{txt:'徐亚伟教授出席会议指出，我国心血管疾病的防治形势仍然非常严峻，心脏康复是实现心血管病患者回归家庭、回归社会的重要一步。省级心脏康复中心联盟单位，要明确服务定位，搭建心脏康复体系建设，建立常态化转诊机制，从而普及、规范、提高心脏康复工作。'},
-			{src:require('./assets/imgs/News/new8-05.jpg')},
+			{src:require('./assets/imgs/News/new8-05.jpg').default},
 			{txt:'陕西省卫生健康委胡俊鸿督察专员代表卫健委对陕西省心脏康复中心联盟的成立表示热烈的祝贺。在致辞中表示我省的心血管健康事业近年来取得了很大的发展，但随着人口老龄化及人们生活水平的提高，心血管疾病的发病率及死亡率不断上升，心血管疾病诊疗、救治、康复也面临着巨大的压力，希望心血管中心联盟的成立在学科建设、人才培养、学术交流等方面广泛开展合作，共同推进区域心脏康复水平向前迈进，为心血管疾病患者提供高水平的服务！'},
-			{src:require('./assets/imgs/News/new8-06.jpg')},
+			{src:require('./assets/imgs/News/new8-06.jpg').default},
 			{txt:"陕西省心脏康复中心联盟主席寿锡凌教授就心脏康复中心建设意义、目前陕西省心脏康复工作的现状及未来3年的工作计划进行了介绍，她表示陕西省心脏康复中心联盟成立后，将积极推动执行心脏康复标准化技术与标准化流程，未来将继续在心血管健康联盟心脏康复中心总部的带领下，切实使心血管病患者的心脏康复真正落到实处，实现心血管疾病患者全程、全面管理，改善患者生活质量，降低患者死亡率和再住院率。"},
-			{src:require('./assets/imgs/News/new8-07.jpg')},
+			{src:require('./assets/imgs/News/new8-07.jpg').default},
 			{txt:'陕西省心脏康复联盟执行主席李学文围绕心脏康复建设及管理做了详细介绍，从心脏康复的发展简史、心脏康复概述、心脏康复建设及管理3方面的讲解，让大家对心脏康复有了更深刻的了解。在心血管外科已开展的心脏康复工作基础上对今后工作提出更远的的目标。'},
-			{src:require('./assets/imgs/News/new8-08.jpg')},
+			{src:require('./assets/imgs/News/new8-08.jpg').default},
 			{title:'2.实操演示'},
 			{txt:'会议期间，在陕西省人民医院，与会专家使用CPX-600高级心肺功能评测系统，向来自全国的心脏康复从业者进行了心肺运动试验（CPET）的实操演示，得到了业内专家学者们的高度赞赏。'},
-			{src:require('./assets/imgs/News/new8-10.jpg')},
-			{src:require('./assets/imgs/News/new8-09.jpg')},
+			{src:require('./assets/imgs/News/new8-10.jpg').default},
+			{src:require('./assets/imgs/News/new8-09.jpg').default},
 			{title:'3.CPX-600高级心肺功能评测系统'},
-			{src:require('./assets/imgs/News/new7-08.jpg')},
+			{src:require('./assets/imgs/News/new7-08.jpg').default},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaNvD3LO3VBKAha5nqquh8P0mdCyJxLEtVBvSVuLvqX3iacLicWianIfm7Yf38T4EFkibUd7yTU3gvrIibA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
 			{title:'主要适用于'},
 			{txt:'心内科、呼吸科、康复科等需要进行心肺功能测定和康复的患者，以及各种需要心肺功能评测指导下的身体康复的患者。'},
@@ -72,34 +72,34 @@ export const NEWS_DETAIL = {
 	  publisher:'madecare',
 	  items:[ 
  	    {txt:'2021年6月25日由冀德远健旗下公司美德远健举办的心肺运动试验临床应用与研究学术研讨会在河北石家庄召开。来自河北省临床心脏康复的医务工作者参加了此次学术研讨会。'},
-		  {txt:'美德远健携高级心肺功能评测系统 CPX-600参加了这次学术研讨会，为在场的专家提供了学术交流的技术操作平台，并就心肺运动试验临床应用与心脏康复新技术等前沿热点问题进行了广泛学术交流。'},
-			{video:require('./assets/mp4/new7.mp4')},  
+		  {txt:'冀德远健携高级心肺功能评测系统 CPX-600参加了这次学术研讨会，为在场的专家提供了学术交流的技术操作平台，并就心肺运动试验临床应用与心脏康复新技术等前沿热点问题进行了广泛学术交流。'},
+			{video:require('./assets/mp4/new7.mp4').default},  
 			{title:'1.主持会议——王颖 副总经理'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07InTjYTZABnHIA7DvP04PasvfGOiauJWEMBHeaNUcx99EU6BsUTrO3bicSA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7.jpg')},
+			{src:require('./assets/imgs/News/new7.jpg').default},
 			{title:'2.心肺运动试验及解析——袁静 副主任'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07Iny7LaZLzAtQgZz44DsYhzkDfjVMfkjD9wmiaNMSBMnGicxiaZFNibcu0OibQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7-02.jpg')},
+			{src:require('./assets/imgs/News/new7-02.jpg').default},
 			{title:'3.心肺运动试验的临床应用 ——张青娟 护士长'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07In4egqWX9ZZU5Mdm2ydhXZx6R2D7RjpXNW6TrKGdYzkZNPkWlABuj8CQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7-03.jpg')},
+			{src:require('./assets/imgs/News/new7-03.jpg').default},
 			{title:'4.心肺运动试验病例概括分析 ——赵鑫 医师'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07InibZJvxtNVK3tItnf5gdpJTvGrcey9ZPSbfRM6icgMtjnvLXwDbdQVGsg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7-04.jpg')},
+			{src:require('./assets/imgs/News/new7-04.jpg').default},
 			{txt:'此次会议，madecare将携能将CPET测试“化繁为简”的CPX-600高级心肺功能评测系统隆重登场。'},
 			{title:'5.CPX-600心肺运动试验演示——尹娜 副总经理 '},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07InQsicJ9FuZFmMZ7uIRXgL7YJrHUhOXSFvFialLsNxvZxLZuKpjiciaVibwlw/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
 			{title:'高级心肺功能评测系统 CPX-600 演示'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07InBxibeDuAQ7hnkUwRu8NcCEvqv4mEkwAm9zzCcAAOVDkbdDrufuOcdzA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7-05.jpg')},
+			{src:require('./assets/imgs/News/new7-05.jpg').default},
 			{title:'6.专家讨论'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07Inoe8Lic9BjuiaeYFiaibqNR7KKUJ06x7PTx8WibIzK0GBmRiaD2TQOl3qI16Q/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7-06.jpg')},
+			{src:require('./assets/imgs/News/new7-06.jpg').default},
 			{title:'7.大会总结——刘美霞 教授'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaPSQwWn8hr2J7DZbsNA07InVYKbAHDXwBpygWQXE1QShDiaWNDzeU3LFXxP3oib6IvfmXBBYiavPwyKA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-			{src:require('./assets/imgs/News/new7-07.jpg')},
+			{src:require('./assets/imgs/News/new7-07.jpg').default},
 			{txt:'配有遥测运动心电及血压的高度自动化心肺评测系统（CPX）'},
-			{src:require('./assets/imgs/News/new7-08.jpg')},
+			{src:require('./assets/imgs/News/new7-08.jpg').default},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaNvD3LO3VBKAha5nqquh8P0mdCyJxLEtVBvSVuLvqX3iacLicWianIfm7Yf38T4EFkibUd7yTU3gvrIibA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
 			{title:'主要适用于'},
 			{txt:'心内科、呼吸科、康复科等需要进行心肺功能测定和康复的患者，以及各种需要心肺功能评测指导下的身体康复的患者。'},
@@ -134,10 +134,10 @@ export const NEWS_DETAIL = {
 			{txt:'美国运动医学会（ACSM）'},
 			{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaMshwzc2DicOAPQhhvoD9Ll92Y2ibf16Lyb8C2zhvicJdiaCNQm4iaUXTrNniaRDJH2EBSJ8D3nlU6nWEfQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
 			{txt:'此次学术研讨会推动了心脏康复中心标准化、规范化和专业化的建设，为心脏康复领域的医务工作者搭建了高水平的学术交流平台，充分展示了心脏康复的学术及临床研究成果，将进一步推动心脏康复的发展。'},
-			{src:require('./assets/imgs/News/new7-09.jpg')},
+			{src:require('./assets/imgs/News/new7-09.jpg').default},
 			{txt:'与此同时，madecare 高级心肺功能评测系统 CPX-600 得到了业内专家学者们的高度赞赏。'},
-			{src:require('./assets/imgs/News/new7-10.jpg')},
-			{txt:'至此，2021年心肺运动试验临床应用与研究学术研讨会圆满落幕未来，美德远健会参与更多丰富多彩的学术活动与康复同仁们提供案例分享、交流、展示的平台不断为中国康复事业的发展贡献力量madecare依旧在等您'}]
+			{src:require('./assets/imgs/News/new7-10.jpg').default},
+			{txt:'至此，2021年心肺运动试验临床应用与研究学术研讨会圆满落幕未来，冀德远健会参与更多丰富多彩的学术活动与康复同仁们提供案例分享、交流、展示的平台不断为中国康复事业的发展贡献力量madecare依旧在等您'}]
 	},
 	news6:{
 	  title:'有效逆转高血压的“新处方”',
@@ -151,7 +151,7 @@ export const NEWS_DETAIL = {
 	    {txt:'来自北京大学人民医院心血管内科的丁荣晶主任给我们讲讲有效逆转高血压的“新处方”。'},
 	    {src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaMshwzc2DicOAPQhhvoD9Ll9XpcSxjxOyIDCvFAdjr4Q4Veeag4euW49EyNFuoUbm2pt9ibDX1urMZg/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
 	    {txt:'丁荣晶   副主任医师 北京大学人民医院 心血管内科'},
-		{src:require('./assets/bigimg/new6-3.jpg')},
+		{src:require('./assets/bigimg/new6-3.jpg').default},
 		{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaMshwzc2DicOAPQhhvoD9Ll9wCytwd5kNgtCuPceyVIc8anNGRaNZmUFjPAVq47UUeZWclWonK4VVQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
 		{txt:'“新处方”多久有效果'},
 		{txt:'“降压的“新处方”维持3-6个月，一次的治疗后，一个小时左右，实现5-10毫米汞柱的高压下降，3-5毫米汞柱的低压下降 。根据患者情况会让药物减掉或者不用吃药。'},
@@ -166,7 +166,7 @@ export const NEWS_DETAIL = {
 		{txt:'心肺运动负荷试验是一项重要的检查。'},
 		{txt:'日常生活中，人们在不了解自己的情况下活动时，风险更大。进行心肺运动负荷试验后，了解自己身体能接受的强度，在日常生活中是可控心血管的风险。'},
 		{src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaMshwzc2DicOAPQhhvoD9Ll96uqwktllriaBvAURzHb8oUiavWmSjXYjhgHx7DYOrtgl76QU6DJXzicAQ/640?wx_fmt=gif&wxfrom=5&wx_lazy=1'},
-		{src:require('./assets/bigimg/new6-10.png')},
+		{src:require('./assets/bigimg/new6-10.png').default},
 		{txt:'"配有遥测运动心电及血压的高度自动化心肺评测系统（CPX）。"'},
 		{txt:'主要适用于心内科、呼吸科、康复科等需要进行心肺功能测定和康复的患者，以及各种需要心肺功能评测指导下的身体康复的患者。'},
 		{title:'产品功能'},
@@ -207,33 +207,33 @@ export const NEWS_DETAIL = {
     publisher:'xxx',
     items:[
       {txt:'为推动医学工程发展，提升医学创新能力，2017年10月13至14日，第二届北京国际医学工程大会暨产品与技术交易博览会在中关村医学工程转化中心园区隆重举行。'},
-      {txt:'美德远健展出了全新的有自主专利的创新产品，领动TM系列智能康复解决方案及致护TM系列智能护理解决方案。智能转移和康复系统、智能导尿监护和膀胱康复系统以及床旁长期监护系统的亮相，引来了与会专家和观众的广泛关注和高度评价，在展会上独树一帜。智能转移和康复系统有效解决了病人的减重下肢康复训练和全覆盖的安全转移问题，智能导尿系统有效解决了中国每年3000多万套留置式导尿管的使用者的膀胱保护和康复、日夜不间断的护理负担，长期床旁监护以一种新的技术让病人和老人的健康监测、安全照护和疾病预警变得简单和智能。'},
-      {src:require('./assets/imgs/News/news3.jpg')},
+      {txt:'冀德远健展出了全新的有自主专利的创新产品，领动TM系列智能康复解决方案及致护TM系列智能护理解决方案。智能转移和康复系统、智能导尿监护和膀胱康复系统以及床旁长期监护系统的亮相，引来了与会专家和观众的广泛关注和高度评价，在展会上独树一帜。智能转移和康复系统有效解决了病人的减重下肢康复训练和全覆盖的安全转移问题，智能导尿系统有效解决了中国每年3000多万套留置式导尿管的使用者的膀胱保护和康复、日夜不间断的护理负担，长期床旁监护以一种新的技术让病人和老人的健康监测、安全照护和疾病预警变得简单和智能。'},
+      {src:require('./assets/imgs/News/news3.jpg').default},
       {txt:'本届大会由中国食品药品企业质量安全促进会和中关村医学工程转化中心共同主办，中关村国际医药检验认证科技有限公司协办。参加本次会议的有中、加、英、美、以色列等国家近40名医学工程研究领域的专家学者，其中不乏在国际医学舞台上被公认的顶级领军人物。国家食药监总局副局长孙咸泽、国家中医药管理局副局长于文明以及工信部、卫计委、科技部火炬中心、北京市和海淀区政府部门相关领导也出席了本次大会。'}
     ]
   },
   news4:{
-    title:'美德远健在2018春季CMEF初次亮相并获得广泛关注',
+    title:'冀德远健在2018春季CMEF初次亮相并获得广泛关注',
     time:'2018-04-11',
     publisher:'xxx',
     items:[
-      {txt:`2018年4月11-14日，美德远健精彩亮相亚太地区最大的医疗器械展览会-中国国际医疗器械博览会（CMEF），吸引了海内外客户、友商以及代理商的高度关注。
-        美德远健秉持“数据引领 智能康护”的理念，首次亮相就推出了多款数字化、智能化的高端康复/护理产品，包括力感减重下肢康复机器人、智能转移/康复系统、长期
+      {txt:`2018年4月11-14日，冀德远健精彩亮相亚太地区最大的医疗器械展览会-中国国际医疗器械博览会（CMEF），吸引了海内外客户、友商以及代理商的高度关注。
+        冀德远健秉持“数据引领 智能康护”的理念，首次亮相就推出了多款数字化、智能化的高端康复/护理产品，包括力感减重下肢康复机器人、智能转移/康复系统、长期
         床旁监护系统，几款产品均获得了终端用户的广泛好评。`},
-      {src:require('./assets/imgs/News/news2.jpg')},
-      {src:require('./assets/imgs/News/news2-1.jpg')},
-      {src:require('./assets/bigimg/news2-2.jpg')},
-      {src:require('./assets/imgs/News/news2-3.jpg')}
+      {src:require('./assets/imgs/News/news2.jpg').default},
+      {src:require('./assets/imgs/News/news2-1.jpg').default},
+      {src:require('./assets/bigimg/news2-2.jpg').default},
+      {src:require('./assets/imgs/News/news2-3.jpg').default}
     ]
   },
   news3:{
-    title:'美德远健携多款高端康复医疗设备成功签约入驻石家庄高新区',
+    title:'冀德远健携多款高端康复医疗设备成功签约入驻石家庄高新区',
     time:'2018-05-18',
     publisher:'xxx',
     items:[
-      {src:require('./assets/bigimg/news1.jpg')},
-      {txt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，美德远健作为重点邀请入区企业成功签约入区。'},
-      {txt:'美德远健作为国家级高新技术企业，携多款旗下高端康复医疗设备入驻石家庄高新区，将助力石家庄作为国家康复辅助器具产业综合创新试点城市迈向更高的台阶。'}
+      {src:require('./assets/bigimg/news1.jpg').default},
+      {txt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，冀德远健作为重点邀请入区企业成功签约入区。'},
+      {txt:'冀德远健作为国家级高新技术企业，携多款旗下高端康复医疗设备入驻石家庄高新区，将助力石家庄作为国家康复辅助器具产业综合创新试点城市迈向更高的台阶。'}
     ]
   },
   news2:{
@@ -241,19 +241,19 @@ export const NEWS_DETAIL = {
     time:'2019-08-28',
     publisher:'xxx',
     items:[      
-      {txt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，美德远健作为重点邀请入区企业成功签约入区。'},
-      {src:require('./assets/bigimg/828_1.gif')},
-      {txt:'美德远健以“无感”监护为主题，以非接触式为核心，借技术变革与重构之际洞见养老新机遇，打开智能养老未来之门。'},
-      {src:require('./assets/bigimg/828_2.png')},
-      {txt:'此次美德远健携致护™长期床旁监护系统 PMS-600 隆重登场。吸引了众多业内人士和观展商驻足观摩，受到了众多专家学者们的一致好评。'},
-      {src:require('./assets/bigimg/828_3.png')},
-      // {src:require('./assets/imgs/News/2019/828_4.png')},
-      {src:require('./assets/imgs/News/2019/828_5.png')},
+      {txt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，冀德远健作为重点邀请入区企业成功签约入区。'},
+      {src:require('./assets/bigimg/828_1.gif').default},
+      {txt:'冀德远健以“无感”监护为主题，以非接触式为核心，借技术变革与重构之际洞见养老新机遇，打开智能养老未来之门。'},
+      {src:require('./assets/bigimg/828_2.png').default},
+      {txt:'此次冀德远健携致护™长期床旁监护系统 PMS-600 隆重登场。吸引了众多业内人士和观展商驻足观摩，受到了众多专家学者们的一致好评。'},
+      {src:require('./assets/bigimg/828_3.png').default},
+      // {src:require('./assets/imgs/News/2019/828_4.png').default},
+      {src:require('./assets/imgs/News/2019/828_5.png').default},
       {txt:'“PMS-600长期床旁监护系统”是一款适合于养老院、医院等，用于老人或患者长期健康监测和身体异常预警的系统。采用了先进的传感技术及算法，能对心率、呼吸、体动进行监测，实现了心率变异分析、翻身提醒、睡眠分析、中央监测等功能。完全不接触身体、不干扰使用者的生活习惯，基于云的数据采集和管理技术将助力远程监护和中央监测先进管理模式的升级。'},
-      // {src:require('./assets/imgs/News/2019/828_6.gif')},
-      // {src:require('./assets/imgs/News/2019/828_7.png')},
-      // {src:require('./assets/imgs/News/2019/828_8.png')},
-      // {src:require('./assets/imgs/News/2019/828_9.gif')}
+      // {src:require('./assets/imgs/News/2019/828_6.gif').default},
+      // {src:require('./assets/imgs/News/2019/828_7.png').default},
+      // {src:require('./assets/imgs/News/2019/828_8.png').default},
+      // {src:require('./assets/imgs/News/2019/828_9.gif').default}
     ]
   },
   news1:{
@@ -261,14 +261,14 @@ export const NEWS_DETAIL = {
     time:'2019-11-8',
     publisher:'xxx',
     items:[
-      {src:require('./assets/imgs/News/118.png')},
+      {src:require('./assets/imgs/News/118.png').default},
       {txt:'为加强康复医学学术交流与合作，发挥高端学术会议引领辐射作用，打造综合学术年会品牌，2019年11月22至24日，中国康复医学会将在北京市国家会议中心举办2019第三届中国康复医学会综合学术年会暨国际康复设备展览会。'},
       {txt:'本届会议围绕“守正创新，融合发展”主题，紧盯康复医学科技发展前沿，安排第三届国际综合康复主论坛及50余场学术会议，会聚康复、医疗、护理、疗养、养老等领域国内外知名专家，研讨交流先进康复理念、技术创新与服务经验，展示国内外康复医学科技发展最新成果，开展康复技术理论和操作培训，谋划助推康复医学未来发展，汇集诸多实用与前沿，国内与国际兼容并蓄精品内容。'},
-      {txt:'此次大会，美德远健将携能将CPET测试“化繁为简”的CPX-600高级心肺功能评测系统隆重登场，诚挚地邀请您莅临美德远健展位C45参观体验！'},
+      {txt:'此次大会，冀德远健将携能将CPET测试“化繁为简”的CPX-600高级心肺功能评测系统隆重登场，诚挚地邀请您莅临冀德远健展位C45参观体验！'},
       {src:'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-imgbed/a8d82563-7327-4281-a695-6a550d609d9c.png'},
       {txt:'“CPX-600高级心肺功能评测系统”是一款采用先进传感器技术、先进算法，集运动气体代谢、运动心电/血压/血氧监测和营养代谢评估于一体，具有全面心肺功能快速精确评测的医疗设备。满足国际权威的美国心脏协会（AHA）、美国胸科协会（ATS）、美国胸科医师协会（ACCP）和美国运动医学会（ACSM）等发布的指导要求。适用于康复科、心脏科、呼吸科等需要进行心肺功能测定和康复的患者，以及各种需要心肺功能评测指导下的身体康复的患者。主要针对心肺功能不全者进行运动心肺试验、静态心测试、静态肺功能测试，对营养代谢疾病患者进行运动营养代谢分析、基础代谢率测定。'},
-      // {src:require('./assets/imgs/News/640.gif')},
-      {src:require('./assets/imgs/News/2019/7.jpg')}
+      // {src:require('./assets/imgs/News/640.gif').default},
+      {src:require('./assets/imgs/News/2019/7.jpg').default}
     ]
   },
   news0:{
@@ -305,25 +305,25 @@ export const NEWS_DETAIL = {
       {txt:'2.通过心肺运动负荷试验的评估报告，选择适合自己的运动形式。'},     
       {txt:'3.合理增加运动频率。'},     
       {txt:'4.注意运动强度。'},     
-      {video:require('./assets/mp4/0bf2zyjoaaasiaaii5eixzpuftwd4dhbfyaa.f10002.mp4')}
+      {video:require('./assets/mp4/0bf2zyjoaaasiaaii5eixzpuftwd4dhbfyaa.f10002.mp4').default}
     ]
   }
 };
 
 export const NEWS_ABSTRACT = [
-	{title:'化繁为简|CPX-600高级心肺功能评测系统助力陕西心脏康复”',time:'2021-07-12',cnt:'2021年6月24日至26日，陕西省心脏康复中心联盟成立大会暨心脏康复高峰论坛在古城西安举行。此次会议，madecare携能将CPET测试“化繁为简”...',src:require('./assets/imgs/News/new8-01.jpg'),to:'/news/newsdetail#news8'},
-	{title:'会议回顾 | 心肺运动试验临床应用与研究学术研讨会”',time:'2021-06-26',cnt:'心肺运动试验临床应用与研究学术研讨会已于2021年6月25日圆满落幕请跟随美德远健回顾此次会议...',src:require('./assets/imgs/News/new7-09.jpg'),to:'/news/newsdetail#news7'},
-  {title:'有效逆转高血压的“新处方”',time:'2020-08-28',cnt:'2019年中国心血管健康与疾病报告最新统计，大于18岁的成年人高血压患病率27.9%。我国成年人中每4个人就有1个高血压患者，是影响我国居民心血管健康的头号健康大敌...',src:require('./assets/bigimg/new6-3.jpg'),to:'/news/newsdetail#news6'},
+	{title:'化繁为简|CPX-600高级心肺功能评测系统助力陕西心脏康复”',time:'2021-07-12',cnt:'2021年6月24日至26日，陕西省心脏康复中心联盟成立大会暨心脏康复高峰论坛在古城西安举行。此次会议，madecare携能将CPET测试“化繁为简”...',src:require('./assets/imgs/News/new8-01.jpg').default,to:'/news/newsdetail#news8'},
+	{title:'会议回顾 | 心肺运动试验临床应用与研究学术研讨会”',time:'2021-06-26',cnt:'心肺运动试验临床应用与研究学术研讨会已于2021年6月25日圆满落幕请跟随冀德远健回顾此次会议...',src:require('./assets/imgs/News/new7-09.jpg').default,to:'/news/newsdetail#news7'},
+  {title:'有效逆转高血压的“新处方”',time:'2020-08-28',cnt:'2019年中国心血管健康与疾病报告最新统计，大于18岁的成年人高血压患病率27.9%。我国成年人中每4个人就有1个高血压患者，是影响我国居民心血管健康的头号健康大敌...',src:require('./assets/bigimg/new6-3.jpg').default,to:'/news/newsdetail#news6'},
   {title:'了解心肺功能——CPET“肺”他莫属',time:'2020-10-29',cnt:'随着社会的高度发展，当前威胁我们健康的主要原因已由传染类疾病过渡到以心血管病、“ 三高”为代表的慢性病。而引起这些慢性病的主要原因之...',src:'https://mmbiz.qpic.cn/mmbiz_gif/KX9KudQjtaOE5ZL5ETicBJs1kDfmQQraUfngtOiczKicR2X8Rt5JytQEeNKcTAuicmo79vtXjhUFVVlqicynuMY01HA/640?wx_fmt=gif&wxfrom=5&wx_lazy=1',to:'/news/newsdetail#news0'},
-  {title:'化繁为简|国际康复设备展览会',time:'2019-11-8',cnt:'为加强康复医学学术交流与合作，发挥高端学术会议引领辐射作用，打造综合学术年会品牌，2019年11月22至24日，中国康复医学会将...',src:require('./assets/imgs/News/118.png'),to:'/news/newsdetail#news1'},
-  {title:'展会回顾|“无感”监护 第八届中国国际养老服务业博览会',time:'2019-8-28',cnt:'第八届中国国际养老服务业博览会吸引了来自20多个国家和地区的220多家社会组织、机构及企业参展；本届博览会创新办会模式，由以往...',src:require('./assets/imgs/News/828.png'),to:'/news/newsdetail#news2'},
-  {title:'美德远健携多款高端康复医疗设备成功签约入驻石家庄高新区',cnt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，美德远健作为重点邀请入区企业成功签约入区...',time:'2018-05-18',src:require('./assets/bigimg/news1.jpg'),to:'/news/newsdetail#news3'},
-  {title:'美德远健在2018春季CMEF初次亮相并获得广泛关注',time:'2018-04-11',cnt:'2018年4月11-14日，美德远健精彩亮相亚太地区最大的医疗器械展览会-中国国际医疗器械博览会（CMEF），吸引了海内外客户、友商以及代理商的高度关注...',src:require('./assets/imgs/News/news2.jpg'),to:'/news/newsdetail#news4'},
-  {title:'美德智能康复护理医疗器械产品亮相第二届“北京国际医学工程大会暨产品与技术交易博览会”',cnt:'为推动医学工程发展，提升医学创新能力，2017年10月13至14日，第二届北京国际医学工程大会暨产品与技术交易博览会在中关村医学工程转化中心园区隆重举行...',time:'2017-10-15',src:require('./assets/imgs/News/news3.jpg'),to:'/news/newsdetail#news5'}
+  {title:'化繁为简|国际康复设备展览会',time:'2019-11-8',cnt:'为加强康复医学学术交流与合作，发挥高端学术会议引领辐射作用，打造综合学术年会品牌，2019年11月22至24日，中国康复医学会将...',src:require('./assets/imgs/News/118.png').default,to:'/news/newsdetail#news1'},
+  {title:'展会回顾|“无感”监护 第八届中国国际养老服务业博览会',time:'2019-8-28',cnt:'第八届中国国际养老服务业博览会吸引了来自20多个国家和地区的220多家社会组织、机构及企业参展；本届博览会创新办会模式，由以往...',src:require('./assets/imgs/News/828.png').default,to:'/news/newsdetail#news2'},
+  {title:'冀德远健携多款高端康复医疗设备成功签约入驻石家庄高新区',cnt:'石家庄（北京）生物医药健康产业专题对接会签约仪式于2018年5月16日在北京圆满完成，冀德远健作为重点邀请入区企业成功签约入区...',time:'2018-05-18',src:require('./assets/bigimg/news1.jpg').default,to:'/news/newsdetail#news3'},
+  {title:'冀德远健在2018春季CMEF初次亮相并获得广泛关注',time:'2018-04-11',cnt:'2018年4月11-14日，冀德远健精彩亮相亚太地区最大的医疗器械展览会-中国国际医疗器械博览会（CMEF），吸引了海内外客户、友商以及代理商的高度关注...',src:require('./assets/imgs/News/news2.jpg').default,to:'/news/newsdetail#news4'},
+  {title:'美德智能康复护理医疗器械产品亮相第二届“北京国际医学工程大会暨产品与技术交易博览会”',cnt:'为推动医学工程发展，提升医学创新能力，2017年10月13至14日，第二届北京国际医学工程大会暨产品与技术交易博览会在中关村医学工程转化中心园区隆重举行...',time:'2017-10-15',src:require('./assets/imgs/News/news3.jpg').default,to:'/news/newsdetail#news5'}
 ];
 
 export const NAVS = [
-  // {txt:'nav_product',to:'/product',icon:'shopping_cart',items:[{txt:'nav_product_dws1000',to:'/product/dws1000',src:require('./assets/imgs/NavHeader/prod5.png')},{txt:'nav_product_tr800',to:'/product/tr800',src:require('./assets/imgs/NavHeader/prod6.png')},{txt:'nav_product_tr600',to:'/product/tr600',src:require('./assets/imgs/NavHeader/prod1.png')},{txt:'nav_product_pms600',to:'/product/pms600',src:require('./assets/imgs/NavHeader/prod2.png')},{txt:'nav_product_sc600',to:'/product/sc600',src:require('./assets/imgs/NavHeader/prod3.png')},{txt:'nav_product_cloud',to:'/product/cloud',src:require('./assets/imgs/NavHeader/prod4.png')}]},
+  // {txt:'nav_product',to:'/product',icon:'shopping_cart',items:[{txt:'nav_product_dws1000',to:'/product/dws1000',src:require('./assets/imgs/NavHeader/prod5.png').default},{txt:'nav_product_tr800',to:'/product/tr800',src:require('./assets/imgs/NavHeader/prod6.png').default},{txt:'nav_product_tr600',to:'/product/tr600',src:require('./assets/imgs/NavHeader/prod1.png').default},{txt:'nav_product_pms600',to:'/product/pms600',src:require('./assets/imgs/NavHeader/prod2.png').default},{txt:'nav_product_sc600',to:'/product/sc600',src:require('./assets/imgs/NavHeader/prod3.png').default},{txt:'nav_product_cloud',to:'/product/cloud',src:require('./assets/imgs/NavHeader/prod4.png').default}]},
   {txt:'nav_solution',to:'/solution',icon:'assignment_ind',items:[{txt:'nav_solution_rehab',to:'/solution/recovery'},{txt:'nav_solution_transfer',to:'/solution/transfer'},{txt:'nav_solution_protection',to:'/solution/prevent'},{txt:'nav_solution_monitor',to:'/solution/monitor'},{txt:'nav_solution_manage',to:'/solution/remote'},{txt:'nav_solution_cpx',to:'/solution/cpx'},]},
   {txt:'nav_about',to:'/about',icon:'supervisor_account',items:[{txt:'nav_about_profile',to:'/about'},{txt:'nav_about_team',to:'/about'},{txt:'nav_about_vision',to:'/about'},{txt:'nav_about_mission',to:'/about'},{txt:'nav_about_culture',to:'/about'},]},
   {txt:'nav_new',icon:'fiber_new',to:'/news'},

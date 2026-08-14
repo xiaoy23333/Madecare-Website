@@ -9,7 +9,7 @@ export default class RecruitLayout extends React.Component{
     return(
       <>
         <div className={styles.banner} style={{
-          background: `url(${require('../assets/imgs/Recruit/banner.png')}) no-repeat`,
+          background: `url(${require('../assets/imgs/Recruit/banner.png').default}) no-repeat`,
           backgroundSize: '100% auto'
         }}>
           {/* <p className={styles.banner_title}>加入我们</p> */}

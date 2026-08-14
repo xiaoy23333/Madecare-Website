@@ -8,8 +8,22 @@
 module.exports = {
   /* Your site config here */
   plugins:[
-    'gatsby-plugin-sass',
-    'gatsby-plugin-layout',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        cssLoaderOptions: {
+          modules: {
+            namedExport: false
+          }
+        }
+      }
+    },
+    {
+      resolve:'gatsby-plugin-layout',
+      options: {
+        component: require.resolve('./src/layouts/index.js')
+      }
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve:'gatsby-plugin-intl',

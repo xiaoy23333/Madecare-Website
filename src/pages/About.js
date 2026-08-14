@@ -7,17 +7,17 @@ import { useIntl,injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 export default class About extends React.Component {
   _renderProfile() {
     // let imgs = [
-    //   require('../assets/imgs/About/company-1.jpg'),
-    //   require('../assets/imgs/About/company-2.jpg'),
-    //   require('../assets/imgs/About/company-3.jpg'),
-    //   require('../assets/imgs/About/company-4.jpg'),
-    //   require('../assets/imgs/About/company-5.jpg'),
-    //   require('../assets/imgs/About/company-6.jpg'),
+    //   require('../assets/imgs/About/company-1.jpg').default,
+    //   require('../assets/imgs/About/company-2.jpg').default,
+    //   require('../assets/imgs/About/company-3.jpg').default,
+    //   require('../assets/imgs/About/company-4.jpg').default,
+    //   require('../assets/imgs/About/company-5.jpg').default,
+    //   require('../assets/imgs/About/company-6.jpg').default,
     // ];
     return (
       <div className={styles.tab_panel}>
         <div className={styles.left}>
-            <img className={styles.profile} src={require('../assets/imgs/About/intro.png')}/>
+            <img className={styles.profile} src={require('../assets/imgs/About/intro.png').default}/>
         </div>
         <div className={styles.profile_text}>
             <p className={styles.cq}>
@@ -33,7 +33,7 @@ export default class About extends React.Component {
     return (
       <div className={styles.tab_panel}>
         <div className={styles.left}>
-          <img className={styles.profile} src={require('../assets/imgs/About/team.png')}/>
+          <img className={styles.profile} src={require('../assets/imgs/About/team.png').default}/>
         </div>
         <div className={styles.media_body2}>
           <p className={styles.cq} style={{marginTop:0}}>
@@ -58,7 +58,7 @@ export default class About extends React.Component {
     return (
       <div className={styles.tab_panel}>
         <div className={styles.left}>
-          <img className={styles.profile} src={require('../assets/imgs/About/wish.png')}/>
+          <img className={styles.profile} src={require('../assets/imgs/About/wish.png').default}/>
         </div>
         <div className={styles.media_body} style={{width: '58%',  marginLeft: '2%'}}>
             <p className={styles.cq} style={{marginTop:0, marginLeft: '11%'}}>
@@ -93,7 +93,7 @@ export default class About extends React.Component {
             </p>
         </div>
         <div className={styles.right}>
-          <img className={styles.mission_img} src={require('../assets/imgs/About/mission.png')}/>
+          <img className={styles.mission_img} src={require('../assets/imgs/About/mission.png').default}/>
         </div>
       </div>
     );
@@ -102,7 +102,7 @@ export default class About extends React.Component {
   _renderCulture() {
     let datas = [
       {
-        src: require('../assets/imgs/About/culture-1.png'),
+        src: require('../assets/imgs/About/culture-1.png').default,
         // title: '核心价值',
         items: [
           { name: <FormattedMessage id="about.culturedescrip1" />, txt: <FormattedMessage id="about.culturedescrip4" /> },
@@ -111,7 +111,7 @@ export default class About extends React.Component {
         ],
       },
       // {
-      //   src: require('../assets/imgs/About/culture-2.png'),
+      //   src: require('../assets/imgs/About/culture-2.png').default,
       //   title: '行为准则',
       //   items: [
       //     { name: '结果导向', txt: '从结果出发制定计划指导行动。' },
@@ -163,7 +163,7 @@ export default class About extends React.Component {
       <div>
         <div className={styles.content_bg}
              style={{
-               background: `url(${require('../assets/imgs/About/banner.png')}) no-repeat`, backgroundSize: '100% auto',
+               background: `url(${require('../assets/imgs/About/banner.png').default}) no-repeat`, backgroundSize: '100% auto',
              }}>
                <div className={styles.banner_title}>数据引领 智能康护</div>
         </div>             

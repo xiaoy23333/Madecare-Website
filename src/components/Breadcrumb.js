@@ -4,7 +4,7 @@ import Link from './Link';
 import { LANGS, ROUTE_OBJ, ROUTE_OBJ_EN } from '../config';
 import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-export default @injectIntl class Breadcrumb extends React.Component {
+class Breadcrumb extends React.Component {
   /**
  * 合并数组前n项
  * @param arr
@@ -56,3 +56,5 @@ export default @injectIntl class Breadcrumb extends React.Component {
 
 
 
+
+export default injectIntl(Breadcrumb);

@@ -71,3 +71,6 @@ yarn-error.log
 # IDE
 .idea
 node_modules
+
+# 微信小程序（独立仓库 git@github.com:18612643035/wxapp.git）
+wx-app

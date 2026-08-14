@@ -3,11 +3,11 @@ import Breadcrumb from '../components/Breadcrumb';
 import styles from './Contact.module.scss';
 import { useIntl,injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-export default @injectIntl class Contact extends React.Component {
+class Contact extends React.Component {
   // componentDidMount() {
   //   let opt = {
   //     id: 'map',
-  //     title: { text: '美德远健（北京）医疗系统科技有限公司', className: 'title' },
+  //     title: { text: '冀德远健（北京）医疗系统科技有限公司', className: 'title' },
   //     content: { className: 'content', text: ['地址：北京市海淀区永丰屯538号3号楼211'] },
   //     point: { lng: '116.231473', lat: '40.078212' },
   //     level: 15,
@@ -15,7 +15,7 @@ export default @injectIntl class Contact extends React.Component {
   //     type: ['地图', '卫星'],
   //     width: 320,
   //     height: 70,
-  //     icon: { url: require('../assets/imgs/icon.png'), width: 36, height: 36 },
+  //     icon: { url: require('../assets/imgs/icon.png').default, width: 36, height: 36 },
   //   };
   //   const {BMap,BMAP_SATELLITE_MAP,BMAP_NORMAL_MAP} = window;
   //   let map = new BMap.Map(opt.id);
@@ -46,7 +46,7 @@ export default @injectIntl class Contact extends React.Component {
     return (
       <div>
         <div className={styles.banner} style={{
-          background: `url(${require('../assets/imgs/Contact/banner.png')}) no-repeat`,
+          background: `url(${require('../assets/imgs/Contact/banner.png').default}) no-repeat`,
           backgroundSize: '100% auto',
         }}>
           {/* <p>联系我们</p> */}
@@ -58,16 +58,16 @@ export default @injectIntl class Contact extends React.Component {
           </div>
           {/* <div className={styles.map_wrap}>
             <div id="map" className={styles.container}/>
-            <div className={styles.mes}><h3>美德远健（北京）医疗系统科技有限公司</h3>
+            <div className={styles.mes}><h3>冀德远健（北京）医疗系统科技有限公司</h3>
               <p>地址：北京市海淀区永丰屯538号3号楼211<br/>邮箱：contact@madecare.com<br/>电话：010-53381056</p><h4>微信公众号</h4><img
-                src={require('../assets/imgs/Contact/qrcode.png')} alt=""/></div>
+                src={require('../assets/imgs/Contact/qrcode.png').default} alt=""/></div>
             </div>
           </div> */}
           <div className={styles.contact_wrap}>
             <div className={styles.container}>
                   <div className={styles.map}>
                     <div className={styles.earth} style={{}}>
-                        <img style={{width: '96%',marginTop:'3%'}} src={require('../assets/imgs/Contact/contact.png')} alt=""/>
+                        <img style={{width: '96%',marginTop:'3%'}} src={require('../assets/imgs/Contact/contact.png').default} alt=""/>
                     </div>
                   </div>
                   <div className={styles.address}>
@@ -93,7 +93,7 @@ export default @injectIntl class Contact extends React.Component {
                   <div className={styles.mes}>
                       <div className={styles.mes_wrap}>
                           <div className={styles.qrcode} >
-                            <img style={{width:(intl.locale !== "en") ? '50%':'61%',marginTop: (intl.locale !== "en") ? '0%':'22%'}} src={require('../assets/imgs/Contact/qrcode.png')} alt=""/>
+                            <img style={{width:(intl.locale !== "en") ? '50%':'61%',marginTop: (intl.locale !== "en") ? '0%':'22%'}} src={require('../assets/imgs/Contact/qrcode.png').default} alt=""/>
                             <p className={styles.word_14} style={{marginLeft: '14%', lineHeight: '250%',display:(intl.locale !== "en") ? 'block':'none'}}><FormattedMessage id="contact.wechat" /></p>
                             <div className={styles.contact_text} style={{display:(intl.locale !== "en") ? 'block':'none'}}>                              
                               <p className={styles.word_14}><FormattedMessage id="contact.tel" /><br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -112,3 +112,5 @@ export default @injectIntl class Contact extends React.Component {
     );
   }
 }
+
+export default injectIntl(Contact);

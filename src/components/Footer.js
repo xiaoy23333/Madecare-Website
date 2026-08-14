@@ -4,7 +4,7 @@ import Link from './Link';
 import { injectIntl } from 'gatsby-plugin-intl';
 import { NAVS } from '../config';
 
-export default @injectIntl class Footer extends Component {
+class Footer extends Component {
   render() {
     let {intl} = this.props;
     let msg = intl.formatMessage;
@@ -24,10 +24,12 @@ export default @injectIntl class Footer extends Component {
             );
           })} */}
         </div>
-        <div className={styles.footer_bottom}><p>美德远健（北京）医疗系统科技有限公司 版权所有 COPYRIGHT 2020 MADECARE ALL RIGHTS RESERVED
+        <div className={styles.footer_bottom}><p>冀德远健（北京）医疗系统科技有限公司 版权所有 COPYRIGHT 2020 MADECARE ALL RIGHTS RESERVED
           京ICP备18045046号</p></div>
         {/*</div>*/}
       </footer>
     );
   }
 }
+
+export default injectIntl(Footer);

@@ -3,14 +3,13 @@ import React from 'react';
 import styles from './Monitor.module.scss';
 import { injectIntl, FormattedMessage } from 'gatsby-plugin-intl';
 
-export default @solWrap(<FormattedMessage id="en.bedcare" />) @injectIntl
 class Monitor extends React.Component {
   render() {
     let {intl} = this.props;
     return (
       <div className={styles.trait}>
       <div className={styles.left}>
-          <img src={require('../../assets/imgs/Solution/Prevent/vector_obj.png')} alt="膀胱保护和康复"/>
+          <img src={require('../../assets/imgs/Solution/Prevent/vector_obj.png').default} alt="膀胱保护和康复"/>
       </div>
 
       <div className={styles.right}>
@@ -20,10 +19,12 @@ class Monitor extends React.Component {
             </p>
           </div>
           <div className={styles.bedcare}>
-              <img src={require('../../assets/imgs/Solution/Monitor/monitor.png')} alt="膀胱保护和康复"/>
+              <img src={require('../../assets/imgs/Solution/Monitor/monitor.png').default} alt="膀胱保护和康复"/>
           </div>
       </div>
       </div>      
     );
   }
 }
+
+export default solWrap(<FormattedMessage id="en.bedcare" />)(injectIntl(Monitor));

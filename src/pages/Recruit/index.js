@@ -16,7 +16,7 @@ export default class Recruit extends React.Component {
     ]
     return (
       <>
-        <p className={styles.desc}>美德远健欢迎您来应聘，简历投递邮箱：hr@madecare.com</p>
+        <p className={styles.desc}>冀德远健欢迎您来应聘，简历投递邮箱：hr@madecare.com</p>
         <table className={styles.tb}>
           <thead>
           <tr className={styles.th_tr}>

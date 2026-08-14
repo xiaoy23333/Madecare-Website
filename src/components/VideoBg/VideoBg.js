@@ -1,5 +1,5 @@
 import React from "react";
-import classNames from "./VideoBg.module.css";
+import * as classNames from "./VideoBg.module.css";
 import Source from "./Source";
 import PropTypes from "prop-types";
 
