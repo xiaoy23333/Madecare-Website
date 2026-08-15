@@ -156,7 +156,7 @@ render={({ state, fullpageApi }) => {
                                 </div>
                                 <div className={styles.product3} >
                                       <div style={{    height: '89%'}}  >
-                                          <img className={styles.images} src={require('../assets/imgs/Index/mwt_01.png').default} />
+                                          <img className={styles.images} src={require('../assets/imgs/Index/mwt_01_nav.png').default} />
                                       </div>
                                       <div className={styles.sfy_right_xzkf} style={{}}>
                                           <button className={styles.button_style} onClick={() => fullpageApi.moveTo(11, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.mwt"})}</span></button>
@@ -546,7 +546,7 @@ render={({ state, fullpageApi }) => {
                     </button>
                   </div>
 
-                  <div className={styles.cpx_left}>
+                  <div className={styles.cpx_left} style={{position:'relative', zIndex:1}}>
                         <div className={styles.descrip2} style={{float:"left"}}  >
                             <div className={styles.word_24}>
                                 {intl.formatMessage({ id: "index7rse.subtitle" })}
@@ -560,8 +560,8 @@ render={({ state, fullpageApi }) => {
                               <p className={styles.Index} style={{marginTop: '45%',marginLeft: '10%'}} >03</p>
                         </div>
                     </div>
-                  <div className={styles.cpx_image} >
-                      <img style={{width: '80%', marginTop: '22%'}} src={require('../assets/imgs/Index/rse_01.png').default} />
+                  <div className={styles.cpx_image} style={{position:'relative', zIndex:1}} >
+                      <img style={{height: '100%', width: 'auto', marginTop: '0%'}} src={require('../assets/imgs/Index/rse_01_t.png').default} />
                   </div>
 
               </div>
@@ -706,7 +706,9 @@ render={({ state, fullpageApi }) => {
                     </button>
                   </div>
 
-                  <div className={styles.cpx_left}>
+                  <div className={styles.web_bg}>
+                    <div style={{position:'absolute', top:0, left:0, width:'100%', height:'100%', backgroundImage: `url(${require('../assets/imgs/Index/mwt_bg.jpg').default})`, backgroundSize: 'cover', backgroundPosition: 'center', WebkitMaskImage: 'linear-gradient(to right, black 0%, black 30%, transparent 60%)', maskImage: 'linear-gradient(to right, black 0%, black 30%, transparent 60%)'}} />
+                  <div className={styles.cpx_left} style={{position:'relative', zIndex:1}}>
                         <div className={styles.descrip2} style={{float:"left", marginLeft: '15%'}}  >
                             <div className={styles.word_24}>
                                 {intl.formatMessage({ id: "index7mwt.subtitle" })}
@@ -720,8 +722,9 @@ render={({ state, fullpageApi }) => {
                               <p className={styles.Index} style={{marginTop: '45%',marginLeft: '15%'}} >04</p>
                         </div>
                     </div>
-                  <div className={styles.cpx_image} >
-                      <img style={{width: '80%', marginTop: '10%'}} src={require('../assets/imgs/Index/mwt_01.png').default} />
+                  <div className={styles.cpx_image} style={{position:'relative', zIndex:1}} >
+                      <img style={{height: '100%', width: 'auto', marginTop: '0%'}} src={require('../assets/imgs/Index/mwt_01_t.png').default} />
+                  </div>
                   </div>
 
               </div>
@@ -1083,14 +1086,14 @@ render={({ state, fullpageApi }) => {
                   </div>
 
                   <div className={styles.sc600_container}>
-                    <div className={styles.sc600_box}>
-                        <div className={styles.sc600} >  
-                            <img style={{width: '100%'}} src={require('../assets/imgs/Index/sc600_02.png').default} />     
-                            {/* <p className={styles.productname}>{intl.formatMessage({ id: "p14.zndn" })}</p>       */}
+                    <div className={styles.sc600_box} style={{height: '90vh'}}>
+                        <div className={styles.sc600} style={{display: 'flex', alignItems: 'center', height: '100%', marginTop: '0', marginLeft: '6%'}} >
+                            <img style={{height: '38vh', flexShrink: 0, objectFit: 'contain'}} src={require('../assets/imgs/Index/sc600_02_left.png').default} />
+                            <img style={{height: '26vh', marginLeft: '2%', flexShrink: 0, objectFit: 'contain'}} src={require('../assets/imgs/Index/sc800d_02.png').default} />
                         </div>
                     </div>
-                  <div className={styles.sc600_info}>
-                          <div className={styles.sc600_title}><p  className={styles.word_30}>{intl.formatMessage({ id: "p13.sc600" })}</p></div>
+                  <div className={styles.sc600_info} style={{height: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+                          <div className={styles.sc600_title}><p  className={styles.word_30}>{intl.formatMessage({ id: "p13.sc800d" })}</p></div>
                               <div className={styles.product_sc600}> 
                                       <div className={styles.sc600_function}>
                                       <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productfunc" })}</div>
