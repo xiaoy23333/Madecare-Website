@@ -118,16 +118,6 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.sfy_container}>
                     <Header {...this.props}/>
                     <div className={styles.sfy_row}>
-                          <div className={styles.sfy_left} >
-                              {/* <div className={styles.sfy_left_banner}> */}
-                                  <img className={styles.images_left} src={require('../assets/imgs/Index/overview/00.png').default} />             
-                                  {/* <div style={{paddingLeft: '14.75rem',display: 'block'}}></div> */}      
-                                                  
-                                  {/*
-                                  <p className={styles.cpzs_left2}>
-                                                                </p> */}
-                              {/* </div> */}
-                          </div>
                         <div className={styles.cpzx}>
                           <div className={styles.sfy_index_title} >
                                 <div className={styles.index_title}>
@@ -140,61 +130,71 @@ render={({ state, fullpageApi }) => {
                                 </div> 
                           </div>
                           <div className={styles.sfy_product1} >
-                                <div className={styles.images_a} >
-                                    <img src={require('../assets/imgs/Index/overview/a.png').default} />
+                                <div className={styles.product3} >
+                                      <div style={{    height: '89%'}}  >
+                                          <img className={styles.images} src={require('../assets/imgs/Index/overview/02.png').default} />
+                                      </div>
+                                      <div className={styles.sfy_right_xzkf} style={{}}>
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(3, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.xzkf"})}</span></button>
+                                      </div>
+                                </div>
+                                <div className={styles.product3} >
+                                      <div style={{    height: '89%'}}  >
+                                          <img className={styles.images} src={require('../assets/imgs/Index/overview/04.png').default} />
+                                      </div>
+                                      <div className={styles.sfy_right_xzkf} style={{}}>
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(5, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.cpx"})}</span></button>
+                                      </div>
+                                </div>
+                                <div className={styles.product3} >
+                                      <div style={{    height: '89%'}}  >
+                                          <img className={styles.images} src={require('../assets/imgs/Index/rse_02.png').default} />
+                                      </div>
+                                      <div className={styles.sfy_right_xzkf} style={{}}>
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(8, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.rse"})}</span></button>
+                                      </div>
+                                </div>
+                                <div className={styles.product3} >
+                                      <div style={{    height: '89%'}}  >
+                                          <img className={styles.images} src={require('../assets/imgs/Index/mwt_01.png').default} />
+                                      </div>
+                                      <div className={styles.sfy_right_xzkf} style={{}}>
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(11, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.mwt"})}</span></button>
+                                      </div>
+                                </div>
+                          </div>
+                          <div className={styles.sfy_product2} >
+                                <div className={styles.product2} >
+                                      <div style={{    height: '90%'}} >
+                                          <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png').default} />
+                                      </div>
+                                      <div className={styles.kfzy1} >
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(13, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
+                                      </div>
+                                </div>
+                                <div className={styles.product2} >
+                                      <div style={{    height: '90%'}}   >
+                                          <img  className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png').default} />
+                                      </div>
+                                      <div className={styles.kfzy1} >
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(15, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
+                                      </div>
                                 </div>
                                 <div className={styles.product1} >
-                                    <div style={{    height: '86%'}}  >
-                                        <img  style={{marginTop:'-25%'}} src={require('../assets/imgs/Index/overview/001.png').default} />
+                                    <div style={{    height: '86%', textAlign: 'center'}}  >
+                                        <img  src={require('../assets/imgs/Index/overview/001.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} >
                                       <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
                                     </div>
                                 </div>
-                                <div className={styles.product2} >
-                                      <div style={{    height: '89%'}} >
-                                          <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png').default} />   
-                                      </div>                                 
-                                      <div className={styles.kfzy1} >
-                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(13, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
-                                      </div>
-                                </div>
-                                <div className={styles.product3} >
-                                      <div style={{    height: '89%'}}  >
-                                          <img className={styles.images} src={require('../assets/imgs/Index/overview/02.png').default} />   
-                                      </div>                         
-                                      <div className={styles.sfy_right_xzkf} style={{}}>
-                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(3, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.xzkf"})}</span></button>
-                                      </div> 
-                                </div>
-                          </div>
-                          <div className={styles.sfy_product2} >
-                                <div className={styles.images_a} >
-                                    <img   style={{    }}   src={require('../assets/imgs/Index/overview/a.png').default} />
-                                </div>
                                 <div className={styles.product1} >
-                                    <div style={{height: '89%',marginTop:'0%'}} >
+                                    <div style={{height: '89%',marginTop:'0%', textAlign: 'center'}} >
                                       <img src={require('../assets/imgs/Index/overview/03.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
                                       <button className={styles.button_style} onClick={() => fullpageApi.moveTo(19, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
                                     </div>
-                                </div>
-                                <div className={styles.product2} >
-                                      <div style={{    height: '90%'}}   >
-                                          <img  className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png').default} />     
-                                      </div>                               
-                                      <div className={styles.kfzy1} >
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(15, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
-                                      </div>
-                                </div>
-                                <div className={styles.product3} >
-                                      <div style={{    height: '90%'}}   >
-                                            <img   className={styles.images} src={require('../assets/imgs/Index/overview/04.png').default} />                
-                                      </div>            
-                                      <div className={styles.sfy_right_xzkf} style={{}}>
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(5, 0)}><span className={styles.word_20}>{intl.formatMessage({ id: "cpzs.cpx"})}</span></button>
-                                      </div> 
                                 </div>
                           </div>
                       </div>
@@ -552,7 +552,7 @@ render={({ state, fullpageApi }) => {
                                 {intl.formatMessage({ id: "index7rse.subtitle" })}
                             </div>
                               <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
-                            <div className={styles.word_30} style={{width: '100%',lineHeight: '190%'}}>
+                            <div className={styles.word_title} style={{width: '100%',lineHeight: '190%'}}>
                               {intl.formatMessage({ id: "index7rse.title" })}
                             </div>
                         </div>
@@ -712,7 +712,7 @@ render={({ state, fullpageApi }) => {
                                 {intl.formatMessage({ id: "index7mwt.subtitle" })}
                             </div>
                               <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
-                            <div className={styles.word_30} style={{width: '100%',lineHeight: '190%'}}>
+                            <div className={styles.word_title} style={{width: '100%',lineHeight: '190%'}}>
                               {intl.formatMessage({ id: "index7mwt.title" })}
                             </div>
                         </div>
@@ -1049,19 +1049,19 @@ render={({ state, fullpageApi }) => {
                   </div>
                   
                   <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc600_01.jpg').default})` }}>
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc800d_01.jpeg').default})` }}>
                       <div style={{}}>
                           <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >08</p>
                       </div>
 
                       <div className={styles.descrip06} style={{float:"left"}}  >
 
-                          <div className={styles.word_24} style={{color:'#ffffff'}}>
-                                {intl.formatMessage({ id: "p13.sc600" })}
+                          <div className={styles.word_24}>
+                                {intl.formatMessage({ id: "p13.sc800d" })}
                           </div>
                               <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
                           <div className={styles.word_title} style={{lineHeight: '190%'}}>
-                                {intl.formatMessage({ id: "p13.sc600intro" })}
+                                {intl.formatMessage({ id: "p13.sc800dintro" })}
                           </div>
                       </div>
                     </div>

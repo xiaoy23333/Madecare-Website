@@ -38,6 +38,8 @@
   "cpzs.kfzy2":"TR-600 Patient Lift",
   "cpzs.xzkf":"Dynamic Body Weight Support",
   "cpzs.cpx":"Cardiopulmonary Exercise",
+  "cpzs.rse":"Exercise ECG Testing System",
+  "cpzs.mwt":"Six-Minute Walk Test System",
   "cpzs.znhl":"Intelligent Nursing Care",
   "cpzs.znkf":"Intelligent Rehabilitation",
 
@@ -225,6 +227,8 @@
 
   "p13.sc600":"SC-600 Urinary Catheterization",
   "p13.sc600intro":"Bionic, Compact, Central monitoring",
+  "p13.sc800d":"Intelligent Urinary Catheterization System SC-800D/SC-T",
+  "p13.sc800dintro":"Precise Urine Volume Measurement, Intra-abdominal Pressure Safety Monitoring",
   "p14.sc600descrip":"SC-600 is an innovative product in urination management. It functions with automatic urination triggered by bladder pressure and time, backflow prevention, urination error alert, continuous urination volume measurement, continuous bladder pressure measurement, etc. The device and the system also support bladder rehabilitation, bladder infection reduction. The system can realize central patient monitoring, integrated with hospital IT systems.",
   "p14.zndn":" ",
 
