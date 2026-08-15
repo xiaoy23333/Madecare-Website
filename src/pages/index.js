@@ -79,7 +79,7 @@ class Index extends React.Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
-    const anchors = ["1", "2", "3","4","5","6","7","8","9","10","11","12","13","14","15","16","17"];
+    const anchors = ["1", "2", "3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22"];
 
     return (
       <ReactFullpage
@@ -148,7 +148,7 @@ render={({ state, fullpageApi }) => {
                                         <img  style={{marginTop:'-25%'}} src={require('../assets/imgs/Index/overview/001.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} >
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(12, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
                                     </div>
                                 </div>
                                 <div className={styles.product2} >
@@ -156,7 +156,7 @@ render={({ state, fullpageApi }) => {
                                           <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png').default} />   
                                       </div>                                 
                                       <div className={styles.kfzy1} >
-                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(8, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
+                                          <button className={styles.button_style} onClick={() => fullpageApi.moveTo(13, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
                                       </div>
                                 </div>
                                 <div className={styles.product3} >
@@ -177,7 +177,7 @@ render={({ state, fullpageApi }) => {
                                       <img src={require('../assets/imgs/Index/overview/03.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(14, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(19, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
                                     </div>
                                 </div>
                                 <div className={styles.product2} >
@@ -185,7 +185,7 @@ render={({ state, fullpageApi }) => {
                                           <img  className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png').default} />     
                                       </div>                               
                                       <div className={styles.kfzy1} >
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(10, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(15, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
                                       </div>
                                 </div>
                                 <div className={styles.product3} >
@@ -211,13 +211,13 @@ render={({ state, fullpageApi }) => {
                                 <div className={styles.middle1} >
                                     <img className={styles.images_middle} src={require('../assets/imgs/Index/overview/01.png').default} />                                    
                                     <p className={styles.kfzy1} >
-                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(8, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
+                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(13, 0)}>{intl.formatMessage({ id: "cpzs.kfzy1" })}</button>
                                     </p>
                                 </div>                               
                                 <div className={styles.middle2} >
                                     <img className={styles.images_small} src={require('../assets/imgs/Index/overview/06.png').default} />
                                     <p className={styles.kfzy2} >
-                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(10, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
+                                    <button className={styles.button_style} onClick={() => fullpageApi.moveTo(15, 0)}>{intl.formatMessage({ id: "cpzs.kfzy2" })}</button>
                                     </p>                                    
                                 </div>
                               </div>
@@ -528,6 +528,264 @@ render={({ state, fullpageApi }) => {
                       <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
                         <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
                         <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7sem.applyintro" })}</span>
+                      </div>
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P7b RSE 运动心电测试系统 标题页 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>
+                      </div>
+                    </button>
+                  </div>
+
+                  <div className={styles.cpx_left}>
+                        <div className={styles.descrip2} style={{float:"left"}}  >
+                            <div className={styles.word_24}>
+                                {intl.formatMessage({ id: "index7rse.subtitle" })}
+                            </div>
+                              <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
+                            <div className={styles.word_30} style={{width: '100%',lineHeight: '190%'}}>
+                              {intl.formatMessage({ id: "index7rse.title" })}
+                            </div>
+                        </div>
+                        <div >
+                              <p className={styles.Index} style={{marginTop: '45%',marginLeft: '10%'}} >03</p>
+                        </div>
+                    </div>
+                  <div className={styles.cpx_image} >
+                      <img style={{width: '80%', marginTop: '22%'}} src={require('../assets/imgs/Index/rse_01.png').default} />
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P7c RSE 详情页 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>
+                      </div>
+                    </button>
+                  </div>
+
+                    <div className={styles.cpx_container} style={{marginTop: '-6vh'}}>
+                      <div className={styles.cpx} >
+                          <img src={require('../assets/imgs/Index/rse_02.png').default} />
+                      </div>
+                      <div className={styles.cpx_info}>
+                        <div className={styles.cpx_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "index7rse.subtitle" })}</p></div>
+                            <div className={styles.product_cpx}>
+                                      <div className={styles.cpx_function}>
+                                      <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productfunc" })}</div>
+                                          <div className={styles.word_18}>
+                                              <ul className={styles.ul2}>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li1" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li2" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li3" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li4" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li5" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li6" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li7" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li8" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li9" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li10" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li11" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li12" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li13" })}</li>
+                                              </ul>
+                                          </div>
+                                    </div>
+                                    <div className={styles.cpx_apply}>
+                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index6.producttrait" })}</div>
+                                        <div className={styles.word_18}>
+                                            <ul className={styles.ul3}>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li1" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li2" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li3" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li4" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li5" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li6" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li7" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li8" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li9" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li10" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li11" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li12" })}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                              </div>
+                      </div>
+                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                        <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
+                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7rse.applyintro" })}</span>
+                      </div>
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P7d STM 医用跑台 详情页 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>
+                      </div>
+                    </button>
+                  </div>
+
+                    <div className={styles.cpx_container}>
+                      <div className={styles.cpx} >
+                          <img src={require('../assets/imgs/Index/stm_01.jpeg').default} />
+                      </div>
+                      <div className={styles.cpx_info}>
+                        <div className={styles.cpx_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "index7stm.title" })}</p></div>
+                            <div className={styles.product_cpx}>
+                                      <div className={styles.cpx_function}>
+                                      <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.paramtitle" })}</div>
+                                          <div className={styles.word_18}>
+                                              <ul className={styles.ul2}>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul2.li1" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul2.li2" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul2.li3" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul2.li4" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul2.li5" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul2.li6" })}</li>
+                                              </ul>
+                                          </div>
+                                    </div>
+                                    <div className={styles.cpx_apply}>
+                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.featuretitle" })}</div>
+                                        <div className={styles.word_18}>
+                                            <ul className={styles.ul3}>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li1" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li2" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li3" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li4" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li5" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li6" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li7" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li8" })}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                              </div>
+                      </div>
+                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                        <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
+                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7stm.applyintro" })}</span>
+                      </div>
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P7e 6MWT 六分钟步行实验测试系统 标题页 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>
+                      </div>
+                    </button>
+                  </div>
+
+                  <div className={styles.cpx_left}>
+                        <div className={styles.descrip2} style={{float:"left", marginLeft: '15%'}}  >
+                            <div className={styles.word_24}>
+                                {intl.formatMessage({ id: "index7mwt.subtitle" })}
+                            </div>
+                              <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
+                            <div className={styles.word_30} style={{width: '100%',lineHeight: '190%'}}>
+                              {intl.formatMessage({ id: "index7mwt.title" })}
+                            </div>
+                        </div>
+                        <div >
+                              <p className={styles.Index} style={{marginTop: '45%',marginLeft: '15%'}} >04</p>
+                        </div>
+                    </div>
+                  <div className={styles.cpx_image} >
+                      <img style={{width: '80%', marginTop: '10%'}} src={require('../assets/imgs/Index/mwt_01.png').default} />
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P7f 6MWT 详情页 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>
+                      </div>
+                    </button>
+                  </div>
+
+                    <div className={styles.cpx_container}>
+                      <div className={styles.cpx} >
+                          <img src={require('../assets/imgs/Index/mwt_02.png').default} />
+                      </div>
+                      <div className={styles.cpx_info}>
+                        <div className={styles.cpx_title}><p  className={styles.word_30}> {intl.formatMessage({ id: "index7mwt.subtitle" })}</p></div>
+                            <div className={styles.product_cpx}>
+                                      <div className={styles.cpx_function}>
+                                      <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productfunc" })}</div>
+                                          <div className={styles.word_18}>
+                                              <ul className={styles.ul2}>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li1" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li2" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li3" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li4" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li5" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li6" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li7" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li8" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li9" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li10" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul2.li11" })}</li>
+                                              </ul>
+                                          </div>
+                                    </div>
+                                    <div className={styles.cpx_apply}>
+                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index6.producttrait" })}</div>
+                                        <div className={styles.word_18}>
+                                            <ul className={styles.ul3}>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li1" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li2" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li3" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li4" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li5" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li6" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li7" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li8" })}</li>
+                                              <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li9" })}</li>
+                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li10" })}</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                              </div>
+                      </div>
+                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                        <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
+                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7mwt.applyintro" })}</span>
                       </div>
                   </div>
 
