@@ -10,7 +10,8 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
+    "deploy": "xcopy mobile static\\mobile /E /Y /I >nul && gatsby build --prefix-paths && gh-pages -d public -b gh-pages"
   },
   "dependencies": {
     "@fullpage/react-fullpage": "0.1.16",
@@ -29,6 +30,7 @@
     "babel-preset-gatsby": "^2.25.0",
     "gatsby-plugin-layout": "^3.25.0",
     "gatsby-plugin-sass": "^5.25.0",
+    "gh-pages": "^6.3.0",
     "prettier": "^1.18.2",
     "sass": "^1.62.1"
   },

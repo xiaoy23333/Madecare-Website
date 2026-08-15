@@ -74,3 +74,6 @@ node_modules
 
 # 微信小程序（独立仓库 git@github.com:18612643035/wxapp.git）
 wx-app
+
+# 部署生成快照（deploy 脚本会自动同步）
+static/mobile/

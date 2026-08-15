@@ -7,6 +7,7 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: '/Madecare-Website/',
   plugins:[
     {
       resolve: 'gatsby-plugin-sass',
