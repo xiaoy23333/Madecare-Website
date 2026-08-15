@@ -1,0 +1,32 @@
+
+.first-cell .right{
+    float: right;
+    text-align: center;
+    width: 50%;
+    height: 100%;
+}
+
+.first-cell .img-wrap{
+    margin: 0 auto;
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.first-cell{
+    background-color: rgb(243,243,243);
+    position:relative;
+}
+
+#img-wrap-right{
+    transform: translate(50%,-30%);
+    left: 30%;
+    float: right;
+    text-align: center;
+    width: 50%;
+}
+
+.wrap-left{
+    width: 60%;
+}
