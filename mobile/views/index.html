@@ -5,12 +5,12 @@
 			return m ? m[1] : '';
 		}
 		if(/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile"){
-			// location.href = 'http://m.madecare.com';
+			// location.href = 'https://m.madecare.com';
 			document.location = "mobile/views/index_mobile.html";
-			// document.location = 'http://m.madecare.com';
+			// document.location = 'https://m.madecare.com';
 		}
 		else{
-			// location.href = 'http://XXX.com';
+			// location.href = 'https://XXX.com';
 			document.location = "index_pc.html";
 		}
 	}();
