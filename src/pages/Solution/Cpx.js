@@ -10,7 +10,7 @@ class Monitor extends React.Component {
     return (
       <div>
       <div className={styles.trait}>
-            <div className={styles.intro}>
+            <div className={styles.intro} style={{paddingRight: '6%', width: '42%'}}>
             <p className={styles.subtitle}><FormattedMessage id="solution.cpxtitle" /></p>
             <FormattedMessage id="solution.cpxdescrip1" />
             <br />
@@ -21,19 +21,19 @@ class Monitor extends React.Component {
 
       </div>
       <div className={styles.trait}>
-            <div className={styles.intro}>
+            <div className={styles.intro} style={{paddingRight: '6%', width: '42%'}}>
             <p className={styles.subtitle}><FormattedMessage id="solution.rse.title" /></p>
             <FormattedMessage id="solution.rse.descrip" />
             </div>
-          <img src={require('../../assets/imgs/Solution/solution_rse.png').default}
+          <img style={{width: '52%'}} src={require('../../assets/imgs/Solution/solution_rse.png').default}
                                                          alt=""/>
       </div>
       <div className={styles.trait}>
-            <div className={styles.intro}>
+            <div className={styles.intro} style={{paddingRight: '6%', width: '42%'}}>
             <p className={styles.subtitle}><FormattedMessage id="solution.rse6mwt.title" /></p>
             <FormattedMessage id="solution.rse6mwt.descrip" />
             </div>
-          <img src={require('../../assets/imgs/Solution/solution_rse6mwt.png').default}
+          <img style={{width: '38%'}} src={require('../../assets/imgs/Solution/solution_rse6mwt.png').default}
                                                          alt=""/>
       </div>
       </div>

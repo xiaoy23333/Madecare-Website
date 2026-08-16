@@ -14,25 +14,21 @@ class Breadcrumb extends React.Component {
  joinN = (arr, n, m) =>  {
   let str = m;
   for (let i = 0; i < n; i++) {
-    str += arr[i];
+    str += arr[i] + (i < n - 1 ? '/' : '');
   }
   return str;
 }
     render() {
       // intl.locale !== "en"
-    let {location} = this.props;
+    let {location, intl} = this.props;
     let { pathname } = location;
     // console.log('location',location);
     // console.log(ROUTE_OBJ)
     // console.log(ROUTE_OBJ_EN)
-    let ROUTE = {};
-    if(pathname.split('/')[1] !== 'en'){
-       ROUTE = ROUTE_OBJ;
-    }else{
-       ROUTE = ROUTE_OBJ_EN;
-    }
+    let ROUTE = intl.locale === 'en' ? ROUTE_OBJ_EN : ROUTE_OBJ;
 
-    let paths = pathname.split('/').filter(p => p !== '' && LANGS.indexOf(p) < 0);
+    let prefix = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__.split('/').filter(Boolean)[0] : '';
+    let paths = pathname.split('/').filter(p => p !== '' && LANGS.indexOf(p) < 0 && p !== prefix);
         return (
           <ol className={styles.breadcrumb}>
             <li><Link to={'/'}>

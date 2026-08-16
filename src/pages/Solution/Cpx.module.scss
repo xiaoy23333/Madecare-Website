@@ -1,13 +1,15 @@
 .trait {
-    width: 62.5rem
+    width: 62.5rem;
+    display: flex;
+    align-items: center;
   }
   
 .trait img {
     display: block;
-    margin-top: -4%;
-    float: left;
+    margin-top: 0;
     width: 45%;
     height: 100%;
+    flex-shrink: 0;
 }
 
 .intro{

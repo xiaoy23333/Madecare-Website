@@ -611,17 +611,17 @@ render={({ state, fullpageApi }) => {
                                         <div className={styles.word_18}>
                                             <ul className={styles.ul3}>
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li1" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li2" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li2" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li3" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li4" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li4" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li5" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li6" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li6" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li7" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li8" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li8" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li9" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li10" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li10" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul3.li11" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li12" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7rse.ul3.li12" })}</li>}
                                             </ul>
                                         </div>
                                     </div>
@@ -772,13 +772,13 @@ render={({ state, fullpageApi }) => {
                                         <div className={styles.word_18}>
                                             <ul className={styles.ul3}>
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li1" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li2" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li3" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li2" })}</li>}
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li3" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li4" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li5" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li5" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li6" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li7" })}</li>
-                                              <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li8" })}</li>
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li7" })}</li>}
+                                              {intl.locale !== 'en' && <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li8" })}</li>}
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7mwt.ul3.li9" })}</li>
                                               <li className={styles.li_index2}>{intl.formatMessage({ id: "index7mwt.ul3.li10" })}</li>
                                             </ul>
