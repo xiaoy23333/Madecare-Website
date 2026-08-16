@@ -1,6 +1,17 @@
 <!doctype html>
 <html class="no-js">
 <head>
+    <script type="text/javascript">
+        // 设备自动跳转：电脑打开手机版英文首页时跳回 PC 版英文站
+        (function () {
+            if (location.protocol === 'file:') return;
+            var ua = navigator.userAgent.toLowerCase();
+            if (/iphone|ios|android|ipod|mobile/i.test(ua)) return;
+            if (/from=mobile/i.test(location.search)) return;
+            var base = location.pathname.split('/mobile/')[0] || '/';
+            location.replace(base + '/en/');
+        })();
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="">
