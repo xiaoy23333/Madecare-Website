@@ -872,6 +872,13 @@ $ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
   animation: ecg-scan 9s linear infinite;
 }
 
+/* 系统开启"减少动态效果"时,仅静止大幅运动的扫描线,微动效保留 */
+@media (prefers-reduced-motion: reduce) {
+  .main_content::after {
+    animation: none !important;
+  }
+}
+
 @keyframes ecg-scan {
   0% { transform: translateX(-100%); opacity: 0; }
   8% { opacity: 1; }
@@ -1630,10 +1637,11 @@ div .button_style{
 }
 
 /* 首屏视频:底部渐变压暗,向第二屏过渡更自然 */
-.section1 {
+/* 注:section1 是 JSX 中写死的全局类名,必须用 :global,否则会被 CSS Modules 哈希化而失效 */
+:global(.section1) {
   position: relative;
 }
-.section1::after {
+:global(.section1)::after {
   content: '';
   position: absolute;
   left: 0;
@@ -1648,56 +1656,57 @@ div .button_style{
 /* ===== 高级感细节 ===== */
 /* 波形分隔线"呼吸":像监护信号一样轻微搏动 */
 .dws1000_title, .cpx_title, .tr800_title, .tr600_title, .pms600_title, .sc600_title {
-  animation: ecg-breathe 3s ease-in-out infinite;
+  animation: ecg-breathe 2.6s ease-in-out infinite;
 }
 @keyframes ecg-breathe {
   0%, 100% { opacity: 1; }
-  50% { opacity: .55; }
+  50% { opacity: .38; }
 }
 
 /* 翻屏渐入:翻到当前屏时内容优雅浮现 */
+/* 注:section/active 是 fullpage 的全局类名,必须 :global,否则被 CSS Modules 哈希化后永远匹配不上 */
 @keyframes fade-up {
   from { opacity: 0; transform: translateY(1.5rem); }
   to { opacity: 1; transform: translateY(0); }
 }
-.section.active .descrip2 {
+:global(.section.active) .descrip2 {
   animation: fade-up .55s ease both;
 }
-.section.active .Index {
+:global(.section.active) .Index {
   animation: fade-up .55s ease .12s both;
 }
-.section.active .cpx_image,
-.section.active .tr800_image,
-.section.active .tr600_image,
-.section.active .sc600_box {
+:global(.section.active) .cpx_image,
+:global(.section.active) .tr800_image,
+:global(.section.active) .tr600_image,
+:global(.section.active) .sc600_box {
   animation: fade-up .55s ease .15s both;
 }
-.section.active .dws1000_info,
-.section.active .cpx_info,
-.section.active .tr800_info,
-.section.active .tr600_info,
-.section.active .pms600_info,
-.section.active .sc600_info {
+:global(.section.active) .dws1000_info,
+:global(.section.active) .cpx_info,
+:global(.section.active) .tr800_info,
+:global(.section.active) .tr600_info,
+:global(.section.active) .pms600_info,
+:global(.section.active) .sc600_info {
   animation: fade-up .55s ease .1s both;
 }
-.section.active .product1,
-.section.active .product2,
-.section.active .product3 {
+:global(.section.active) .product1,
+:global(.section.active) .product2,
+:global(.section.active) .product3 {
   animation: fade-up .5s ease both;
 }
-.section.active .product1:nth-child(2),
-.section.active .product2:nth-child(2),
-.section.active .product3:nth-child(2) {
+:global(.section.active) .product1:nth-child(2),
+:global(.section.active) .product2:nth-child(2),
+:global(.section.active) .product3:nth-child(2) {
   animation-delay: .06s;
 }
-.section.active .product1:nth-child(3),
-.section.active .product2:nth-child(3),
-.section.active .product3:nth-child(3) {
+:global(.section.active) .product1:nth-child(3),
+:global(.section.active) .product2:nth-child(3),
+:global(.section.active) .product3:nth-child(3) {
   animation-delay: .12s;
 }
-.section.active .product1:nth-child(4),
-.section.active .product2:nth-child(4),
-.section.active .product3:nth-child(4) {
+:global(.section.active) .product1:nth-child(4),
+:global(.section.active) .product2:nth-child(4),
+:global(.section.active) .product3:nth-child(4) {
   animation-delay: .18s;
 }
 

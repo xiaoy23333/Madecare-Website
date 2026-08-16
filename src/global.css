@@ -157,12 +157,3 @@ header {
 .section{
 	opacity: 0;
 }
-
-/* 尊重用户动效偏好:全局禁用动画时全站静默 */
-@media (prefers-reduced-motion: reduce) {
-    *, *::before, *::after {
-        animation-duration: .01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: .01ms !important;
-    }
-}
