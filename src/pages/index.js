@@ -462,13 +462,13 @@ render={({ state, fullpageApi }) => {
                                     </div>
                               </div>                  
 
-                      </div>
-                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                      <div style={{marginLeft: '2%', marginTop: '1vh', clear: 'both'}}>
                         <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index6.apply" })}</span>
-                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index6.applyintro" })}</span>     
+<span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index6.applyintro" })}</span>     
                       </div>      
                   </div>          
 
+              </div>
               </div>
               <div className="section">
                   {/* P7 SEM 运动负荷试验测试踏车 */}
@@ -524,12 +524,12 @@ render={({ state, fullpageApi }) => {
                                     </div>
                               </div>
 
-                      </div>
-                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                      <div style={{marginLeft: '2%', marginTop: '1vh', clear: 'both'}}>
                         <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
-                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7sem.applyintro" })}</span>
+<span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7sem.applyintro" })}</span>
                       </div>
                   </div>
+                      </div>
 
               </div>
               <div className="section">
@@ -602,7 +602,7 @@ render={({ state, fullpageApi }) => {
                                                 <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li10" })}</li>
                                                 <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li11" })}</li>
                                                 <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li12" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li13" })}</li>
+                                                {intl.locale !== 'en' && <li className={styles.li_index}>{intl.formatMessage({ id: "index7rse.ul2.li13" })}</li>}
                                               </ul>
                                           </div>
                                     </div>
@@ -626,12 +626,12 @@ render={({ state, fullpageApi }) => {
                                         </div>
                                     </div>
                               </div>
-                      </div>
-                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                      <div style={{marginLeft: '2%', marginTop: '1vh', clear: 'both'}}>
                         <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
-                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7rse.applyintro" })}</span>
+<span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7rse.applyintro" })}</span>
                       </div>
                   </div>
+                      </div>
 
               </div>
               <div className="section">
@@ -684,12 +684,12 @@ render={({ state, fullpageApi }) => {
                                         </div>
                                     </div>
                               </div>
-                      </div>
-                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                      <div style={{marginLeft: '2%', marginTop: '1vh', clear: 'both'}}>
                         <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
-                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7stm.applyintro" })}</span>
+<span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7stm.applyintro" })}</span>
                       </div>
                   </div>
+                      </div>
 
               </div>
               <div className="section">
@@ -785,12 +785,12 @@ render={({ state, fullpageApi }) => {
                                         </div>
                                     </div>
                               </div>
-                      </div>
-                      <div style={{float: 'left', marginLeft: '2%',marginTop: '1vh'}}>
+                      <div style={{marginLeft: '2%', marginTop: '1vh', clear: 'both'}}>
                         <span className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.apply" })}</span>
-                        <span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7mwt.applyintro" })}</span>
+<span  className={styles.li_index} style={{lineHeight: '200%'}}>&nbsp;&nbsp;{intl.formatMessage({ id: "index7mwt.applyintro" })}</span>
                       </div>
                   </div>
+                      </div>
 
               </div>
               <div className="section">

@@ -7,21 +7,14 @@ import { navigate } from 'gatsby';
 
 class Header extends Component {
   toggleLan = () => {
-    let { location: { href }, intl: { locale } } = this.props;
-    let hArr = href.split('/');
-    hArr.splice(0, 3);
-    let prefix = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__.split('/').filter(Boolean)[0] : '';
-    if (prefix && hArr[0] === prefix) hArr.splice(0, 1);
-    let i = LANGS.indexOf(hArr[0]);
-    // console.log(LANGS)
-    if (i >= 0) {
-      hArr.splice(0, 1, LANGS[(i + 1) % 2]);
-    } else {
-      hArr.splice(0, 0, LANGS[1]);
-    }
-    let h = '/' + hArr.join('/');
-    // console.log('nav-header', h);
-    navigate(h);
+    let { location, intl } = this.props;
+    let { pathname, search, hash } = location;
+    const target = intl.locale === 'zh' ? '/en' : '/zh';
+    const prefix = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__ : '';
+    let p = pathname;
+    if (prefix && p.indexOf(prefix) === 0) p = p.slice(prefix.length);
+    p = p.replace(/^\/(en|zh)(?=\/|$)/, '');
+    window.location.href = prefix + target + p + search + hash;
   };
   state = {
     activeNavItems:[],

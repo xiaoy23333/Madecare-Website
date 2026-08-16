@@ -23,10 +23,19 @@ body > div > div {
     display: flex;
     flex-direction: column;
     height: 100%;
+    overflow: hidden;
 }
 
 header + div {
     flex:1;
+    min-height: 0;
+    overflow: auto;
+}
+
+/* 首页整屏翻页容器不参与内部滚动，避免破坏 fullpage 翻屏 */
+#fullpage {
+    min-height: auto;
+    overflow: visible;
 }
 
 *, body, dd, div, input, li, span, table, td, tr, ul {

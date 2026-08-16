@@ -21,11 +21,11 @@ class Monitor extends React.Component {
 
       </div>
       <div className={styles.trait}>
-            <div className={styles.intro} style={{paddingRight: '6%', width: '42%'}}>
+            <div className={styles.intro} style={{paddingRight: '2%', width: '40%'}}>
             <p className={styles.subtitle}><FormattedMessage id="solution.rse.title" /></p>
             <FormattedMessage id="solution.rse.descrip" />
             </div>
-          <img style={{width: '52%'}} src={require('../../assets/imgs/Solution/solution_rse.png').default}
+          <img style={{width: '56%'}} src={require('../../assets/imgs/Solution/solution_rse.png').default}
                                                          alt=""/>
       </div>
       <div className={styles.trait}>
@@ -33,7 +33,7 @@ class Monitor extends React.Component {
             <p className={styles.subtitle}><FormattedMessage id="solution.rse6mwt.title" /></p>
             <FormattedMessage id="solution.rse6mwt.descrip" />
             </div>
-          <img style={{width: '38%'}} src={require('../../assets/imgs/Solution/solution_rse6mwt.png').default}
+          <img style={{width: '38%', marginTop: '2rem'}} src={require('../../assets/imgs/Solution/solution_rse6mwt.png').default}
                                                          alt=""/>
       </div>
       </div>

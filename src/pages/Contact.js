@@ -59,7 +59,7 @@ class Contact extends React.Component {
           {/* <div className={styles.map_wrap}>
             <div id="map" className={styles.container}/>
             <div className={styles.mes}><h3>冀德远健（北京）医疗系统科技有限公司</h3>
-              <p>地址：北京市海淀区永丰屯538号3号楼211<br/>邮箱：contact@madecare.com<br/>电话：010-53381056</p><h4>微信公众号</h4><img
+              <p>地址：北京市海淀区永丰屯538号3号楼211<br/>邮箱：contact@madecare.com<br/>电话：4000128608</p><h4>微信公众号</h4><img
                 src={require('../assets/imgs/Contact/qrcode.png').default} alt=""/></div>
             </div>
           </div> */}
@@ -79,11 +79,11 @@ class Contact extends React.Component {
                         <br/>
                         <p className={styles.word_18}><FormattedMessage id="contact.comtitle2" /></p>
                         <br/>
-                        <p className={styles.word_14}><FormattedMessage id="contact.comaddr2" defaultMessage="Address：3-211 NO538 YONGFENGTUN HAIDIAN DISTRICT &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BEIJING CHINA10094" /></p>
+                        <p className={styles.word_14}><FormattedMessage id="contact.comaddr2" defaultMessage="Address：Jingyan Rongyuan198, C02，Fengtai Lukou, Fengtai District, Beijing" /></p>
                         <br/>
                       </div>
                       <div className={styles.foot_bottom}>
-                        <p className={styles.word_18} style={{fontSize:(intl.locale !== "en") ? '1.125rem':'.875rem'}} ><FormattedMessage id="contact.comtitle3" /></p>
+                        <p className={styles.word_18} style={{fontSize:(intl.locale !== "en") ? '1.125rem':'.875rem', whiteSpace: 'pre-line'}} ><FormattedMessage id="contact.comtitle3" /></p>
                         <br/>                      
                         <p className={styles.word_14}><FormattedMessage id="contact.comaddr3" /></p>
                         <br/>
