@@ -10,8 +10,8 @@ body {
 }
 .zn {
   background-color: #fff;
-  color: #025361;
-  /* border-bottom: 0.05rem solid #ccc; */
+  color: var(--ink-700);
+  /* border-bottom: 0.05rem solid var(--hairline); */
   margin-bottom: 0.5rem;
 }
 .tu {
@@ -30,7 +30,7 @@ body {
   line-height: 1.5rem;
 }
 .main ul li span {
-  color: #f29417;
+  color: var(--pulse);
 }
 .main ul .fs {
   font-size: 0.8rem;
@@ -38,6 +38,6 @@ body {
 .bn {
   margin-top: 1rem;
   color: #fff;
-  background-color: #025361;
+  background-color: var(--ink-700);
   font-size: 0.6rem;
 }

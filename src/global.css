@@ -3,12 +3,28 @@ html {
     overflow-x: hidden
 }
 
+/* ===== 冀德远健设计系统 token ===== */
+:root {
+    --ink-900: #013A46;    /* 深海墨青:深底、大标题 */
+    --ink-700: #025361;    /* 品牌深青:主体色 */
+    --monitor: #2FA0B5;    /* 监护青:数据、波形、hover */
+    --pulse:   #F29417;    /* 品牌橙:激活强调 */
+    --paper:   #F6FAFA;    /* 冷调暖白:浅背景 */
+    --graphite:#33464B;    /* 石墨灰:正文 */
+    --hairline:#E0E8EA;    /* 细线 */
+    --shadow: 0 2px 12px rgba(1, 58, 70, .06);
+    --font-display: Bahnschrift, "Arial Narrow", "Helvetica Neue", sans-serif;
+    --font-cn: FZLTXHK--GBK1-0, "Microsoft YaHei", "PingFang SC", "Noto Sans SC", sans-serif;
+}
+
 html {
     height: 100%;
 }
 
 body {
     height: 100%;
+    background: #fff;
+    color: var(--graphite);
 }
 
 body > div {
@@ -38,10 +54,30 @@ header + div {
     overflow: visible;
 }
 
+/* 细滚动条(深青+青),与整站风格一致 */
+::-webkit-scrollbar {
+    width: .5rem;
+    height: .5rem;
+}
+::-webkit-scrollbar-track {
+    background: #eef4f5;
+}
+::-webkit-scrollbar-thumb {
+    background: #b9cdd2;
+    border-radius: .25rem;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--ink-700);
+}
+
+::selection {
+    background: rgba(47, 160, 181, .25);
+}
+
 *, body, dd, div, input, li, span, table, td, tr, ul {
     margin: 0;
     padding: 0;
-    font-family: 方正兰亭纤黑_GBK;
+    font-family: var(--font-cn);
 }
 
 li, ol, ul {
@@ -71,6 +107,12 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 400
+}
+
+/* 键盘可达性:统一焦点环(监护青) */
+a:focus-visible, button:focus-visible {
+    outline: 2px solid var(--monitor);
+    outline-offset: 2px;
 }
 
 header {
@@ -114,4 +156,13 @@ header {
 
 .section{
 	opacity: 0;
+}
+
+/* 尊重用户动效偏好:全局禁用动画时全站静默 */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+    }
 }

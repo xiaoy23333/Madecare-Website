@@ -11,12 +11,12 @@
 
 .breadcrumb a {
   font-size:14px;
-  font-family: 微软雅黑;
-  color: #333333
+  font-family: var(--font-cn);
+  color: var(--graphite)
 }
 
 .breadcrumb > .active {
-  color: #025361
+  color: var(--ink-700)
 }
 
 .breadcrumb > li {
@@ -24,7 +24,7 @@
 }
 
 .breadcrumb > li + li:before {
-  color: #025361;
+  color: var(--ink-700);
   content: " > ";
   padding: 0 .125rem
 }

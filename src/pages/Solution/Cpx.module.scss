@@ -19,13 +19,13 @@
     padding-top: 9%;
     padding-right: 11%;
     height: 100%;
-    font-family: 微软雅黑;
+    font-family: var(--font-cn);
     font-size: .875rem;
     color: #666666;
     line-height: 200%;
 }
 .subtitle{
-    color: #025361;
+    color: var(--ink-700);
     font-weight: 700;
     font-size: 1.125rem;
     margin-bottom: .5rem;

@@ -29,7 +29,7 @@
   font-stretch: normal;
   line-height: 2.5rem;
   letter-spacing: .15rem;
-  color: #333;
+  color: var(--graphite);
   margin-left: 1.25rem
 }
 
@@ -53,7 +53,7 @@
   font-size: 1.875rem;
   line-height: 1.5rem;
   display: inline-block;
-  color: #025361;
+  color: var(--ink-700);
   margin-top: 1.25rem;
   margin-bottom: .625rem;
 }
@@ -62,7 +62,7 @@
   margin-top: .625rem;
   margin-bottom: 1.25rem;
   border: 0;
-  border-top: .0625rem solid #eee;
+  border-top: .0625rem solid var(--hairline);
   display: block;
   width: 100%;  
 }

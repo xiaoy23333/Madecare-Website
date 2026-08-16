@@ -3,7 +3,7 @@
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: .15rem;
-  color: #333;
+  color: var(--graphite);
   margin: 1.25rem auto;
   display: block
 }
@@ -15,20 +15,20 @@
 }
 .word_14{
   font-size:.875rem;
-  font-family: 微软雅黑;
-  color: #333333
+  font-family: var(--font-cn);
+  color: var(--graphite)
 }
 
 .trait .fir_q p {
   font-size: .875rem;
   line-height: 2.75rem;
   letter-spacing: .0875rem;
-  color: #333
+  color: var(--graphite)
 }
 
 .trait .fir_q p span {
   font-weight: 900;
-  color: #2fa0b5
+  color: var(--monitor)
 }
 
 .trait .fir_q ul li {
@@ -36,7 +36,7 @@
   width: 18.75rem;
   height: 18.875rem;
   margin-right: 1.875rem;
-  border: .0625rem solid #2fa0b5
+  border: .0625rem solid var(--monitor)
 }
 
 .trait .fir_q ul li li:last-child {
@@ -55,7 +55,7 @@
   letter-spacing: .0875rem;
   color: #fff;
   display: block;
-  background-color: #2fa0b5;
+  background-color: var(--monitor);
   text-align: center
 }
 
@@ -67,10 +67,10 @@
   font-size: .875rem;
   line-height: 3.375rem;
   letter-spacing: .0875rem;
-  color: #333
+  color: var(--graphite)
 }
 
 .trait .sec_q p span {
   font-weight: 900;
-  color: #2fa0b5
+  color: var(--monitor)
 }

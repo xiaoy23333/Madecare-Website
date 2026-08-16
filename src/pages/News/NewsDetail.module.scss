@@ -16,7 +16,7 @@
 .title {
   font-size: 1.875rem;
   line-height: 1.5rem;
-  color: #333;
+  color: var(--graphite);
   display: inline-block;
   margin-top: 1.25rem;
 }
@@ -24,7 +24,7 @@
 .sub_title {
   text-align: center;
   font-size: 1.25rem;
-  color: #025361;
+  color: var(--ink-700);
   line-height: 2.875rem
 }
 
@@ -49,7 +49,7 @@
   display: inline-block;
   font-size: 1rem;
   letter-spacing: 0;
-  color: #333;
+  color: var(--graphite);
   text-indent: 2em;
   line-height: 2.25rem
 }
@@ -63,7 +63,7 @@
   margin-top: 2.1875rem;
   margin-bottom: 2.1875rem;
   border: none;
-  border-top: .0625rem solid #ccc;
+  border-top: .0625rem solid var(--hairline);
   display: block;
   width: 100%;  
 }

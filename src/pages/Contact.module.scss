@@ -8,13 +8,13 @@
   overflow: hidden;
   margin-bottom: 1.25rem;
   padding-bottom: 1%;
-  border-bottom: .0625rem solid #e5e5e5;
+  border-bottom: .0625rem solid var(--hairline);
 }
 
 .title {
   font-size: 1.875rem;
   line-height: 1.5rem;
-  color: #333;
+  color: var(--graphite);
   display: inline-block;
   margin-top: 1.25rem;
   text-align: center;
@@ -32,7 +32,7 @@
   // width: 50%;
   // height: 100%;
   // float: left;
-  // border: solid .0625rem #ccc
+  // border: solid .0625rem var(--hairline)
   width: 100%;
   height: 25rem;
 }
@@ -95,15 +95,15 @@
 
 .word_14 {
   font-size:.875rem;
-  font-family: 微软雅黑;
-  color: #333333;
+  font-family: var(--font-cn);
+  color: var(--graphite);
   // height: 1.5rem;
 }
 
 .word_18 {
   font-size:1.125rem;
-  font-family: 微软雅黑;
-  color: #333333;
+  font-family: var(--font-cn);
+  color: var(--graphite);
   // height: 1.5rem;
 }
 
@@ -112,14 +112,14 @@
 //   font-weight: 400;
 //   line-height: 1.5rem;
 //   letter-spacing: .1125rem;
-//   color: #333
+//   color: var(--graphite)
 // }
 
 // .mes p {
 //   font-size: .875rem;
 //   line-height: 1.5rem;
 //   letter-spacing: .0875rem;
-//   color: #333;
+//   color: var(--graphite);
 //   display: block;
 //   margin-top: 2.3125rem
 // }
@@ -130,7 +130,7 @@
 //   font-weight: 400;
 //   line-height: 1.5rem;
 //   letter-spacing: .06875rem;
-//   color: #333;
+//   color: var(--graphite);
 //   display: block;
 //   margin-top: 3rem
 // }
@@ -146,7 +146,7 @@
 }
 
 .banner p {
-  color: #025361;
+  color: var(--ink-700);
   font-size: 1.875rem;
   padding-left: 27%;
   padding-top: 10%;

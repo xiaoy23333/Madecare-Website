@@ -12,7 +12,7 @@
 .title {
   font-size: 1.875rem;
   line-height: 1.5rem;
-  color: #333;
+  color: var(--graphite);
   display: inline-block;
   margin-top: 1.25rem;
 }
@@ -53,7 +53,7 @@
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5rem;
-  color: #333
+  color: var(--graphite)
 }
 
 .dynamic .media .time {
@@ -62,14 +62,14 @@
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: .0875rem;
-  color: #666
+  color: #8A9BA0
 }
 
 .dynamic .media .content {
   font-size: .875rem;
   line-height: 1.5rem;
   letter-spacing: .0875rem;
-  color: #333
+  color: var(--graphite)
 }
 
 .dynamic .media .particulars {
@@ -80,7 +80,7 @@
   font-stretch: normal;
   line-height: 1.5rem;
   letter-spacing: .0875rem;
-  color: #f29417;
+  color: var(--pulse);
   margin-top: 1.5rem
 }
 
@@ -111,7 +111,7 @@
   margin-top: 2.1875rem;
   margin-bottom: 2.1875rem;
   border: none;
-  border-top: .0625rem solid #ccc;
+  border-top: .0625rem solid var(--hairline);
   display: block;
   width: 100%;  
 }

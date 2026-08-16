@@ -41,23 +41,23 @@
 }
 
 .intro_title {
-  font-family: 微软雅黑;
+  font-family: var(--font-cn);
   font-size: 1rem;
-  color: #025361;
+  color: var(--ink-700);
   /* width: 25%; */
   margin-top: 47%;
   /* margin-left: 38%; */
   /* margin-bottom: 5%; */
   text-align: center;
   // border-bottom-width: .0625rem;
-  // border-bottom-color: #025361;
+  // border-bottom-color: var(--ink-700);
   // border-bottom-style: solid;
 }
 
 .text_title1 {
-  font-family: 微软雅黑;
+  font-family: var(--font-cn);
   font-size: 1rem;
-  color: #025361;
+  color: var(--ink-700);
   margin-top: 5%;
   /* margin-right: 41%; */
   margin-bottom: 5%;
@@ -66,25 +66,25 @@
   overflow: hidden;
   text-align: right;
   // border-bottom-width: .0625rem;
-  // border-bottom-color: #025361;
+  // border-bottom-color: var(--ink-700);
   // border-bottom-style: solid;
 }
 .text_title2 {
-  font-family: 微软雅黑;
+  font-family: var(--font-cn);
   font-size: 1rem;
-  color: #025361;
+  color: var(--ink-700);
   // background-color: red;
   // width: 43%;
   margin-top: 5%;
   margin-bottom: 5%;
   // border-bottom-width: .0625rem;
-  // border-bottom-color: #025361;
+  // border-bottom-color: var(--ink-700);
   // border-bottom-style: solid;
 }
 .text_title5 {
-  font-family: 微软雅黑;
+  font-family: var(--font-cn);
   font-size: 1rem;
-  color: #025361;
+  color: var(--ink-700);
   margin-top: 5%;
   width: 100%;
   margin-bottom: 5%;
@@ -92,13 +92,13 @@
   // background-color: red;
   // width: 28%;
   // border-bottom-width: .0625rem;
-  // border-bottom-color: #025361;
+  // border-bottom-color: var(--ink-700);
   // border-bottom-style: solid;
 }
 
 
 .intro_text{
-  font-family: 微软雅黑;
+  font-family: var(--font-cn);
   font-size: .75rem;
   color: #666666;
   // background-color: green;
@@ -146,13 +146,13 @@
 }
 
 .word_16 {
-  font-family:微软雅黑;
+  font-family: var(--font-cn);
   font-size:1rem;
-  color:#333333;
+  color:var(--graphite);
 }
 
 .word_12 {
-  font-family:微软雅黑;
+  font-family: var(--font-cn);
   font-size:.75rem;
   color:#666666;
 }
@@ -182,13 +182,13 @@
   font-size: 1rem;
   line-height: 2.25rem;
   letter-spacing: .1rem;
-  color: #333;
+  color: var(--graphite);
   margin-top: 1.4375rem;
   cursor: pointer;
 }
 
 .trait ul li .gs:hover {
-  background-color: #f29417;
+  background-color: var(--pulse);
   color: #fff
 }
 
@@ -196,7 +196,7 @@
   font-size: .875rem;
   line-height: 1.5rem;
   letter-spacing: .075rem;
-  color: #666;
+  color: #8A9BA0;
   text-align: left;
   margin-top: 1.1875rem
 }

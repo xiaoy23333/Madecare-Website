@@ -52,7 +52,7 @@
         margin-top: 0.5rem;
         text-align: left;
         line-height: 1.2rem;
-        color: #333;
+        color: var(--graphite);
         margin-bottom:1rem;
     }
 

@@ -1,3 +1,6 @@
+/* 冀德远健设计系统 —— 心电波形分隔线(签名元素) */
+$ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0 10 L58 10 L62 10 L65 2 L68 12 L71 10 L138 10 L141 2 L144 12 L147 10 L200 10' fill='none' stroke='%232FA0B5' stroke-width='1.6'/%3E%3C/svg%3E");
+
 .fp-scrollable{
 	height:100%;
 }
@@ -20,13 +23,19 @@
   float: left;
   margin-right: 1.25rem;
   cursor: pointer;
-  border: .0625rem solid #ccc
+  border: .0625rem solid #b9cdd2;
+  transition: border-color .2s ease, transform .2s ease;
+}
+
+.annerbox_nav dl dd:hover {
+  border-color: var(--monitor);
+  transform: scale(1.15);
 }
 
 .annerbox_nav dl .bg {
   width: .75rem;
   height: .75rem;
-  background-color: #ffbe21;
+  background-color: var(--pulse);
   border: none;
   border-radius: 50%
 }
@@ -70,8 +79,8 @@
   cursor: pointer;
   float: left;
   font-size: 1.75rem;
-  font-family: arial;
-  color: #ccc;
+  font-family: var(--font-display);
+  color: var(--hairline);
   padding: .3125rem .625rem
 }
 
@@ -81,7 +90,7 @@
 
 .index_focus .slide_nav .on, .index_focus .slide_nav li:hover {
   text-decoration: none;
-  color: #f29417;
+  color: var(--pulse);
   opacity: .8
 }
 
@@ -148,14 +157,14 @@
 }
 
 .index_focus_info1 h3 {
-  font-family: FZLTXHK--GBK1-0;
+  font-family: var(--font-cn);
   font-size: 1.625rem;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5rem;
   letter-spacing: .1625rem;
-  color: #025361;
+  color: var(--ink-700);
   display: none;
   margin-top: 1.6875rem;
   opacity: 0;
@@ -166,28 +175,28 @@
 .index_focus_info2 h3 {
   display: none;
   margin-top: 1.6875rem;
-  font-family: FZLTXHK--GBK1-0;
+  font-family: var(--font-cn);
   font-size: 1.625rem;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5rem;
   letter-spacing: .1625rem;
-  color: #025361;
+  color: var(--ink-700);
   opacity: 0;
   animation-delay: .7s;
   -webkit-animation-delay: .7s
 }
 
 .index_focus_info3 h3 {
-  font-family: FZLTXHK--GBK1-0;
+  font-family: var(--font-cn);
   font-size: 1.625rem;
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.5rem;
   letter-spacing: .1625rem;
-  color: #025361;
+  color: var(--ink-700);
   display: none;
   margin-top: 1.6875rem;
   opacity: 0;
@@ -196,9 +205,9 @@
 }
 
 .index_title {
-  font-family: 微软雅黑;
+  font-family: var(--font-cn);
   font-size: 1.875rem;
-  color: #333333;
+  color: var(--graphite);
   /* margin-top: 12%; */
   /* margin-bottom: 9%; */
   margin-left: 0;
@@ -237,7 +246,7 @@
 //       display: inline-block;
 //       width: .5625rem;
 //       height: .5625rem;
-//       background-color: #025361;
+//       background-color: var(--ink-700);
 //       margin: 1rem 1.375rem .8125rem 1.375rem
 //     }
 
@@ -259,7 +268,7 @@
     font-size: 2.5rem;
     line-height: 4.5rem;
     letter-spacing: 0;
-    color: #025361;
+    color: var(--ink-700);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -267,7 +276,7 @@
       display: inline-block;
       width: .5625rem;
       height: .5625rem;
-      background-color: #025361;
+      background-color: var(--ink-700);
       margin: 1rem 1.375rem .8125rem 1.375rem
     }
 
@@ -293,7 +302,16 @@
   padding: 0 .625rem;
   padding-top: 1.375rem;
   border-radius: .3125rem;
-  border: .0625rem solid rgb(238,238,238);
+  border: .0625rem solid var(--hairline);
+  background: #fff;
+  box-shadow: var(--shadow);
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card_wrap .card:hover {
+  transform: translateY(-.1875rem);
+  box-shadow: 0 .5rem 1.25rem rgba(1, 58, 70, .1);
+  border-color: #cfe0e4;
 }
 
 .card_wrap .card .left {
@@ -325,14 +343,14 @@
   /* height: 2.375rem; */
   font-size: .875rem;
   line-height: 1.5rem;
-  color: #333;
+  color: var(--graphite);
 }
 
 .card_wrap .card .right a {
   height: .875rem;
   font-size: .875rem;
   line-height: 1.5rem;
-  color: #2fa0b5;
+  color: var(--monitor);
   vertical-align: middle;
   margin-top: 1.875rem;
   display: block
@@ -373,7 +391,7 @@
     height: 1.8125rem;
     font-size: 1.875rem;
     line-height: 1.5rem;
-    color: #333
+    color: var(--graphite)
   }
 }
 
@@ -417,7 +435,7 @@
     margin-left: 1rem;
     font-size: 1.125rem;
     color: black;
-    text-decoration-color: #333;
+    text-decoration-color: var(--graphite);
     text-decoration-line: none;
   }
 
@@ -480,11 +498,11 @@
   height: 25rem;
   overflow: hidden;
   div {
-    border-top: .0625rem solid #e5e5e5;
+    border-top: .0625rem solid var(--hairline);
     padding-top: .9375rem;
     padding-bottom: .9375rem;
     &:last-child{
-      border-bottom: .0625rem solid #e5e5e5;
+      border-bottom: .0625rem solid var(--hairline);
     }
     h3 {
       margin-top: .75rem;
@@ -492,7 +510,7 @@
         height: 1.125rem;
         font-size: 1.125rem;
         line-height: 1.5rem;
-        color: #333
+        color: var(--graphite)
       }
     }
     span {
@@ -501,13 +519,13 @@
       font-size: .875rem;
       margin-bottom: 5%;
       display: inline-block;
-      color: #999
+      color: #8A9BA0
     }
     p {
       height: .9375rem;
       font-size: .9375rem;
       line-height: .875rem;
-      color: #333;
+      color: var(--graphite);
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis
@@ -520,10 +538,11 @@
   width: 8.3125rem;
   height: 2.1875rem;
   line-height: 2.1875rem;
-  background-color: #2fa0b5;
+  background-color: var(--ink-700);
   border-radius: 1.0625rem;
   margin: 0 auto;
   clear: both;
+  transition: background-color .2s ease;
   a {
     font-size: .875rem;
     color: #fff;
@@ -533,35 +552,39 @@
   }
 }
 
+.button:hover {
+  background-color: var(--ink-900);
+}
+
 .dots{
  width: .3125rem;
   height: .3125rem;
-  color: #2fa0b5;
+  color: var(--monitor);
 }
 
 .word_18 {
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size:1rem
 }
 
 .word_16 {
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size:1rem
 }
 
 .word_20 {
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size:1.25rem;
   line-height: 190%;
 }
 
 .word_24 {
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size:1.375rem;
   line-height: 190%;
 }
 .word_30 {
-  font-family:微软雅黑;
+  font-family: var(--font-cn);
   font-size:1.75rem
 }
 
@@ -689,7 +712,7 @@
 }
 
 .sfy_right_xzkf {
-  color: #333333;
+  color: var(--graphite);
   height: 2rem;
   text-align: center;
   // margin-top: -4%;_tr
@@ -735,7 +758,7 @@
 }
 
 .kfzy1{
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size:1.25rem;
   line-height: 190%;
   width: 100%;
@@ -744,7 +767,7 @@
   // margin-left: -5%;
 }
 .kfzy2{
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size:1.25rem;
   line-height: 190%;
   width: 100%;
@@ -783,21 +806,38 @@
 
 .main_content {
   z-index: 2;
-  // position: relative;
-  // display: inline-block;
-  // /* Vertical center */
-  // top: 50%;
-  // transform: translateY(-50%);
+  position: relative;
   display:flex;
   justify-content: center;
   align-items: center;
   background-color: rgba(2, 000, 000, 0.5);
 }
 
+/* 签名元素:首屏"监护仪扫描线"——青色光带从左向右缓慢扫过 */
+.main_content::after {
+  content: '';
+  position: absolute;
+  top: 38%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, rgba(47,160,181,.9) 12%, rgba(47,160,181,.9) 88%, transparent);
+  box-shadow: 0 0 .75rem rgba(47,160,181,.55);
+  pointer-events: none;
+  animation: ecg-scan 9s linear infinite;
+}
+
+@keyframes ecg-scan {
+  0% { transform: translateX(-100%); opacity: 0; }
+  8% { opacity: 1; }
+  92% { opacity: 1; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
 .main_content h1 {
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'proxima-nova-condensed', Helvetica;
+  font-family: var(--font-display);
   color: #fff;
   font-size: 2.1875rem;
 }
@@ -846,19 +886,21 @@
 }
 
 .Index {
-  font-family:Impact;
+  font-family: var(--font-display);
+  font-weight: 600;
   font-size: 10.25rem;
-  color: #ff6600;
+  letter-spacing: .02em;
+  color: var(--pulse);
 }
 
 .backto {
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size: 1.5rem;
-  color: #333333;
+  color: var(--graphite);
 }
 
 .backto_white {
-  font-family:方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size: 1.5rem;
   color: #fff;
 }
@@ -872,18 +914,20 @@
 
 .word_title{
   // font-family:幼圆;
-  font-family: 方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
+  font-weight: 600;
   font-size:1.75rem;
-  color: #ff6600;
+  letter-spacing: .05em;
+  color: var(--pulse);
   // line-height: 190%;
 }
 
 
 .cpzs_left1{
-  font-family: 方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size: 1.25rem;
   line-height: 190%;
-  color: #333333;
+  color: var(--graphite);
   /* margin-top: 26%; */
   width: 100%;
   text-align: center;
@@ -892,10 +936,10 @@
 }
 
 .cpzs_left2{
-  font-family: 方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size: 1.25rem;
   line-height: 190%;
-  color: #333333;
+  color: var(--graphite);
   margin-left: 78%;
   margin-top: 63%;
   width: 100%;
@@ -958,9 +1002,10 @@
 
 .dws1000_title {
   width: 95%;
-  border-bottom-width: .125rem;
-  border-bottom-color: #cccccc;
-  border-bottom-style:solid;
+  background-image: $ecg-wave;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1rem;
   margin-top: 2%;
   margin-bottom: 2.5%;
   padding-bottom: 2%;
@@ -968,14 +1013,14 @@
 
 .product_text {
   border-top: .125rem;
-  border-color: #cccccc;
+  border-color: var(--hairline);
   height: 30%;
   width: 100%;
   float: left;
   margin-top: 4%;
   width: 95%;
   border-top-width: .125rem;
-  border-top-color: #cccccc;
+  border-top-color: var(--hairline);
   border-top-style: solid;
   padding-top: 4%;
   line-height: 190%;
@@ -1060,9 +1105,10 @@
 
 .cpx_title {
   width: 95%;
-  border-bottom-width: .125rem;
-  border-bottom-color: #cccccc;
-  border-bottom-style:solid;
+  background-image: $ecg-wave;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1rem;
   margin-top: 2%;
   margin-bottom: 2.5%;
   padding-bottom: 2%;
@@ -1128,9 +1174,10 @@
 
 .tr800_title {
   width: 95%;
-  border-bottom-width: .125rem;
-  border-bottom-color: #cccccc;
-  border-bottom-style:solid;
+  background-image: $ecg-wave;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1rem;
   margin-top: 2%;
   margin-bottom: 2.5%;
   // padding-bottom: 1%;
@@ -1194,9 +1241,10 @@
 
 .tr600_title {
   width: 95%;
-  border-bottom-width: .125rem;
-  border-bottom-color: #cccccc;
-  border-bottom-style:solid;
+  background-image: $ecg-wave;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1rem;
   margin-top: 2%;
   margin-bottom: 2.5%;
   padding-bottom: 1%;
@@ -1218,7 +1266,7 @@
 
 //P12配套样式css
 .productname{
-  font-family: 方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size: 1.375rem;
   text-align: center;
 }
@@ -1253,9 +1301,10 @@
 
 .pms600_title {
   width: 95%;
-  border-bottom-width: .125rem;
-  border-bottom-color: #cccccc;
-  border-bottom-style:solid;
+  background-image: $ecg-wave;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1rem;
   margin-top: 2%;
   margin-bottom: 2.5%;
   padding-bottom: 2%;
@@ -1306,9 +1355,10 @@
 
 .sc600_title {
   width: 95%;
-  border-bottom-width: .125rem;
-  border-bottom-color: #cccccc;
-  border-bottom-style:solid;
+  background-image: $ecg-wave;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% 1rem;
   margin-top: 2%;
   margin-bottom: 2.5%;
   padding-bottom: 2%;
@@ -1357,6 +1407,11 @@
 
 .li_index{
   list-style: disc;
+}
+
+/* 功能列表圆点用监护青,呼应"读数"意象 */
+.li_index::marker{
+  color: var(--monitor);
 }
 
 .li_index2{
@@ -1455,10 +1510,10 @@
 }
 
 div .button_style{
-  font-family: 方正兰亭纤黑_GBK;
+  font-family: var(--font-cn);
   font-size: 1.25rem;
   line-height: 190%;
-  color: #333333;
+  color: var(--graphite);
   cursor: pointer;
 }
 
@@ -1470,5 +1525,5 @@ div .button_style{
 }
 
 .fp-right ul li a span{
-  background: #d2d2d2 !important;
+  background: var(--hairline) !important;
 }

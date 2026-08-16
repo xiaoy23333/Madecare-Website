@@ -7,7 +7,7 @@
 
 .button{
   border-radius: .9375rem;
-  background-color: #2fa0b5;
+  background-color: var(--monitor);
   color: #fff;
   display: inline-block;
   padding: .375rem .75rem;
@@ -44,7 +44,7 @@
   display: inline-block;
   a{
     text-decoration: none;
-    background-color: #eee;
+    background-color: var(--hairline);
     display: inline-block;
     padding: .3125rem .875rem;
     border: .0625rem solid #ddd;
@@ -67,7 +67,7 @@
   font-size: 1.125rem;
   line-height: 1.875rem;
   letter-spacing: .1125rem;
-  color: #2fa0b5;
+  color: var(--monitor);
   margin:.9375rem auto;
 }
 
@@ -75,7 +75,7 @@
   font-size: .875rem;
   line-height: 1.875rem;
   letter-spacing: .0875rem;
-  color: #333;
+  color: var(--graphite);
 }
 
 .job_cur{

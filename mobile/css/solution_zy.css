@@ -4,13 +4,13 @@
 .bn p {
   color: #fff;
   font-size: 0.6rem;
-  background-color: #025361;
+  background-color: var(--ink-700);
 }
 .zn {
   background-color: #fff;
-  color: #025361;
+  color: var(--ink-700);
   font-size: 1rem;
-  /* border-bottom: 1px solid #ccc; */
+  /* border-bottom: 1px solid var(--hairline); */
   margin-bottom: 0.5rem;
 }
 .tu {
@@ -27,14 +27,14 @@
   margin: 0 auto ;
 }
 .main p span {
-  color: #2fa0b5;
+  color: var(--monitor);
   font-weight: 700;
 }
 .main ul li span {
   font-size: 0.7rem ;
   color: #fff;
   display: block;
-  background-color: #2fa0b5;
+  background-color: var(--monitor);
   text-align: center;
   width: 100%;
   height: 1.3rem;

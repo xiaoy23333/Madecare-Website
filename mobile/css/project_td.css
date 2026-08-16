@@ -2,19 +2,19 @@ body {
   background: #fff;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #333;
+  color: var(--graphite);
   margin: 0;
   padding: 0;
 }
 .zn {
   font-size: 0.8rem;
-  color: #025361
-  /* background-color: #025361; */
+  color: var(--ink-700)
+  /* background-color: var(--ink-700); */
 }
 .bn {
   margin-top: 1rem;
   color: #fff;
-  background-color: #025361;
+  background-color: var(--ink-700);
   
 }
  .ban{
@@ -41,15 +41,15 @@ body {
 }
 .zz ul li:before {
   content: "● ";
-  color: #f29417;
+  color: var(--pulse);
 }
 .cs {
   margin: 1.5rem;
 }
 .cs p {
   display: block;
-  border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  border-left: 1px solid #ccc;
+  border-bottom: 1px solid var(--hairline);
+  border-right: 1px solid var(--hairline);
+  border-left: 1px solid var(--hairline);
   padding: 0.2rem;
 }

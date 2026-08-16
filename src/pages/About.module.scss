@@ -11,7 +11,7 @@
   font-style: normal;
   font-stretch: normal;
   letter-spacing: .15rem;
-  color: #025361;
+  color: var(--ink-700);
   float: right;
   margin-top: 5%;
   margin-right: 20%;
@@ -25,7 +25,7 @@
 .title {
   font-size: 1.875rem;
   line-height: 1.5rem;
-  color: #333;
+  color: var(--graphite);
   display: inline-block
 }
 
@@ -39,14 +39,14 @@
   margin:0;
   font-size: .875rem;
   line-height: 1.875rem;
-  color: #333
+  color: var(--graphite)
 }
 
 .tab_panel .cq {
   margin-top: 1.6875rem;
   font-size:.875rem;
-  font-family: 微软雅黑;
-  color: #333333;
+  font-family: var(--font-cn);
+  color: var(--graphite);
 }
 
 .right{
@@ -139,7 +139,7 @@
   font-size: .875rem;
   line-height: 1.875rem;
   letter-spacing: .0875rem;
-  color: #025361;
+  color: var(--ink-700);
 }
 
 .core .abculture3{
@@ -157,7 +157,7 @@
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
   border: 0;
-  border-top: .0625rem solid #eee;
+  border-top: .0625rem solid var(--hairline);
   height: 0;
 }
 
