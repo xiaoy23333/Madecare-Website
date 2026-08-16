@@ -12,11 +12,16 @@ exports.onRenderBody = ({ setHeadComponents }) => {
   var ua = navigator.userAgent.toLowerCase();
   if (!/iphone|ios|android|ipod|mobile/i.test(ua)) return;
   if (/from=mobile/i.test(location.search)) return;
-  var prefix = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__ : '';
-  var p = location.pathname;
-  if (prefix && p.indexOf(prefix) === 0) p = p.slice(prefix.length);
-  var isEn = /^\\/(en)(?=\\/|$)/.test(p);
-  location.replace(prefix + (isEn ? '/mobile/views/madecare_En/index.html' : '/mobile/views/index.html'));
+  var seg = location.pathname.replace(/^\\//, '').split('/');
+  var base, isEn;
+  if (seg[0] === 'en' || seg[0] === 'zh') {
+    isEn = seg[0] === 'en';
+    base = '';
+  } else {
+    isEn = seg[1] === 'en';
+    base = seg[0] ? '/' + seg[0] : '';
+  }
+  location.replace(base + (isEn ? '/mobile/views/madecare_En/index.html' : '/mobile/views/index.html'));
 })();`,
       }}
     />
