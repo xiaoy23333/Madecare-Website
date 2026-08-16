@@ -2,6 +2,28 @@
 
 const React = require('react');
 
+// 设备自动跳转：手机打开 PC 版任意页面时，跳到对应语言的手机版首页
+exports.onRenderBody = ({ setHeadComponents }) => {
+  const UA_REDIRECT_SCRIPT = (
+    <script
+      key="ua-redirect"
+      dangerouslySetInnerHTML={{
+        __html: `(function(){
+  var ua = navigator.userAgent.toLowerCase();
+  if (!/iphone|ios|android|ipod|mobile/i.test(ua)) return;
+  if (/from=mobile/i.test(location.search)) return;
+  var prefix = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__ : '';
+  var p = location.pathname;
+  if (prefix && p.indexOf(prefix) === 0) p = p.slice(prefix.length);
+  var isEn = /^\\/(en)(?=\\/|$)/.test(p);
+  location.replace(prefix + (isEn ? '/mobile/views/madecare_En/index.html' : '/mobile/views/index.html'));
+})();`,
+      }}
+    />
+  );
+  setHeadComponents([UA_REDIRECT_SCRIPT]);
+};
+
 // exports.onRenderBody = (
 //   { setHeadComponents, setPostBodyComponents },
 // ) => {
