@@ -662,15 +662,18 @@ $ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
   width: 25%;
   height: 100%;
   position: relative;
+  box-sizing: border-box;
+  padding: 0 .8%;
 }
 .product2{
   display: block;
   float: left;
-  padding: 0;
+  padding: 0 .8%;
   width: 25%;
   height: 100%;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
 .product3{
   display: block;
@@ -680,6 +683,48 @@ $ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
   height: 100%;
   text-align: center;
   position: relative;
+  box-sizing: border-box;
+  padding: 0 .8%;
+}
+
+/* 产品导航卡片:图片容器 hover 抬升 + 底部波形浮现 */
+.product1 > div:first-child,
+.product2 > div:first-child,
+.product3 > div:first-child {
+  transition: transform .3s ease;
+}
+.product1:hover > div:first-child,
+.product2:hover > div:first-child,
+.product3:hover > div:first-child {
+  transform: translateY(-.625rem);
+}
+.sfy_right_xzkf, .kfzy1, .cpzs_left1 {
+  position: relative;
+}
+.sfy_right_xzkf::after, .kfzy1::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -.375rem;
+  width: 0;
+  height: .5rem;
+  transform: translateX(-50%);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 8' preserveAspectRatio='none'%3E%3Cpath d='M0 6 L24 6 L26 6 L28 1 L30 7 L32 6 L56 6 L58 1 L60 7 L62 6 L80 6' fill='none' stroke='%232FA0B5' stroke-width='1.4'/%3E%3C/svg%3E") no-repeat center bottom;
+  background-size: 100% 100%;
+  opacity: 0;
+  transition: width .25s ease, opacity .25s ease;
+  pointer-events: none;
+}
+.sfy_right_xzkf:hover::after, .kfzy1:hover::after {
+  width: 45%;
+  opacity: 1;
+}
+.button_style {
+  transition: color .2s ease;
+}
+.sfy_right_xzkf:hover .button_style,
+.kfzy1:hover .button_style {
+  color: var(--monitor);
 }
 .sfy_middle {
   width: 26%;
@@ -1526,4 +1571,43 @@ div .button_style{
 
 .fp-right ul li a span{
   background: var(--hairline) !important;
+}
+
+/* ===== 布局升级:产品详情屏信息面板 ===== */
+/* 左侧文字列升级为悬浮信息面板(白底、圆角、轻阴影) */
+.dws1000_info, .cpx_info, .tr800_info, .tr600_info, .pms600_info, .sc600_info {
+  background: #fff;
+  border: .0625rem solid var(--hairline);
+  border-radius: .5rem;
+  box-shadow: var(--shadow);
+  box-sizing: border-box;
+  padding: 2.5% 2.5% 1.5%;
+}
+
+/* 面板内功能/特点列表:加大行距与可读性 */
+.dws1000_function li, .cpx_function li, .tr800_function li,
+.tr600_function li, .pms600_function li, .sc600_function li {
+  padding: .4rem 0;
+}
+
+/* 面板内列表间距呼吸感 */
+.dws1000_function ul, .cpx_function ul, .tr800_function ul,
+.tr600_function ul, .pms600_function ul, .sc600_function ul {
+  margin-top: 1.5%;
+}
+
+/* 首屏视频:底部渐变压暗,向第二屏过渡更自然 */
+.section1 {
+  position: relative;
+}
+.section1::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: linear-gradient(to bottom, rgba(1, 58, 70, .15) 0%, transparent 32%, transparent 68%, rgba(1, 58, 70, .45) 100%);
+  pointer-events: none;
+  z-index: 1;
 }

@@ -7,8 +7,20 @@
 .contact_head{
   overflow: hidden;
   margin-bottom: 1.25rem;
-  padding-bottom: 1%;
-  border-bottom: .0625rem solid var(--hairline);
+  padding-bottom: 1.2rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 12' preserveAspectRatio='none'%3E%3Cpath d='M0 10 L58 10 L62 10 L65 2 L68 12 L71 10 L138 10 L141 2 L144 12 L147 10 L200 10' fill='none' stroke='%232FA0B5' stroke-width='1.6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% .75rem;
+}
+
+/* 整块联系信息升级为悬浮大卡片 */
+.contact_wrap {
+  background: #fff;
+  border: .0625rem solid var(--hairline);
+  border-radius: .5rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
 }
 
 .title {
@@ -50,6 +62,7 @@
   float: left;
   width: 40%;
   height: 75%;
+  background: var(--paper);
 }
 .address_wrap{
   margin-top: 15%;
@@ -70,6 +83,8 @@
   float: left;
   width: 25%;
   height: 100%;
+  border-left: .0625rem dashed var(--hairline);
+  box-sizing: border-box;
 }
 .mes_wrap {
   margin-top: 20%;

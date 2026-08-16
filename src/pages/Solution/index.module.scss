@@ -54,6 +54,23 @@
   // border-bottom-style: solid;
 }
 
+/* 解决方案板块标题:悬停变监护青,下划线加粗 */
+.intro_title, .text_title1, .text_title2, .text_title5 {
+  transition: color .2s ease;
+}
+.intro_title:hover, .text_title1:hover, .text_title2:hover, .text_title5:hover {
+  color: var(--monitor);
+}
+.intro_title u, .text_title1 u, .text_title2 u, .text_title5 u {
+  text-decoration-color: #9fd6e0;
+  text-decoration-thickness: .125rem;
+  text-underline-offset: .3rem;
+  transition: text-decoration-color .2s ease;
+}
+.intro_title:hover u, .text_title1:hover u, .text_title2:hover u, .text_title5:hover u {
+  text-decoration-color: var(--monitor);
+}
+
 .text_title1 {
   font-family: var(--font-cn);
   font-size: 1rem;

@@ -3118,3 +3118,27 @@ header {
 	display: block;
 	width: 100%
 }
+
+/* ===== 布局升级:详情屏信息面板(与 PC 版一致,不覆盖原有 padding) ===== */
+.index-module--dws1000_info--3pRy7,
+.index-module--cpx_info--10ioq,
+.index-module--tr800_info--1_zXy,
+.index-module--tr600_info--h1MIr,
+.index-module--pms600_info--1O85N,
+.index-module--sc600_info--16xN2 {
+	background: #fff;
+	border: .0625rem solid var(--hairline);
+	border-radius: .5rem;
+	box-shadow: var(--shadow);
+	box-sizing: border-box;
+}
+
+/* 面板内列表行距(类名为当前 HTML 实际引用) */
+.index-module--cpx_function--2qBEA li,
+.index-module--dws1000_function--2Z3xz li,
+.index-module--tr800_function--1Eq65 li,
+.index-module--tr600_function--iSg50 li,
+.index-module--pms600_function--1ICB1 li,
+.index-module--sc600_function--3QBil li {
+	padding: .3rem 0;
+}
