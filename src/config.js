@@ -345,7 +345,7 @@ export const ROUTE_OBJ = {
   solution: '解决方案',
   transfer: '患者安全转移',
   prevent: '膀胱保护和康复',
-  cpx: '高级心肺评测系统',
+  cpx: '心肺康复',
   remote: '远程云管理',
   monitor: '长期床旁监护',
   product: '产品中心',

@@ -8,15 +8,34 @@ class Monitor extends React.Component {
     let {intl} = this.props;
     // console.log('cpx-intl',this.props)
     return (
+      <div>
       <div className={styles.trait}>
             <div className={styles.intro}>
+            <p className={styles.subtitle}><FormattedMessage id="solution.cpxtitle" /></p>
             <FormattedMessage id="solution.cpxdescrip1" />
             <br />
             <FormattedMessage id="solution.cpxdescrip2" />
             </div>
           <img src={require('../../assets/imgs/Solution/solution_cpx.png').default}
                                                          alt=""/>
-        
+
+      </div>
+      <div className={styles.trait}>
+            <div className={styles.intro}>
+            <p className={styles.subtitle}><FormattedMessage id="solution.rse.title" /></p>
+            <FormattedMessage id="solution.rse.descrip" />
+            </div>
+          <img src={require('../../assets/imgs/Solution/solution_rse.png').default}
+                                                         alt=""/>
+      </div>
+      <div className={styles.trait}>
+            <div className={styles.intro}>
+            <p className={styles.subtitle}><FormattedMessage id="solution.rse6mwt.title" /></p>
+            <FormattedMessage id="solution.rse6mwt.descrip" />
+            </div>
+          <img src={require('../../assets/imgs/Solution/solution_rse6mwt.png').default}
+                                                         alt=""/>
+      </div>
       </div>
     );
   }

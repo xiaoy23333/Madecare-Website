@@ -1089,7 +1089,7 @@ render={({ state, fullpageApi }) => {
                     <div className={styles.sc600_box} style={{height: '90vh'}}>
                         <div className={styles.sc600} style={{display: 'flex', alignItems: 'center', height: '100%', marginTop: '0', marginLeft: '6%'}} >
                             <img style={{height: '38vh', flexShrink: 0, objectFit: 'contain'}} src={require('../assets/imgs/Index/sc600_02_left.png').default} />
-                            <img style={{height: '26vh', marginLeft: '2%', flexShrink: 0, objectFit: 'contain'}} src={require('../assets/imgs/Index/sc800d_02.png').default} />
+                            <img style={{height: '34vh', marginLeft: '2%', flexShrink: 0, objectFit: 'contain'}} src={require('../assets/imgs/Index/sc800d_02.png').default} />
                         </div>
                     </div>
                   <div className={styles.sc600_info} style={{height: '90vh', display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>

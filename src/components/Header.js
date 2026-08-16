@@ -10,6 +10,8 @@ class Header extends Component {
     let { location: { href }, intl: { locale } } = this.props;
     let hArr = href.split('/');
     hArr.splice(0, 3);
+    let prefix = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__.split('/').filter(Boolean)[0] : '';
+    if (prefix && hArr[0] === prefix) hArr.splice(0, 1);
     let i = LANGS.indexOf(hArr[0]);
     // console.log(LANGS)
     if (i >= 0) {
