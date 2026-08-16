@@ -3142,3 +3142,88 @@ header {
 .index-module--sc600_function--3QBil li {
 	padding: .3rem 0;
 }
+
+/* ===== 高级感升级(与 PC 版一致) ===== */
+/* 编号与大标题:金橙渐变文字 */
+.index-module--Index--kt_h8 {
+	background: linear-gradient(180deg, #f8b54c 0%, var(--pulse) 55%, #d97e08 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+.index-module--word_title--4Np-c {
+	background: linear-gradient(90deg, #f8b54c 0%, var(--pulse) 50%, #d97e08 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+/* 标题页玻璃卡 */
+.index-module--descrip2--Kl_jV {
+	background: rgba(255, 255, 255, .55);
+	-webkit-backdrop-filter: blur(.5rem);
+	backdrop-filter: blur(.5rem);
+	border: .0625rem solid rgba(255, 255, 255, .7);
+	border-radius: .5rem;
+	box-shadow: 0 .5rem 1.5rem rgba(1, 58, 70, .12);
+	padding: 4% 5%;
+	box-sizing: border-box;
+}
+
+/* 详情屏面板:点阵纹理 + 渐变顶条 */
+.index-module--dws1000_info--3pRy7,
+.index-module--cpx_info--10ioq,
+.index-module--tr800_info--1_zXy,
+.index-module--tr600_info--h1MIr,
+.index-module--pms600_info--1O85N,
+.index-module--sc600_info--16xN2 {
+	background-color: #fff;
+	background-image: radial-gradient(rgba(47, 160, 181, .07) .0625rem, transparent .0625rem);
+	background-size: 1.375rem 1.375rem;
+	position: relative;
+}
+.index-module--dws1000_info--3pRy7::before,
+.index-module--cpx_info--10ioq::before,
+.index-module--tr800_info--1_zXy::before,
+.index-module--tr600_info--h1MIr::before,
+.index-module--pms600_info--1O85N::before,
+.index-module--sc600_info--16xN2::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: .1875rem;
+	border-radius: .5rem .5rem 0 0;
+	background: linear-gradient(90deg, var(--monitor) 0%, var(--pulse) 100%);
+	opacity: .85;
+}
+
+/* 波形分隔线呼吸 */
+.index-module--cpx_title--oURYN,
+.index-module--dws1000_title--21Z1_,
+.index-module--tr800_title--3ewC2,
+.index-module--tr600_title--3DBoD,
+.index-module--pms600_title--3aoFO,
+.index-module--sc600_title--26woJ {
+	animation: ecg-breathe 3s ease-in-out infinite;
+}
+@keyframes ecg-breathe {
+	0%, 100% { opacity: 1; }
+	50% { opacity: .55; }
+}
+
+/* 页面加载渐入 */
+@keyframes fade-up {
+	from { opacity: 0; transform: translateY(1.5rem); }
+	to { opacity: 1; transform: translateY(0); }
+}
+.index-module--descrip2--Kl_jV,
+.index-module--dws1000_info--3pRy7,
+.index-module--cpx_info--10ioq,
+.index-module--tr800_info--1_zXy,
+.index-module--tr600_info--h1MIr,
+.index-module--pms600_info--1O85N,
+.index-module--sc600_info--16xN2 {
+	animation: fade-up .6s ease both;
+}
