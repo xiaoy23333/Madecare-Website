@@ -6,12 +6,12 @@
 		}
 		if(/iphone|ios|android|ipod/i.test(navigator.userAgent.toLowerCase()) == true && params(location.search, "from") != "mobile"){
 			// location.href = 'https://m.madecare.com';
-			document.location = "mobile/views/index_mobile.html";
+			document.location = "index_mobile.html";
 			// document.location = 'https://m.madecare.com';
 		}
 		else{
 			// location.href = 'https://XXX.com';
-			document.location = "index_pc.html";
+			document.location = "../../../";
 		}
 	}();
 </script>
