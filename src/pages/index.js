@@ -9,7 +9,7 @@ import Link from '../components/Link';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Slider from 'react-slick';
-import { NEWS_ABSTRACT } from '../config';
+import { loadNews, pickNews, resolveImg } from '../data/news';
 import VideoBg from '../components/VideoBg/VideoBg';
 import poster from "../assets/imgs/Index/video_cover.jpeg";
 import Header from '../components/Header';
@@ -19,6 +19,14 @@ import { LANGS} from '../config';
 
 
 class Index extends React.Component {
+  state = { newsData: null };
+
+  componentDidMount() {
+    // 远健动态:远程数据加载成功后刷新(失败则维持内置数据)
+    loadNews().then(data => {
+      if (data) this.setState({ newsData: data });
+    });
+  }
   //fullpage options
 
   // scrollingSpeed = {1000} /* Options here */
@@ -71,7 +79,9 @@ class Index extends React.Component {
 
     let {intl} = this.props;
     // console.log('index-intl',intl);
-    
+
+    const newsList = pickNews(this.state.newsData, intl.locale);
+
     const newsSlick = {
       dots: true,
       infinite: true,
@@ -1174,16 +1184,16 @@ render={({ state, fullpageApi }) => {
                     <div className={styles.news}>          
                       <div className={styles.left}>
                         <Slider {...newsSlick}>
-                          {NEWS_ABSTRACT.map(({ src, to }, i) =>
-                            <Link className={styles.news_a} key={i} to={to}>
-                              <img src={src}/>
+                          {newsList.map((n, i) =>
+                            <Link className={styles.news_a} key={n.id + i} to={`/news/newsdetail#${n.id}`}>
+                              <img src={resolveImg(n.src)}/>
                             </Link>,
                           )}
                         </Slider>
                       </div>
                       <div className={styles.right}>
-                        {NEWS_ABSTRACT.map(({ title, time, cnt, to }) =>
-                          <div key={title}><h3><Link to={to}>{title}</Link></h3><span>{time}</span><p>{cnt}</p></div>,
+                        {newsList.map(n =>
+                          <div key={n.id}><h3><Link to={`/news/newsdetail#${n.id}`}>{n.title}</Link></h3><span>{n.time}</span><p>{n.cnt}</p></div>,
                         )}
                       </div>   
                       <div className={styles.button}><Link to={'/news'}>更多动态 <img src={require('../assets/imgs/Index/more.png').default}
