@@ -4,6 +4,9 @@ const React = require('react');
 
 // 设备自动跳转：手机打开 PC 版任意页面时，跳到对应语言的手机版首页
 exports.onRenderBody = ({ setHeadComponents }) => {
+  // 站点前缀在构建时定死:GitHub Pages 版 = /Madecare-Website,服务器版(构建时 SITE_PREFIX 为空)= ''
+  const SITE_PREFIX = (process.env.SITE_PREFIX !== undefined ? process.env.SITE_PREFIX : '/Madecare-Website').replace(/\/$/, '');
+
   const UA_REDIRECT_SCRIPT = (
     <script
       key="ua-redirect"
@@ -12,16 +15,11 @@ exports.onRenderBody = ({ setHeadComponents }) => {
   var ua = navigator.userAgent.toLowerCase();
   if (!/iphone|ios|android|ipod|mobile/i.test(ua)) return;
   if (/from=mobile/i.test(location.search)) return;
-  var seg = location.pathname.replace(/^\\//, '').split('/');
-  var base, isEn;
-  if (seg[0] === 'en' || seg[0] === 'zh') {
-    isEn = seg[0] === 'en';
-    base = '';
-  } else {
-    isEn = seg[1] === 'en';
-    base = seg[0] ? '/' + seg[0] : '';
-  }
-  location.replace(base + (isEn ? '/mobile/views/madecare_En/index.html' : '/mobile/views/index.html'));
+  var prefix = ${JSON.stringify(SITE_PREFIX)};
+  var p = location.pathname;
+  if (prefix && p.indexOf(prefix) === 0) p = p.slice(prefix.length);
+  var isEn = /^\\/(en)(?=\\/|$)/.test(p);
+  location.replace(prefix + (isEn ? '/mobile/views/madecare_En/index.html' : '/mobile/views/index.html'));
 })();`,
       }}
     />

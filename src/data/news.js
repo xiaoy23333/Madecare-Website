@@ -5,12 +5,12 @@ import { NEWS_ABSTRACT, NEWS_DETAIL } from '../config';
 
 export const REMOTE_URL = 'https://cdn.jsdelivr.net/gh/xiaoy23333/Madecare-Website@master/static/news-data.json';
 
-// 从当前地址推导站点根(兼容 GitHub Pages 前缀与本地开发,与设备跳转脚本同算法)
+// 从当前地址推导站点根。
+// 用 __PATH_PREFIX__(webpack 构建时注入,SSR 与客户端都会替换):GitHub Pages 版= '/Madecare-Website/',服务器版= '';
+// 不能用 pathname 第一段猜测(服务器根部署时第一段是页面名,不是前缀)
 export function siteBase() {
-  if (typeof window === 'undefined') return '';
-  const seg = window.location.pathname.replace(/^\//, '').split('/');
-  if (seg[0] === 'en' || seg[0] === 'zh') return '';
-  return seg[0] ? '/' + seg[0] : '';
+  const p = typeof __PATH_PREFIX__ !== 'undefined' ? __PATH_PREFIX__ : '';
+  return String(p).replace(/\/$/, '');
 }
 
 // 数据里的图片路径解析:http 开头原样;news-imgs/ 相对站点根;其他原样
