@@ -6,7 +6,7 @@ body {
   margin: 0 auto;
 }
 a {
-  color: #333;
+  color: var(--graphite);
 }
 .img_box {
   width: 20%;
@@ -14,7 +14,7 @@ a {
 }
 .tb {
   text-align: center;
-  background: #ccc;
+  background: var(--hairline);
   width: 85%;
   font-size: 0.8rem;
   position: relative;
@@ -31,7 +31,7 @@ a {
         height: auto ;
     }
 .wz {
-  color: #666;
+  color: #8A9BA0;
   font-size: 0.6rem;
   line-height: 1.2rem;
   width: 86%;
@@ -39,13 +39,13 @@ a {
 }
 .zn {
   font-size: 0.8rem;
-  background-color: #025361;
+  background-color: var(--ink-700);
   padding: 0.1rem;
   color: #fff;
 }
 .bn {
   margin-top: 1rem;
   color: #fff;
-  background-color: #025361;
+  background-color: var(--ink-700);
   font-size: 0.6rem;
 }

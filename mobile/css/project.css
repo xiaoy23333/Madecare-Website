@@ -8,19 +8,19 @@ body {
   background: #fff;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #333;
+  color: var(--graphite);
   margin: 0;
   padding: 0;
 }
 .zn {
   font-size: 1rem;
-  color: #333;
+  color: var(--graphite);
   background-color: #fff;
 }
 .bn {
   margin-top: 1rem;
   color: #fff;
-  background-color: #025361;
+  background-color: var(--ink-700);
 }
 .wrap {
   margin: 0 auto;
@@ -46,7 +46,7 @@ body {
 .tabs a {
   width: 100% ;
   display: block;
-  color: #333;
+  color: var(--graphite);
   text-align: center;
   margin: 0 auto;
   font-size: 0.7rem;
@@ -54,8 +54,8 @@ body {
   padding-bottom: 0.1rem;
 }
 .tabs span.active a {
-  color: #f29417;
-  border-bottom: 2px solid #f29417;
+  color: var(--pulse);
+  border-bottom: 2px solid var(--pulse);
 }
 .swiper-container {
   width: 100%;
@@ -72,7 +72,7 @@ p {
 }
 .hz {
   margin: 1rem;
-  border: 1px solid #ccc;
+  border: 1px solid var(--hairline);
 }
 .hz img {
   padding: 1rem;

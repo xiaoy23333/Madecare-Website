@@ -15,7 +15,7 @@ body {
   background: #fff;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
-  color: #333;
+  color: var(--graphite);
   margin: 0;
   padding: 0;
 }
@@ -50,7 +50,7 @@ body {
 }
 .zn {
   font-size: 1rem;
-  color: #025361;
+  color: var(--ink-700);
   background-color: #f6f6f6;
 }
 .aui-content {
@@ -60,7 +60,7 @@ body {
   width: 100%;
   height: 3rem;
   margin: .6rem;
-  color: #333;
+  color: var(--graphite);
   padding-right: 1rem;
 }
 .aui-content li img {
@@ -77,27 +77,27 @@ body {
 .dt {
   background-color: #fff;
   font-size: 1rem;
-  color: #333;
+  color: var(--graphite);
 }
 .aui-content .aui-list-view .yjdt {
   display: block;
   height: 4.5rem;
   width: 100%;
   margin: .6rem;
-  color: #333;
+  color: var(--graphite);
   padding-right: 1rem;
 }
 .bn {
   margin-top: 1rem;
   color: #fff;
-  background-color: #025361;
+  background-color: var(--ink-700);
 }
 .swiper-wrapper .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #025361;
+  background: var(--ink-700);
 }
 a {
-  color: #333;
+  color: var(--graphite);
 }
 .logo img {
   display: block;
