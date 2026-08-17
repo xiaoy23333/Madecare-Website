@@ -1064,6 +1064,7 @@
 	font-size: .725rem;
     color: #8A9BA0;
 	line-height: 190%;
+	padding: .3rem 0;
 }
 
 .index-module--li_index2--24Mty {
@@ -3104,19 +3105,6 @@ header {
 }
 
 /* ===== 布局升级:详情屏信息面板(与 PC 版一致,不覆盖原有 padding) ===== */
-.index-module--dws1000_info--3pRy7,
-.index-module--cpx_info--10ioq,
-.index-module--tr800_info--1_zXy,
-.index-module--tr600_info--h1MIr,
-.index-module--pms600_info--1O85N,
-.index-module--sc600_info--16xN2 {
-	background: #fff;
-	border: .0625rem solid var(--hairline);
-	border-radius: .5rem;
-	box-shadow: var(--shadow);
-	box-sizing: border-box;
-}
-
 /* 面板内列表行距(类名为当前 HTML 实际引用) */
 .index-module--cpx_function--2qBEA li,
 .index-module--dws1000_function--2Z3xz li,
@@ -3143,68 +3131,6 @@ header {
 }
 
 
-/* 详情屏面板:点阵纹理 + 渐变顶条 */
-.index-module--dws1000_info--3pRy7,
-.index-module--cpx_info--10ioq,
-.index-module--tr800_info--1_zXy,
-.index-module--tr600_info--h1MIr,
-.index-module--pms600_info--1O85N,
-.index-module--sc600_info--16xN2 {
-	background-color: #fff;
-	background-image: radial-gradient(rgba(47, 160, 181, .07) .0625rem, transparent .0625rem);
-	background-size: 1.375rem 1.375rem;
-	position: relative;
-}
-.index-module--dws1000_info--3pRy7::before,
-.index-module--cpx_info--10ioq::before,
-.index-module--tr800_info--1_zXy::before,
-.index-module--tr600_info--h1MIr::before,
-.index-module--pms600_info--1O85N::before,
-.index-module--sc600_info--16xN2::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	height: .1875rem;
-	border-radius: .5rem .5rem 0 0;
-	background: linear-gradient(90deg, var(--monitor) 0%, var(--pulse) 100%);
-	opacity: .85;
-}
-
-/* 波形分隔线呼吸:只让线呼吸,标题文字静止;线为基底线+PQRST波形+橙色脉冲点 */
-.index-module--cpx_title--oURYN,
-.index-module--tr800_title--3ewC2,
-.index-module--tr600_title--3DBoD,
-.index-module--pms600_title--3aoFO,
-.index-module--sc600_title--26woJ {
-	position: relative;
-	padding-bottom: 2%;
-}
-.index-module--cpx_title--oURYN::after,
-.index-module--tr800_title--3ewC2::after,
-.index-module--tr600_title--3DBoD::after,
-.index-module--pms600_title--3aoFO::after,
-.index-module--sc600_title--26woJ::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	height: .5rem;
-	background-image:
-		radial-gradient(circle at 40.7% 15%, #F29417 0px 1.5px, transparent 2px),
-		url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 20' preserveAspectRatio='none'%3E%3Cpath d='M0 14 L180 14' fill='none' stroke='%232FA0B5' stroke-width='0.8' opacity='0.22'/%3E%3Cpath d='M0 14 L50 14 Q57 14 59 11.6 Q61 9.2 63 11.6 Q65 14 70 14 L71.6 16.4 L73.2 3 L74.8 18.4 L76.6 14 C81 14 83 10.6 88 10.6 C93 10.6 95 14 100 14 L180 14' fill='none' stroke='%232FA0B5' stroke-width='3.6' stroke-linejoin='round' opacity='0.16'/%3E%3Cpath d='M0 14 L50 14 Q57 14 59 11.6 Q61 9.2 63 11.6 Q65 14 70 14 L71.6 16.4 L73.2 3 L74.8 18.4 L76.6 14 C81 14 83 10.6 88 10.6 C93 10.6 95 14 100 14 L180 14' fill='none' stroke='%232FA0B5' stroke-width='1.8' stroke-linejoin='round'/%3E%3C/svg%3E");
-	background-size: 4.5rem 100%, auto 100%;
-	background-repeat: repeat-x;
-	background-position: 0 0;
-	animation: ecg-breathe 2.8s ease-in-out infinite;
-	pointer-events: none;
-}
-@keyframes ecg-breathe {
-	0%, 100% { opacity: 1; }
-	50% { opacity: .4; }
-}
 
 /* 页面加载渐入 */
 @keyframes fade-up {
