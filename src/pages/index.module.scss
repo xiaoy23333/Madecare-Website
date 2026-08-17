@@ -701,7 +701,7 @@ $ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
 .sfy_right_xzkf, .kfzy1, .cpzs_left1 {
   position: relative;
 }
-.sfy_right_xzkf::after, .kfzy1::after {
+.sfy_right_xzkf::after, .kfzy1::after, .cpzs_left1::after {
   content: '';
   position: absolute;
   left: 50%;
@@ -715,7 +715,7 @@ $ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
   transition: width .25s ease, opacity .25s ease;
   pointer-events: none;
 }
-.sfy_right_xzkf:hover::after, .kfzy1:hover::after {
+.sfy_right_xzkf:hover::after, .kfzy1:hover::after, .cpzs_left1:hover::after {
   width: 45%;
   opacity: 1;
 }
@@ -723,7 +723,8 @@ $ecg-wave: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' vie
   transition: color .2s ease;
 }
 .sfy_right_xzkf:hover .button_style,
-.kfzy1:hover .button_style {
+.kfzy1:hover .button_style,
+.cpzs_left1:hover .button_style {
   color: var(--monitor);
 }
 .sfy_middle {
