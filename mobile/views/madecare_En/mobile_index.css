@@ -1055,7 +1055,7 @@
 }
 
 .index-module--ul3--vf2T- {
-	margin-left: 54%;
+	margin-left: 58%;
 	line-height: 190%
 }
 
@@ -1063,6 +1063,7 @@
 	list-style: disc;
 	font-size: .725rem;
     color: #8A9BA0;
+	line-height: 190%;
 }
 
 .index-module--li_index2--24Mty {
@@ -3141,19 +3142,6 @@ header {
 	color: transparent;
 }
 
-/* 标题页玻璃卡 */
-.index-module--descrip2--Kl_jV {
-	width: fit-content;
-	max-width: 100%;
-	background: rgba(255, 255, 255, .55);
-	-webkit-backdrop-filter: blur(.5rem);
-	backdrop-filter: blur(.5rem);
-	border: .0625rem solid rgba(255, 255, 255, .7);
-	border-radius: .5rem;
-	box-shadow: 0 .5rem 1.5rem rgba(1, 58, 70, .12);
-	padding: .55rem .9rem;
-	box-sizing: border-box;
-}
 
 /* 详情屏面板:点阵纹理 + 渐变顶条 */
 .index-module--dws1000_info--3pRy7,
