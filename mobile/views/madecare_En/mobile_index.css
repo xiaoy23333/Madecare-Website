@@ -3112,7 +3112,6 @@ header {
 	-webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	text-shadow: 0 0 .35rem rgba(255, 255, 255, .95), 0 0 .8rem rgba(255, 255, 255, .7);
 }
 .index-module--word_title--4Np-c {
 	background: linear-gradient(90deg, #f8b54c 0%, var(--pulse) 50%, #d97e08 100%);
