@@ -39,7 +39,7 @@ export default class News extends React.Component {
 					<div className={styles.media_main}>
 						{newsList.map((n, i) =>
 							<div className={styles.media} key={n.id + i}>
-								<div className={styles.media_left}><Link to={`/news/newsdetail#${n.id}`}><img className={styles.media_object} src={resolveImg(n.src)}/></Link>
+								<div className={styles.media_left}><Link to={`/news/newsdetail#${n.id}`}><img className={styles.media_object} referrerPolicy="no-referrer" src={resolveImg(n.src)}/></Link>
 								</div>
 								<div className={styles.media_body}><Link to={`/news/newsdetail#${n.id}`}><h4 className={styles.media_head}>
 									{n.title}</h4>

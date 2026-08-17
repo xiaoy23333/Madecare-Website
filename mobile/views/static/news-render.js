@@ -32,7 +32,7 @@
       if (it.t === 'title') {
         html += '<p class="aui-padded-10" style="font-weight:800;margin-top:.8rem;">' + it.v + '</p>';
       } else if (it.t === 'img') {
-        html += '<img src="' + imgUrl(it.v) + '" style="display:block;width:100%;margin-top:.5rem;">';
+        html += '<img src="' + imgUrl(it.v) + '" referrerpolicy="no-referrer" style="display:block;width:100%;margin-top:.5rem;">';
       } else if (it.t === 'video') {
         html += '<video controls style="display:block;width:100%;margin-top:.5rem;"><source src="' + it.v + '"></video>';
       } else if (it.t === 'iframe') {
@@ -55,7 +55,7 @@
         + '<ul class="aui-user-view aui-in">'
         + '<li class="aui-user-view-cell aui-img">';
       if (n.src) {
-        html += '<img class="aui-img-object aui-pull-left" src="' + imgUrl(n.src) + '">';
+        html += '<img class="aui-img-object aui-pull-left" referrerpolicy="no-referrer" src="' + imgUrl(n.src) + '">';
       }
       html += '<div class="aui-img-body">'
         + '<span>' + n.title + '<br><br> <em class="aui-text-right">' + (n.time || '') + '</em></span>'

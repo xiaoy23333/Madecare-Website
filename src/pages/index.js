@@ -1186,7 +1186,7 @@ render={({ state, fullpageApi }) => {
                         <Slider {...newsSlick}>
                           {newsList.map((n, i) =>
                             <Link className={styles.news_a} key={n.id + i} to={`/news/newsdetail#${n.id}`}>
-                              <img src={resolveImg(n.src)}/>
+                              <img referrerPolicy="no-referrer" src={resolveImg(n.src)}/>
                             </Link>,
                           )}
                         </Slider>
