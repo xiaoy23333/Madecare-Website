@@ -3140,13 +3140,15 @@ header {
 
 /* 标题页玻璃卡 */
 .index-module--descrip2--Kl_jV {
+	width: fit-content;
+	max-width: 100%;
 	background: rgba(255, 255, 255, .55);
 	-webkit-backdrop-filter: blur(.5rem);
 	backdrop-filter: blur(.5rem);
 	border: .0625rem solid rgba(255, 255, 255, .7);
 	border-radius: .5rem;
 	box-shadow: 0 .5rem 1.5rem rgba(1, 58, 70, .12);
-	padding: 4% 5%;
+	padding: .55rem .9rem;
 	box-sizing: border-box;
 }
 
