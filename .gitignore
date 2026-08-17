@@ -77,3 +77,7 @@ wx-app
 
 # 部署生成快照（deploy 脚本会自动同步）
 static/mobile/
+
+# 部署打包产物(勿提交)
+website.zip
+website-public.zip
