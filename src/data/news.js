@@ -58,12 +58,19 @@ export function builtinNews() {
 }
 
 // 加载远程数据;失败返回 null,由调用方回退内置数据
+// 数据源顺序自动适配:
+//  - GitHub Pages(github.io 域名):远程(GitHub 文件,同事网页编辑)优先,同域副本兜底
+//  - 自有域名(云服务器):同域(服务器上的 news-data.json,同事直接改文件)优先,远程兜底
 export async function loadNews() {
   if (typeof window === 'undefined') return null;
-  const sources = [];
-  if (REMOTE_URL) sources.push(REMOTE_URL);
-  sources.push(siteBase() + '/news-data.json');
+  const onGithubPages = /github\.io$/i.test(window.location.hostname);
+  const sources = onGithubPages
+    ? [REMOTE_URL, siteBase() + '/news-data.json']
+    : [siteBase() + '/news-data.json', REMOTE_URL];
+  const tried = [];
   for (const url of sources) {
+    if (!url || tried.includes(url)) continue;
+    tried.push(url);
     try {
       const res = await fetch(url, { cache: 'no-store' });
       if (!res.ok) continue;

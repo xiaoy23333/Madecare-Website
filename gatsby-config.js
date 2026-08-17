@@ -7,7 +7,9 @@
 
 module.exports = {
   /* Your site config here */
-  pathPrefix: '/Madecare-Website/',
+  // GitHub Pages 默认前缀 /Madecare-Website/;
+  // 部署到云服务器(根域名)时,构建前设置空环境变量 SITE_PREFIX=(Windows: set SITE_PREFIX= / PowerShell: $env:SITE_PREFIX="")
+  pathPrefix: process.env.SITE_PREFIX !== undefined ? process.env.SITE_PREFIX : '/Madecare-Website/',
   plugins:[
     {
       resolve: 'gatsby-plugin-sass',

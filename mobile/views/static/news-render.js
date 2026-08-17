@@ -90,8 +90,13 @@
     });
   }
 
-  fetchJson(REMOTE)
-    .catch(function () { return fetchJson(SAME); })
+  // 数据源顺序自动适配:github.io 上远程优先;自有域名(服务器)上同域优先
+  var onGithubPages = /github\.io$/i.test(location.hostname);
+  var first = onGithubPages
+    ? fetchJson(REMOTE).catch(function () { return fetchJson(SAME); })
+    : fetchJson(SAME).catch(function () { return fetchJson(REMOTE); });
+
+  first
     .catch(function () { return null; })
     .then(function (data) {
       var list = data && data[isEn ? 'en' : 'zh'];
