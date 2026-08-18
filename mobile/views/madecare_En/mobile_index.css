@@ -1085,7 +1085,7 @@
 }
 
 .index-module--ul3--vf2T- {
-	margin-left: 54%;
+	margin-left: 0;
 	line-height: 190%
 }
 
@@ -3169,4 +3169,15 @@ header {
 .index-module--sc600_title--26woJ .word_fullscreen {
 	width: fit-content;
 	border-bottom: .125rem dotted #ccc;
+}
+
+/* 产品特点/适用列显式右列(float),与功能列左右分布 */
+.index-module--dws1000_function--2Z3xz + div,
+.index-module--cpx_function--2qBEA + div,
+.index-module--tr800_function--1Eq65 + div,
+.index-module--tr600_function--iSg50 + div,
+.index-module--pms600_function--1ICB1 + div,
+.index-module--sc600_function--3QBil + div {
+	float: left;
+	width: 46%;
 }
