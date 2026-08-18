@@ -1661,6 +1661,7 @@ div .button_style{
   box-sizing: border-box;
   padding: 2.5% 2.5% 1.5%;
   position: relative;
+  overflow: hidden;
 }
 .dws1000_info::before, .tr800_info::before {
   content: '';
