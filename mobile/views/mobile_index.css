@@ -843,7 +843,6 @@
 
 .index-module--cpx_title--oURYN {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
@@ -903,7 +902,6 @@
 
 .index-module--tr800_title--3ewC2 {
 	width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%
 	padding-bottom: 0;
@@ -960,7 +958,6 @@
 
 .index-module--tr600_title--3DBoD {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 1%
@@ -1015,7 +1012,6 @@
 
 .index-module--pms600_title--3aoFO {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
@@ -1065,7 +1061,6 @@
 
 .index-module--sc600_title--26woJ {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
@@ -3168,4 +3163,13 @@ header {
 .index-module--pms600_info--1O85N,
 .index-module--sc600_info--16xN2 {
 	animation: fade-up .6s ease both;
+}
+
+.index-module--cpx_title--oURYN .word_fullscreen,
+.index-module--tr800_title--3ewC2 .word_fullscreen,
+.index-module--tr600_title--3DBoD .word_fullscreen,
+.index-module--pms600_title--3aoFO .word_fullscreen,
+.index-module--sc600_title--26woJ .word_fullscreen {
+	width: fit-content;
+	border-bottom: .125rem dotted #ccc;
 }
