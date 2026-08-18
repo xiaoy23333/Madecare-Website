@@ -358,7 +358,7 @@ render={({ state, fullpageApi }) => {
                                             </div>                               
                                           </div>
                                           <div className={styles.dws1000_apply}>
-                                            <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
+                                            <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
                                             <div className={styles.word_18}>
                                                 <ul className={styles.ul3}>
                                                   <li className={styles.li_index}>{intl.formatMessage({ id: "index4.zkkfyy" })}</li>
@@ -865,7 +865,7 @@ render={({ state, fullpageApi }) => {
                                           </div>                               
                                           </div>
                                           <div className={styles.tr800_apply}>
-                                          <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
+                                          <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
                                           <div className={styles.word_18}>
                                               <ul className={styles.ul3}>
                                                   <li className={styles.li_index}>{intl.formatMessage({ id: "p8.ul3.li1" })}</li>
@@ -946,7 +946,7 @@ render={({ state, fullpageApi }) => {
                                           </div>                               
                                           </div>
                                           <div className={styles.tr600_apply}>
-                                          <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
+                                          <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
                                           <div className={styles.word_18}>
                                               <ul className={styles.ul3}>
                                                   <li className={styles.li_index}>{intl.formatMessage({ id: "p10.ul3.li1" })}</li>
@@ -1028,7 +1028,7 @@ render={({ state, fullpageApi }) => {
                                         </div>                               
                                         </div>
                                         <div className={styles.pms600_apply}>
-                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
+                                        <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
                                         <div className={styles.word_18}>
                                             <ul className={styles.ul3}>
                                                 <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li1" })}</li>
@@ -1115,7 +1115,7 @@ render={({ state, fullpageApi }) => {
                                       </div>                               
                                       </div>
                                       <div className={styles.sc600_apply}>
-                                      <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
+                                      <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
                                       <div className={styles.word_18}>
                                           <ul className={styles.ul3}>
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "p14.ul3.li1" })}</li>
