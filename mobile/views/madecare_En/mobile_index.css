@@ -846,6 +846,7 @@
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
+
 }
 .index-module--cpx_title--oURYN {
     width: fit-content;
@@ -904,6 +905,8 @@
     border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%
+	padding-bottom: 0;
+
 }
 .index-module--tr800_title--3ewC2 {
 	width: fit-content;
@@ -960,6 +963,7 @@
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 1%
+
 }
 .index-module--tr600_title--3DBoD {
     width: fit-content;
@@ -1014,6 +1018,7 @@
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
+
 }
 .index-module--pms600_title--3aoFO {
     width: fit-content;
@@ -1063,6 +1068,7 @@
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
+
 }
 .index-module--sc600_title--26woJ {
     width: fit-content;
@@ -1084,7 +1090,7 @@
 }
 
 .index-module--ul3--vf2T- {
-	margin-left: 58%;
+	margin-left: 54%;
 	line-height: 190%
 }
 
