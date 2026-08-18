@@ -13,13 +13,13 @@ class Prevent extends React.Component{
             </div>
 
             <div className={styles.right}>
-                <div className={styles.intro}>  
+                <div className={styles.intro}>
                 <p className={styles.word_14}>
-                <FormattedMessage id="solution.zndndescrip" />
+                <FormattedMessage id="p14.sc600descrip" />
                   </p>
                 </div>
                 <div className={styles.bedcare}>
-                    <img src={require('../../assets/imgs/Solution/Prevent/1.png').default} alt="膀胱保护和康复"/>
+                    <img src={require('../../assets/imgs/Index/sc800d_01.jpeg').default} alt="膀胱保护和康复"/>
                 </div>
             </div>
 
