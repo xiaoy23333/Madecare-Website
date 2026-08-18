@@ -1685,5 +1685,5 @@ div .button_style{
 .tr600_title p, .pms600_title p, .sc600_title p {
   width: 100%;
   padding-bottom: .45rem;
-  border-bottom: .125rem solid #8A9BA0;
+  border-bottom: .125rem dashed var(--hairline);
 }
