@@ -20,13 +20,6 @@ import { LANGS} from '../config';
 
 class Index extends React.Component {
   state = { newsData: null };
-
-  componentDidMount() {
-    // 远健动态:远程数据加载成功后刷新(失败则维持内置数据)
-    loadNews().then(data => {
-      if (data) this.setState({ newsData: data });
-    });
-  }
   //fullpage options
 
   // scrollingSpeed = {1000} /* Options here */
@@ -69,6 +62,10 @@ class Index extends React.Component {
 		meta.name = 'referrer';
 		console.log(document.getElementsByTagName('head'))
 		document.getElementsByTagName('head')[0].appendChild(meta);
+		// 远健动态:远程数据加载成功后刷新(失败则维持内置数据)
+		loadNews().then(data => {
+			if (data) this.setState({ newsData: data });
+		});
 	}
 	
   render() {
