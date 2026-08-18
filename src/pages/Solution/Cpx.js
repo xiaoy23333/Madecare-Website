@@ -21,11 +21,11 @@ class Monitor extends React.Component {
 
       </div>
       <div className={styles.trait}>
-            <div className={styles.intro} style={{paddingRight: '2%', width: '40%'}}>
+            <div className={styles.intro} style={{paddingRight: '8%', width: '40%'}}>
             <p className={styles.subtitle}><FormattedMessage id="solution.rse.title" /></p>
             <FormattedMessage id="solution.rse.descrip" />
             </div>
-          <img style={{width: '56%'}} src={require('../../assets/imgs/Solution/solution_rse.png').default}
+          <img style={{width: '52%'}} src={require('../../assets/imgs/Solution/solution_rse.png').default}
                                                          alt=""/>
       </div>
       <div className={styles.trait}>
