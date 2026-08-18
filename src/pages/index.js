@@ -716,7 +716,7 @@ render={({ state, fullpageApi }) => {
                   <div className={styles.web_bg}>
                     <div style={{position:'absolute', top:0, left:0, width:'100%', height:'100%', backgroundImage: `url(${require('../assets/imgs/Index/mwt_bg.jpg').default})`, backgroundSize: 'cover', backgroundPosition: 'center', WebkitMaskImage: 'linear-gradient(to right, black 0%, black 30%, transparent 60%)', maskImage: 'linear-gradient(to right, black 0%, black 30%, transparent 60%)'}} />
                   <div className={styles.cpx_left} style={{position:'relative', zIndex:1}}>
-                        <div className={styles.descrip2} style={{float:"left", marginLeft: '15%'}}  >
+                        <div className={styles.descrip2} style={{float:"left", marginLeft: '15%', background: 'rgba(255, 255, 255, .55)', WebkitBackdropFilter: 'blur(.5rem)', backdropFilter: 'blur(.5rem)', border: '.0625rem solid rgba(255, 255, 255, .7)', borderRadius: '.5rem', boxShadow: '0 .5rem 1.5rem rgba(1, 58, 70, .12)', padding: '4% 5%', boxSizing: 'border-box'}}  >
                             <div className={styles.word_24}>
                                 {intl.formatMessage({ id: "index7mwt.subtitle" })}
                             </div>
