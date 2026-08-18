@@ -730,7 +730,7 @@ render={({ state, fullpageApi }) => {
                         </div>
                     </div>
                   <div className={styles.cpx_image} style={{position:'relative', zIndex:1}} >
-                      <img style={{height: '100%', width: 'auto', marginTop: '0%'}} src={require('../assets/imgs/Index/mwt_01_t.png').default} />
+                      <img style={{height: '96%', width: 'auto', marginTop: '0%'}} src={require('../assets/imgs/Index/mwt_01_t.png').default} />
                   </div>
                   </div>
 
