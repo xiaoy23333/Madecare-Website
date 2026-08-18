@@ -513,7 +513,7 @@ render={({ state, fullpageApi }) => {
                                           </div>
                                     </div>
                                     <div className={styles.cpx_apply}>
-                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.featuretitle" })}</div>
+                                        <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index7sem.featuretitle" })}</div>
                                         <div className={styles.word_18}>
                                             <ul className={styles.ul3}>
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7sem.ul3.li1" })}</li>
@@ -676,7 +676,7 @@ render={({ state, fullpageApi }) => {
                                           </div>
                                     </div>
                                     <div className={styles.cpx_apply}>
-                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index7sem.featuretitle" })}</div>
+                                        <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '56%'}}>{intl.formatMessage({ id: "index7sem.featuretitle" })}</div>
                                         <div className={styles.word_18}>
                                             <ul className={styles.ul3}>
                                               <li className={styles.li_index}>{intl.formatMessage({ id: "index7stm.ul3.li1" })}</li>
