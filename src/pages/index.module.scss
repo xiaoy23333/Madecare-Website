@@ -1674,3 +1674,9 @@ div .button_style{
   background: linear-gradient(90deg, var(--monitor) 0%, var(--pulse) 100%);
   opacity: .85;
 }
+
+/* 详情页第一行小标题下方虚线(与手机版第一个详情页一致:贴合文字宽度的点虚线) */
+.dws1000_title, .cpx_title, .tr800_title, .tr600_title, .pms600_title, .sc600_title {
+  width: fit-content;
+  border-bottom: .125rem dotted var(--hairline);
+}
