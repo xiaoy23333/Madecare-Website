@@ -3179,3 +3179,13 @@ header {
 	width: 46%;
 	margin-left: 4%;
 }
+
+/* 功能列收窄,留出更多间隔 */
+.index-module--dws1000_function--2Z3xz,
+.index-module--cpx_function--2qBEA,
+.index-module--tr800_function--1Eq65,
+.index-module--tr600_function--iSg50,
+.index-module--pms600_function--1ICB1,
+.index-module--sc600_function--3QBil {
+	width: 48%;
+}
