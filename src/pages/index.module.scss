@@ -1675,8 +1675,18 @@ div .button_style{
   opacity: .85;
 }
 
-/* 详情页第一行小标题下方虚线(与手机版第一个详情页一致:贴合文字宽度的点虚线) */
+/* 详情页第一行小标题下方虚线:画在标题文字上,间距统一;颜色加深,线段加长 */
 .dws1000_title, .cpx_title, .tr800_title, .tr600_title, .pms600_title, .sc600_title {
   width: fit-content;
-  border-bottom: .125rem dotted var(--hairline);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.dws1000_title p, .cpx_title p, .tr800_title p,
+.tr600_title p, .pms600_title p, .sc600_title p {
+  width: fit-content;
+  padding-bottom: .45rem;
+  background-image: repeating-linear-gradient(90deg, #8A9BA0 0 .625rem, transparent .625rem 1.0625rem);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: 100% .125rem;
 }

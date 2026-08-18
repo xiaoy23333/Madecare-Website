@@ -842,10 +842,19 @@
 
 .index-module--cpx_title--oURYN {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
+}
+.index-module--cpx_title--oURYN {
+    width: fit-content;
+	margin-top: 2%;
+	margin-bottom: 2.5%;
+	padding-bottom: 2%
+} .word_fullscreen {
+	width: fit-content;
+	line-height: 190%;
+	border-bottom: .125rem dotted #ccc;
 }
 
 .index-module--cpx_function--2qBEA {
@@ -895,10 +904,17 @@
 
 .index-module--tr800_title--3ewC2 {
 	width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%
+}
+.index-module--tr800_title--3ewC2 {
+	width: fit-content;
+	margin-top: 2%;
+	margin-bottom: 2.5%
+} .word_fullscreen {
+	width: fit-content;
+	line-height: 190%;
+	border-bottom: .125rem dotted #ccc;
 }
 
 .index-module--tr800_function--1Eq65 {
@@ -946,11 +962,19 @@
 
 .index-module--tr600_title--3DBoD {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 1%
+}
+.index-module--tr600_title--3DBoD {
+    width: fit-content;
+	margin-top: 2%;
+	margin-bottom: 2.5%;
+	padding-bottom: 1%
+} .word_fullscreen {
+	width: fit-content;
+	line-height: 190%;
+	border-bottom: .125rem dotted #ccc;
 }
 
 .index-module--tr600_function--iSg50 {
@@ -995,11 +1019,19 @@
 
 .index-module--pms600_title--3aoFO {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
+}
+.index-module--pms600_title--3aoFO {
+    width: fit-content;
+	margin-top: 2%;
+	margin-bottom: 2.5%;
+	padding-bottom: 2%
+} .word_fullscreen {
+	width: fit-content;
+	line-height: 190%;
+	border-bottom: .125rem dotted #ccc;
 }
 
 .index-module--pms600_function--1ICB1 {
@@ -1039,11 +1071,19 @@
 
 .index-module--sc600_title--26woJ {
     width: fit-content;
-    border-bottom: .125rem dotted var(--hairline);
-    border-bottom: .125rem dotted var(--hairline);
 	margin-top: 2%;
 	margin-bottom: 2.5%;
 	padding-bottom: 2%
+}
+.index-module--sc600_title--26woJ {
+    width: fit-content;
+	margin-top: 2%;
+	margin-bottom: 2.5%;
+	padding-bottom: 2%
+} .word_fullscreen {
+	width: fit-content;
+	line-height: 190%;
+	border-bottom: .125rem dotted #ccc;
 }
 
 .index-module--sc600_function--3QBil {
