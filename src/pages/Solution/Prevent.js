@@ -18,7 +18,7 @@ class Prevent extends React.Component{
                 <FormattedMessage id="p14.sc600descrip" />
                   </p>
                 </div>
-                <div className={styles.bedcare}>
+                <div className={styles.bedcare} style={{marginTop: intl.locale === 'en' ? '1.8rem' : undefined}}>
                     <img src={require('../../assets/imgs/Index/sc800d_01.jpeg').default} alt="膀胱保护和康复"/>
                 </div>
             </div>
