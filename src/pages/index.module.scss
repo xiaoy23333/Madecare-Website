@@ -1665,7 +1665,7 @@ div .button_style{
 .dws1000_info::before, .tr800_info::before {
   content: '';
   position: absolute;
-  top: 0;
+  top: -0.0625rem;
   left: 0;
   right: 0;
   height: .1875rem;
