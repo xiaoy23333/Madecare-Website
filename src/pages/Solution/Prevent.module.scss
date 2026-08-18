@@ -1,21 +1,19 @@
 .trait {
     width: 62.5rem;
-    height: 25rem;
+    min-height: 25rem;
   }
-  
+
 .bedcare {
     width: 100%;
-    margin-left: 5%;
     margin-top: .8rem;
-    overflow: hidden;
-    flex: 1;
-    min-height: 0;
+    flex: none;
 }
 
 .bedcare img {
     display: block;
-    height: 100%;
-    width: auto;
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
 }
 
 .left {
