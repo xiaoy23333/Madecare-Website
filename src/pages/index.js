@@ -192,7 +192,7 @@ render={({ state, fullpageApi }) => {
                                         <img  src={require('../assets/imgs/Index/overview/001.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} >
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(19, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
                                     </div>
                                 </div>
                                 <div className={styles.product1} >
@@ -200,7 +200,7 @@ render={({ state, fullpageApi }) => {
                                       <img src={require('../assets/imgs/Index/overview/03.png').default} />
                                     </div>
                                     <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(19, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
                                     </div>
                                 </div>
                           </div>
@@ -963,88 +963,6 @@ render={({ state, fullpageApi }) => {
                     </div>    
               </div>
               <div className="section">
-                  {/* P11 */}
-                  <Header {...this.props}/>
-                  <div className="wrapper">
-                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/pms600_01.jpg').default})` ,zIndex:'0'}}>
-                    <div className={styles.back_top}>
-                      <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
-                        <div className={styles.back_icon}>
-                            <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon_white.png').default} />
-                        </div>
-                        <div className={styles.backto_white} >                                  
-                                <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
-                        </div>        
-                      </button>
-                    </div>
-                        <div className={styles.descrip11} style={{float: 'right'}} >
-                          <div className={styles.word_24} style={{color:'#ffffff'}}>
-                                {intl.formatMessage({ id: "p11.pms600" })}
-                          </div>
-                              <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
-                          <div className={styles.word_title} style={{lineHeight: '190%'}}>
-                                {intl.formatMessage({ id: "p11.pms600intro" })}
-                        </div>
-                        <div style={{}}>
-                          <p className={styles.Index} style={{  marginTop: '0',marginLeft: '25rem'}} >07</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-              </div>
-              <div className="section">
-                  {/* P12 */}
-                  <Header {...this.props}/>
-                  <div className={styles.back_top}>
-                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
-                      <div className={styles.back_icon}>
-                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
-                      </div>
-                      <div className={styles.backto} >                                  
-                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
-                      </div>        
-                    </button>
-                  </div>
-
-                  <div className={styles.pms600_container}>
-                    <div className={styles.pms600} >
-                        <img src={require('../assets/imgs/Index/pms600_02.png').default} />
-                        {/* <p className={styles.productname}>{intl.formatMessage({ id: "p12.cpjh" })}</p> */}
-                    </div>
-                    <div className={styles.pms600_info}>
-                            <div className={styles.pms600_title}><p  className={styles.word_30}>{intl.formatMessage({ id: "p11.pms600" })}</p></div>
-                                <div className={styles.product_pms600}> 
-                                        <div className={styles.pms600_function}>
-                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productfunc" })}</div>
-                                        <div className={styles.word_18}>
-                                            <ul className={styles.ul2}>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li1" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li2" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li3" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li4" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li5" })}</li>   
-                                            </ul>
-                                        </div>                               
-                                        </div>
-                                        <div className={styles.pms600_apply}>
-                                        <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '52%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
-                                        <div className={styles.word_18}>
-                                            <ul className={styles.ul3}>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li1" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li2" })}</li>
-                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li3" })}</li>
-                                            </ul>   
-                                        </div>                            
-                                        </div>
-                                </div>
-                            <div className={styles.product_text}><p className={styles.word_18}> {intl.formatMessage({ id: "p12.pms600descrip" })}
-                                </p></div>
-                    </div>
-                  </div>
-
-              </div>
-              <div className="section">
                   {/* P13 */}
                   <Header {...this.props}/>
                   <div className={styles.back_top}>
@@ -1129,6 +1047,88 @@ render={({ state, fullpageApi }) => {
                           <div className={styles.product_text}><p className={styles.word_18}>{intl.formatMessage({ id: "p14.sc600descrip" })}
                               </p></div>
                   </div>
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P11 */}
+                  <Header {...this.props}/>
+                  <div className="wrapper">
+                    <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/pms600_01.jpg').default})` ,zIndex:'0'}}>
+                    <div className={styles.back_top}>
+                      <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                        <div className={styles.back_icon}>
+                            <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon_white.png').default} />
+                        </div>
+                        <div className={styles.backto_white} >                                  
+                                <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
+                        </div>        
+                      </button>
+                    </div>
+                        <div className={styles.descrip11} style={{float: 'right'}} >
+                          <div className={styles.word_24} style={{color:'#ffffff'}}>
+                                {intl.formatMessage({ id: "p11.pms600" })}
+                          </div>
+                              <div style={{width:'6rem',height:'.125rem',backgroundColor:'#ff6600'}} ></div>
+                          <div className={styles.word_title} style={{lineHeight: '190%'}}>
+                                {intl.formatMessage({ id: "p11.pms600intro" })}
+                        </div>
+                        <div style={{}}>
+                          <p className={styles.Index} style={{  marginTop: '0',marginLeft: '25rem'}} >07</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+              <div className="section">
+                  {/* P12 */}
+                  <Header {...this.props}/>
+                  <div className={styles.back_top}>
+                    <button className={styles.back_button_style} onClick={() => {fullpageApi.moveTo(1, 0);var s = document.getElementsByTagName("video")[0];s.play();}}>
+                      <div className={styles.back_icon}>
+                          <img style={{width: '48%',marginBottom: '9%'}} src={require('../assets/imgs/Index/back_icon.png').default} />
+                      </div>
+                      <div className={styles.backto} >                                  
+                              <p className={styles.word_16} >{intl.formatMessage({ id: "backtop" })}</p>                                                                        
+                      </div>        
+                    </button>
+                  </div>
+
+                  <div className={styles.pms600_container}>
+                    <div className={styles.pms600} >
+                        <img src={require('../assets/imgs/Index/pms600_02.png').default} />
+                        {/* <p className={styles.productname}>{intl.formatMessage({ id: "p12.cpjh" })}</p> */}
+                    </div>
+                    <div className={styles.pms600_info}>
+                            <div className={styles.pms600_title}><p  className={styles.word_30}>{intl.formatMessage({ id: "p11.pms600" })}</p></div>
+                                <div className={styles.product_pms600}> 
+                                        <div className={styles.pms600_function}>
+                                        <div className={styles.word_24} style={{lineHeight: '200%'}}>{intl.formatMessage({ id: "index4.productfunc" })}</div>
+                                        <div className={styles.word_18}>
+                                            <ul className={styles.ul2}>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li1" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li2" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li3" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li4" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul2.li5" })}</li>   
+                                            </ul>
+                                        </div>                               
+                                        </div>
+                                        <div className={styles.pms600_apply}>
+                                        <div className={styles.word_24} style={{lineHeight: '200%', marginLeft: '52%'}}>{intl.formatMessage({ id: "index4.productapply" })}</div>
+                                        <div className={styles.word_18}>
+                                            <ul className={styles.ul3}>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li1" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li2" })}</li>
+                                                <li className={styles.li_index}>{intl.formatMessage({ id: "p12.ul3.li3" })}</li>
+                                            </ul>   
+                                        </div>                            
+                                        </div>
+                                </div>
+                            <div className={styles.product_text}><p className={styles.word_18}> {intl.formatMessage({ id: "p12.pms600descrip" })}
+                                </p></div>
+                    </div>
                   </div>
 
               </div>
