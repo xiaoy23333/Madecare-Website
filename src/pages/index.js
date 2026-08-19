@@ -188,6 +188,13 @@ render={({ state, fullpageApi }) => {
                                       </div>
                                 </div>
                                 <div className={styles.product1} >
+                                    <div style={{height: '89%',marginTop:'0%', textAlign: 'center'}} >
+                                      <img src={require('../assets/imgs/Index/overview/03.png').default} />
+                                    </div>
+                                    <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
+                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
+                                    </div>
+                                <div className={styles.product1} >
                                     <div style={{    height: '86%', textAlign: 'center'}}  >
                                         <img  src={require('../assets/imgs/Index/overview/001.png').default} />
                                     </div>
@@ -195,13 +202,6 @@ render={({ state, fullpageApi }) => {
                                       <button className={styles.button_style} onClick={() => fullpageApi.moveTo(19, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
                                     </div>
                                 </div>
-                                <div className={styles.product1} >
-                                    <div style={{height: '89%',marginTop:'0%', textAlign: 'center'}} >
-                                      <img src={require('../assets/imgs/Index/overview/03.png').default} />
-                                    </div>
-                                    <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
-                                      <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
-                                    </div>
                                 </div>
                           </div>
                       </div>
@@ -979,7 +979,7 @@ render={({ state, fullpageApi }) => {
                   <div className="wrapper">
                     <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc800d_01.jpeg').default})` }}>
                       <div style={{}}>
-                          <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >08</p>
+                          <p className={styles.Index} style={{marginTop: '15%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >07</p>
                       </div>
 
                       <div className={styles.descrip06} style={{float:"left"}}  >
@@ -1074,7 +1074,7 @@ render={({ state, fullpageApi }) => {
                                 {intl.formatMessage({ id: "p11.pms600intro" })}
                         </div>
                         <div style={{}}>
-                          <p className={styles.Index} style={{  marginTop: '0',marginLeft: '25rem'}} >07</p>
+                          <p className={styles.Index} style={{  marginTop: '0',marginLeft: '25rem'}} >08</p>
                         </div>
                       </div>
                     </div>
