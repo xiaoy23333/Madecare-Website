@@ -979,7 +979,7 @@ render={({ state, fullpageApi }) => {
                   <div className="wrapper">
                     <div className={styles.web_bg}  style={{backgroundImage: `url(${require('../assets/imgs/Index/sc800d_01.jpeg').default})` }}>
                       <div style={{}}>
-                          <p className={styles.Index} style={{marginTop: '40%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >07</p>
+                          <p className={styles.Index} style={{marginTop: '30%', marginRight: '2.5rem',marginLeft: '2.5rem'}} >07</p>
                       </div>
 
                       <div className={styles.descrip06} style={{float:"left"}}  >
