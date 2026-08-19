@@ -194,6 +194,7 @@ render={({ state, fullpageApi }) => {
                                     <div className={styles.cpzs_left1} style={{bottom: '0%'}}>
                                       <button className={styles.button_style} onClick={() => fullpageApi.moveTo(17, 0)}> {intl.formatMessage({ id: "cpzs.left2" })} </button>
                                     </div>
+                                </div>
                                 <div className={styles.product1} >
                                     <div style={{    height: '86%', textAlign: 'center'}}  >
                                         <img  src={require('../assets/imgs/Index/overview/001.png').default} />
@@ -201,7 +202,6 @@ render={({ state, fullpageApi }) => {
                                     <div className={styles.cpzs_left1} >
                                       <button className={styles.button_style} onClick={() => fullpageApi.moveTo(19, 0)}> {intl.formatMessage({ id: "cpzs.left1" })}</button>
                                     </div>
-                                </div>
                                 </div>
                           </div>
                       </div>
